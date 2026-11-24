@@ -1,8 +1,8 @@
-# RESTful API Specification - OmniLife Personal OS
+# RESTful API Specification - OmniStudy
 
 ## 1. Quy Chuẩn Giao Tiếp Chung (API Conventions)
 
-- **Base URL:** `http://localhost:8080/api/v1` (Local) | `https://api.omnilife.app/api/v1` (Production)
+- **Base URL:** `http://localhost:8080/api/v1` (Local) | `https://api.omnistudy.app/api/v1` (Production)
 - **Định dạng dữ liệu:** `application/json; charset=utf-8` (Ngoại trừ API tải lên tài liệu học tập sử dụng `multipart/form-data`).
 - **Định dạng ngày giờ:** Chuẩn `ISO-8601` (`YYYY-MM-DDTHH:mm:ssZ` cho `DATETIME` và `YYYY-MM-DD` cho `DATE`).
 - **Xác thực (Authentication Middleware):**
@@ -68,8 +68,8 @@
 ```json
 {
   "fullName": "Nguyễn Quốc Khánh",
-  "email": "khanh.student@omnilife.local",
-  "password": "OmniLife@2026",
+  "email": "khanh.student@omnistudy.local",
+  "password": "OmniStudy@2026",
   "timezone": "Asia/Ho_Chi_Minh"
 }
 ```
@@ -84,7 +84,7 @@
     "expiresInSeconds": 900,
     "user": {
       "id": 1,
-      "email": "khanh.student@omnilife.local",
+      "email": "khanh.student@omnistudy.local",
       "fullName": "Nguyễn Quốc Khánh",
       "avatarUrl": null,
       "authProvider": "LOCAL"
@@ -99,15 +99,15 @@
 - **Request Payload:**
 ```json
 {
-  "email": "khanh.student@omnilife.local",
-  "password": "OmniLife@2026"
+  "email": "khanh.student@omnistudy.local",
+  "password": "OmniStudy@2026"
 }
 ```
-- **Response (`200 OK`):** Trả về `AuthResponse` giống mục 2.1 kèm `Set-Cookie: omnilife_rt=<refresh_token>; HttpOnly; Path=/api/v1/auth; Max-Age=604800; SameSite=Lax`.
+- **Response (`200 OK`):** Trả về `AuthResponse` giống mục 2.1 kèm `Set-Cookie: omnistudy_rt=<refresh_token>; HttpOnly; Path=/api/v1/auth; Max-Age=604800; SameSite=Lax`.
 
 ### 2.3. Làm mới Access Token (Refresh Token Rotation)
 - **Endpoint:** `POST /api/v1/auth/refresh`
-- **Auth Required:** Nhận `omnilife_rt` từ HttpOnly Cookie hoặc trường `refreshToken` trong Body.
+- **Auth Required:** Nhận `omnistudy_rt` từ HttpOnly Cookie hoặc trường `refreshToken` trong Body.
 - **Request Payload:**
 ```json
 {
@@ -262,7 +262,7 @@
 ```json
 {
   "courseId": 1,
-  "title": "Hoàn thiện bộ 14 file Spec chuẩn cho dự án OmniLife",
+  "title": "Hoàn thiện bộ 14 file Spec chuẩn cho dự án OmniStudy",
   "description": "Kiểm tra đồng bộ giữa Database schema và REST API payload.",
   "basePriority": "HIGH",
   "estimatedMinutes": 90,
@@ -285,7 +285,7 @@
 - **Request Payload:** Bắt buộc gửi kèm trường `version` hiện tại của bản ghi:
 ```json
 {
-  "title": "Hoàn thiện bộ 14 file Spec chuẩn cho dự án OmniLife",
+  "title": "Hoàn thiện bộ 14 file Spec chuẩn cho dự án OmniStudy",
   "description": "Đã cập nhật thêm ERD 24 bảng.",
   "status": "IN_PROGRESS",
   "basePriority": "CRITICAL",

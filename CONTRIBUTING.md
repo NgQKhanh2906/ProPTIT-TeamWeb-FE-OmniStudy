@@ -1,12 +1,12 @@
-# Hướng Dẫn Đóng Góp Mã Nguồn (Contributing Guide) - OmniLife Personal OS
+# Hướng Dẫn Đóng Góp Mã Nguồn (Contributing Guide) - OmniStudy
 
-Tài liệu này quy định quy trình làm việc với Git, chiến lược phân nhánh, tiêu chuẩn viết Commit Message và quy trình tạo Pull Request cho dự án **OmniLife**. Mọi thành viên và Agent tham gia phát triển dự án bắt buộc tuân thủ nghiêm ngặt các quy tắc dưới đây.
+Tài liệu này quy định quy trình làm việc với Git, chiến lược phân nhánh, tiêu chuẩn viết Commit Message và quy trình tạo Pull Request cho dự án **OmniStudy**. Mọi thành viên và Agent tham gia phát triển dự án bắt buộc tuân thủ nghiêm ngặt các quy tắc dưới đây.
 
 ---
 
 ## 1. Chiến Lược Phân Nhánh (Branching Strategy)
 
-Dự án **OmniLife** áp dụng mô hình **GitHub Flow kết hợp Feature Branching** với 2 nhánh cố định và hệ thống nhánh phát triển theo từng nhiệm vụ trong [docs/roadmap.md](./docs/roadmap.md).
+Dự án **OmniStudy** áp dụng mô hình **GitHub Flow kết hợp Feature Branching** với 2 nhánh cố định và hệ thống nhánh phát triển theo từng nhiệm vụ trong [docs/roadmap.md](./docs/roadmap.md).
 
 ### 1.1. Các Nhánh Cốt Lõi (Permanent Branches)
 
@@ -54,7 +54,7 @@ Mọi commit message bắt buộc tuân thủ cấu trúc chuẩn **Conventional
 - `docs`: Cập nhật tài liệu thiết kế hoặc chú thích Javadoc / OpenAPI.
 - `chore`: Cập nhật cấu hình `pom.xml`, `package.json`, Docker hoặc GitHub Actions.
 
-### 2.2. Danh mục `<scope>` theo các phân hệ của OmniLife
+### 2.2. Danh mục `<scope>` theo các phân hệ của OmniStudy
 - `db`: Thay đổi Flyway migration (`V1__`, `V2__`) hoặc file MySQL Workbench.
 - `security`: Spring Security 6, JWT Filter, Google OAuth2.
 - `user`: Quản lý hồ sơ người dùng và cấu hình cá nhân (`user_preferences`).

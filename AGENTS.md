@@ -1,6 +1,6 @@
-# Quy Tắc Kiến Trúc & Phát Triển Dành Cho AI Agent (AGENTS.md) - OmniLife Personal OS
+# Quy Tắc Kiến Trúc & Phát Triển Dành Cho AI Agent (AGENTS.md) - OmniStudy
 
-Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent (Antigravity) khi tham gia khảo sát, thiết kế, lập trình, kiểm thử và bảo trì mã nguồn trong dự án **OmniLife**.
+Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent (Antigravity) khi tham gia khảo sát, thiết kế, lập trình, kiểm thử và bảo trì mã nguồn trong dự án **OmniStudy**.
 
 ---
 
@@ -18,7 +18,7 @@ Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent (
 - **Backend Stack:**
   - Java 21 LTS, Spring Boot 3.3.x, Maven.
   - Spring Web, Spring Data JPA (Hibernate 6), Spring Security 6 (JWT Stateless + Google OAuth2 Client), Jakarta Validation, Spring AOP, Spring Mail, Spring Cache (Caffeine).
-  - Flyway Database Migration (`V1__init_omnilife_schema.sql`, `V2__seed_initial_data.sql`).
+  - Flyway Database Migration (`V1__init_omnistudy_schema.sql`, `V2__seed_initial_data.sql`).
   - SpringDoc OpenAPI 3 (Swagger UI), Apache PDFBox / Apache POI (bóc tách đề cương học tập).
   - Kiểm thử: JUnit 5, Mockito, AssertJ.
 - **Database Stack:**
@@ -37,7 +37,7 @@ Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent (
 
 Mọi file mã nguồn mới bắt buộc phải đặt đúng vị trí đã định nghĩa trong `docs/folder-structure.md`:
 
-### 3.1. Khu vực `backend/` (`backend/src/main/java/com/omnilife/`)
+### 3.1. Khu vực `backend/` (`backend/src/main/java/com/omnistudy/`)
 - `common/`:
   - `annotation/`: Chứa custom annotations như `@TrackActivity`.
   - `aspect/`: Chứa các Spring AOP Aspects (`ActivityAuditAspect`, `SqlPerformanceAspect`).
@@ -54,8 +54,8 @@ Mọi file mã nguồn mới bắt buộc phải đặt đúng vị trí đã đ
   - **Ranh giới Module (Modular Monolith Boundary):** Một domain module không được phép gọi trực tiếp `Repository` của một domain module khác; mọi giao tiếp liên phân hệ phải đi qua Public `Service` hoặc phát sự kiện qua `ApplicationEventPublisher` (`@TransactionalEventListener`).
 - `backend/src/main/resources/`:
   - Cấu hình `application.yml`, `application-local.yml`, `application-prod.yml`.
-  - `db/migration/`: Chứa kịch bản Flyway `V1__init_omnilife_schema.sql` và `V2__seed_initial_data.sql`.
-- `backend/src/test/java/com/omnilife/`:
+  - `db/migration/`: Chứa kịch bản Flyway `V1__init_omnistudy_schema.sql` và `V2__seed_initial_data.sql`.
+- `backend/src/test/java/com/omnistudy/`:
   - Đặt các bài kiểm thử đơn vị và tích hợp theo đúng tên package của phân hệ tương ứng (`productivity/`, `study/`, `finance/`, `user/`, `habit/`, `journal/`, `audio/`).
 
 ### 3.2. Khu vực `frontend/` (`frontend/src/`)
@@ -73,7 +73,7 @@ Mọi file mã nguồn mới bắt buộc phải đặt đúng vị trí đã đ
 - `types/`: Chứa các định nghĩa TypeScript interface/type (`productivity.ts`, `study.ts`, `finance.ts`, `habit.ts`, `journal.ts`).
 
 ### 3.3. Khu vực `database/`
-- Lưu trữ mô hình MySQL Workbench `omnilife_erd_model.mwb` và các file kiểm thử hiệu năng SQL (`explain_queries_benchmark.sql`, `index_tuning_verification.sql`).
+- Lưu trữ mô hình MySQL Workbench `omnistudy_erd_model.mwb` và các file kiểm thử hiệu năng SQL (`explain_queries_benchmark.sql`, `index_tuning_verification.sql`).
 
 ---
 
@@ -113,7 +113,7 @@ Mọi file mã nguồn mới bắt buộc phải đặt đúng vị trí đã đ
 
 ## 5. Quy Tắc Cốt Lõi: Đào Tạo Chuyên Sâu & Người Dùng Tự Viết Mã (Hands-On Learning Rule)
 
-Mục đích lớn nhất của dự án OmniLife là giúp người dùng hiểu sâu sắc, toàn diện toàn bộ kiến thức về Spring Boot, MySQL và quy trình xây dựng một sản phẩm thực tế từ con số 0. Do đó, Agent bắt buộc phải tuân thủ nghiêm ngặt các nguyên tắc sau:
+Mục đích lớn nhất của dự án OmniStudy là giúp người dùng hiểu sâu sắc, toàn diện toàn bộ kiến thức về Spring Boot, MySQL và quy trình xây dựng một sản phẩm thực tế từ con số 0. Do đó, Agent bắt buộc phải tuân thủ nghiêm ngặt các nguyên tắc sau:
 
 1. **Tuyệt đối không trực tiếp tạo hoặc sửa file mã nguồn:** Agent không được tự ý sử dụng các công cụ ghi/sửa file (`write_file`, `edit_file`...) lên các thư mục mã nguồn (`backend/`, `frontend/`, `database/`). Mọi dòng code, cấu hình và kịch bản kiểm thử phải do người dùng tự tay viết và triển khai.
 2. **Hình thức chuyển giao 100% bằng Hướng dẫn Chi tiết (Step-by-Step Technical Guide):** Mọi nhiệm vụ và task từ `TASK-01` đến `TASK-24` phải được diễn giải thành tài liệu hướng dẫn tường minh, chia nhỏ theo từng bước logic, không nhảy cóc, không viết code tóm tắt hoặc để lại `// TODO`.

@@ -1,4 +1,4 @@
-# Database Specification & MySQL Workbench Guide - OmniLife Personal OS
+# Database Specification & MySQL Workbench Guide - OmniStudy
 
 ## 1. Quy Chuẩn Thiết Kế Cơ Sở Dữ Liệu (Database Standards)
 
@@ -418,16 +418,16 @@ erDiagram
 
 ---
 
-## 5. Kịch Bản DDL Khởi Tạo Hoàn Chỉnh (`V1__init_omnilife_schema.sql`)
+## 5. Kịch Bản DDL Khởi Tạo Hoàn Chỉnh (`V1__init_omnistudy_schema.sql`)
 
 Bạn có thể copy toàn bộ đoạn script dưới đây chạy trực tiếp trong **MySQL Workbench** rồi chọn `Database -> Reverse Engineer` để sinh ra sơ đồ EER trực quan:
 
 ```sql
-CREATE DATABASE IF NOT EXISTS omnilife_db
+CREATE DATABASE IF NOT EXISTS omnistudy_db
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE omnilife_db;
+USE omnistudy_db;
 
 CREATE TABLE users (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

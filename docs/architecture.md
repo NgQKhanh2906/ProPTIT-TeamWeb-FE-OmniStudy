@@ -1,8 +1,8 @@
-# System Architecture Specification - OmniLife Personal OS
+# System Architecture Specification - OmniStudy
 
 ## 1. Tổng Quan Kiến Trúc Hệ Thống (High-Level Architecture)
 
-**OmniLife** được thiết kế theo mô hình **Modular Monolith ở phía Backend (Spring Boot 3.3)** kết hợp với **Single-Page / Hybrid Application ở phía Frontend (Next.js 14 App Router)** và **Cửa sổ nổi độc lập (Always-on-Top Document Picture-in-Picture Window)**.
+**OmniStudy** được thiết kế theo mô hình **Modular Monolith ở phía Backend (Spring Boot 3.3)** kết hợp với **Single-Page / Hybrid Application ở phía Frontend (Next.js 14 App Router)** và **Cửa sổ nổi độc lập (Always-on-Top Document Picture-in-Picture Window)**.
 
 Lý do chọn **Modular Monolith** thay vì Microservices hay Layered Monolith truyền thống:
 1. **Phù hợp tuyệt đối với Solo Developer & Hạ tầng Free-tier:** Chỉ cần đóng gói và triển khai một tiến trình JVM duy nhất (1 Docker Container) và một MySQL Schema duy nhất, tiết kiệm tối đa RAM và chi phí vận hành.
@@ -45,7 +45,7 @@ flowchart TD
     end
 
     subgraph DataTier["Database Tier (MySQL 8.0 - Designed on Workbench)"]
-        MySQL[("MySQL 8.0 InnoDB Engine (omnilife_db)")]
+        MySQL[("MySQL 8.0 InnoDB Engine (omnistudy_db)")]
     end
 
     NextApp -->|"HTTPS REST JSON (Bearer JWT)"| SecFilter
@@ -155,7 +155,7 @@ sequenceDiagram
 
 ---
 
-## 3. Giải Phẫu Bản Chất Spring Boot 3 Trong OmniLife
+## 3. Giải Phẫu Bản Chất Spring Boot 3 Trong OmniStudy
 
 Dự án được thiết kế để bạn thực hành trực tiếp và nắm rõ bản chất của 7 cơ chế cốt lõi trong Spring Boot:
 
@@ -167,7 +167,7 @@ Dự án được thiết kế để bạn thực hành trực tiếp và nắm 
 ### 3.2. Cơ Chế Spring AOP Proxy & Giải Quyết Bẫy Self-Invocation
 - **Cách ứng dụng:** Hệ thống định nghĩa custom annotation `@TrackActivity(domain = ActivityDomain.STUDY, action = "COMPLETE_REVIEW")` và class `ActivityAuditAspect` sử dụng `@AfterReturning` để tự động lưu lịch sử hoạt động vào bảng `activity_logs` mỗi khi người dùng hoàn thành một task, ôn xong một bài học hoặc ghi nhận một thói quen.
 - **Hiểu sâu bản chất Proxy:** Spring Boot 3 sử dụng **CGLIB Proxy** làm mặc định (tạo một subclass kế thừa class Service của bạn tại thời điểm runtime để chèn logic `@Transactional`, `@Async`, `@Cacheable` vào trước và sau lời gọi hàm).
-- **Quy tắc chống lỗi Self-Invocation:** Trong `TaskService`, nếu hàm `createBatchTasks()` gọi trực tiếp hàm `this.createSingleTask()` (có gắn `@Transactional`), lời gọi đó sẽ đi qua con trỏ `this` thay vì đi qua đối tượng CGLIB Proxy, làm vô hiệu hóa Transaction. Kiến trúc OmniLife tách riêng `TaskCommandService` và `TaskQueryService` để mọi lời gọi luôn đi xuyên qua Spring Proxy chuẩn xác.
+- **Quy tắc chống lỗi Self-Invocation:** Trong `TaskService`, nếu hàm `createBatchTasks()` gọi trực tiếp hàm `this.createSingleTask()` (có gắn `@Transactional`), lời gọi đó sẽ đi qua con trỏ `this` thay vì đi qua đối tượng CGLIB Proxy, làm vô hiệu hóa Transaction. Kiến trúc OmniStudy tách riêng `TaskCommandService` và `TaskQueryService` để mọi lời gọi luôn đi xuyên qua Spring Proxy chuẩn xác.
 
 ### 3.3. Quản Lý Transaction (`@Transactional`) & Mức Độ Cô Lập (Isolation Levels)
 - **Read-Write vs Read-Only Transaction:**
@@ -176,10 +176,10 @@ Dự án được thiết kế để bạn thực hành trực tiếp và nắm 
 - **Rollback Rules:** Mặc định Spring chỉ tự động rollback khi gặp `RuntimeException` (Unchecked Exception) và không rollback khi gặp Checked Exception (như `IOException` khi đọc file PDF đề cương). Do đó, mọi phương thức ghi dữ liệu đều được khai báo tường minh `@Transactional(rollbackFor = Exception.class)`.
 
 ### 3.4. Tối Ưu Hóa Hibernate 6 & Triệt Tiêu Lỗi N+1 Query
-- **Quy tắc Mandatory Lazy Loading:** Mọi mối quan hệ `@ManyToOne` và `@OneToMany` trong các Entity của OmniLife bắt buộc khai báo `fetch = FetchType.LAZY` (vì mặc định của JPA cho `@ManyToOne` là `EAGER`, nguyên nhân số một gây ra hàng chục câu lệnh SELECT thừa).
+- **Quy tắc Mandatory Lazy Loading:** Mọi mối quan hệ `@ManyToOne` và `@OneToMany` trong các Entity của OmniStudy bắt buộc khai báo `fetch = FetchType.LAZY` (vì mặc định của JPA cho `@ManyToOne` là `EAGER`, nguyên nhân số một gây ra hàng chục câu lệnh SELECT thừa).
 - **Giải pháp lấy dữ liệu kèm quan hệ:**
   1. Sử dụng `@EntityGraph(attributePaths = {"subtasks", "course"})` trực tiếp trên các hàm truy vấn của `TaskRepository`.
-  2. Sử dụng **Java Record DTO Projection** (`SELECT new com.omnilife.productivity.dto.TaskSummaryProjection(...)`) cho các API thống kê và bảng xếp hạng để Hibernate chỉ `SELECT` đúng các cột cần thiết thay vì kéo toàn bộ Entity.
+  2. Sử dụng **Java Record DTO Projection** (`SELECT new com.omnistudy.productivity.dto.TaskSummaryProjection(...)`) cho các API thống kê và bảng xếp hạng để Hibernate chỉ `SELECT` đúng các cột cần thiết thay vì kéo toàn bộ Entity.
 
 ### 3.5. Kiến Trúc Hướng Sự Kiện Nội Bộ (Domain Events với `@TransactionalEventListener`)
 - Để trang **Daily Journal** cuối ngày tự động biết hôm nay bạn đã hoàn thành những việc gì mà không làm cho `TaskService`, `StudyService`, `FinanceService` bị phụ thuộc chéo vào `JournalService`:
@@ -187,8 +187,8 @@ Dự án được thiết kế để bạn thực hành trực tiếp và nắm 
   - Ở phía nhận, `ActivityEventListener` sử dụng `@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)` kết hợp `@Async("applicationTaskExecutor")` để chỉ ghi nhận hoạt động sau khi Transaction chính đã commit thành công xuống MySQL và chạy trên luồng phụ không làm chậm phản hồi của người dùng.
 
 ### 3.6. Tiến Trình Ngầm & Đa Luồng (`@Scheduled` & `ThreadPoolTaskExecutor`)
-- Thay vì dùng `SimpleAsyncTaskExecutor` mặc định của Spring (vốn tạo mới thread không giới hạn mỗi lần gọi `@Async`), OmniLife cấu hình tường minh một `ThreadPoolTaskExecutor` trong `AsyncConfig`:
-  - `corePoolSize = 4`, `maxPoolSize = 8`, `queueCapacity = 100`, `threadNamePrefix = "OmniLife-Async-"`.
+- Thay vì dùng `SimpleAsyncTaskExecutor` mặc định của Spring (vốn tạo mới thread không giới hạn mỗi lần gọi `@Async`), OmniStudy cấu hình tường minh một `ThreadPoolTaskExecutor` trong `AsyncConfig`:
+  - `corePoolSize = 4`, `maxPoolSize = 8`, `queueCapacity = 100`, `threadNamePrefix = "OmniStudy-Async-"`.
 - Hai bộ lập lịch `@Scheduled` chính:
   1. `TaskUrgencyRecalculationScheduler`: Chạy mỗi 15 phút (`cron = "0 */15 * * * *"`) để cập nhật lại cột `urgency_score` và `urgency_tier` cho các công việc đang mở, giúp việc sắp xếp và lọc bằng SQL Index trên MySQL đạt tốc độ tối đa.
   2. `ClassReminderNotificationScheduler`: Chạy mỗi 5 phút kiểm tra bảng `class_schedules` và gửi email/thông báo cho các lớp học sắp bắt đầu trong 30 phút tới.

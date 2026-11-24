@@ -1,4 +1,4 @@
-# Static Assets & Seed Data Specification - OmniLife Personal OS
+# Static Assets & Seed Data Specification - OmniStudy
 
 ## 1. Tài Nguyên Kiểu Chữ (Font Assets)
 
@@ -52,7 +52,7 @@ Các file này được cắt nối đầu-cuối (Seamless Loop) để phát l�
 ## 4. Hình Ảnh Minh Họa & Nhận Diện (Brand & SVG Illustrations)
 
 Đặt tại thư mục `frontend/public/images/`:
-1. `logo-omnilife.svg` - Biểu tượng hình khối lục giác lồng tâm tối giản, màu Gradient Indigo (`#6366F1` -> `#8B5CF6`).
+1. `logo-omnistudy.svg` - Biểu tượng hình khối lục giác lồng tâm tối giản, màu Gradient Indigo (`#6366F1` -> `#8B5CF6`).
 2. `empty-tasks.svg` - Minh họa vector nét mảnh (`stroke: #4B5563`) hiển thị khi hoàn thành hết công việc trong ngày.
 3. `empty-study-review.svg` - Minh họa vector hiển thị khi hoàn thành xong toàn bộ bài cũ cần ôn tập trong ngày.
 4. `empty-journal.svg` - Minh họa sổ tay mở khi người dùng chưa viết nhật ký cho ngày đang chọn.
@@ -66,8 +66,8 @@ Dữ liệu mẫu dưới đây được nạp tự động qua Flyway migration
 
 ### 5.1. Tài khoản Người dùng Mẫu (`users`)
 - **ID:** `1`
-- **Email:** `khanh.student@omnilife.local`
-- **Password (Plaintext để đăng nhập test):** `OmniLife@2026` (Băm BCrypt trong DB: `$2a$12$R9h/cIPz0gi.URNNX3kh2OPST9/PgBkqquzi.Ss7KIUgO2t0jWMUW`)
+- **Email:** `khanh.student@omnistudy.local`
+- **Password (Plaintext để đăng nhập test):** `OmniStudy@2026` (Băm BCrypt trong DB: `$2a$12$R9h/cIPz0gi.URNNX3kh2OPST9/PgBkqquzi.Ss7KIUgO2t0jWMUW`)
 - **Họ và tên:** `Nguyễn Quốc Khánh`
 - **Múi giờ:** `Asia/Ho_Chi_Minh`
 - **Mục tiêu học tập mỗi ngày:** `240` (phút)

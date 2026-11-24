@@ -1,13 +1,13 @@
-# GitHub Repository & Environment Setup - OmniLife Personal OS
+# GitHub Repository & Environment Setup - OmniStudy
 
 ## 1. Khởi Tạo Kho Lưu Trữ GitHub (Repository Initialization)
 
-Thực hiện tuần tự các lệnh sau tại thư mục gốc `D:\Khanh\java\HackathonNCD\omnilife`:
+Thực hiện tuần tự các lệnh sau tại thư mục gốc `omnistudy`:
 
 ```bash
 git init
 git branch -M main
-git remote add origin https://github.com/<your-github-username>/omnilife.git
+git remote add origin https://github.com/<your-github-username>/omnistudy.git
 git checkout -b develop
 ```
 
@@ -21,7 +21,7 @@ git checkout -b develop
 
 ## 2. Cấu Hình File `.gitignore` Chuẩn Cho Monorepo
 
-Nội dung đầy đủ của file `.gitignore` đặt tại thư mục gốc `omnilife/.gitignore`:
+Nội dung đầy đủ của file `.gitignore` đặt tại thư mục gốc `omnistudy/.gitignore`:
 
 ```gitignore
 # ==========================================
@@ -109,7 +109,7 @@ APP_CORS_ALLOWED_ORIGINS=http://localhost:3000
 # ===================================================================
 DB_HOST=localhost
 DB_PORT=3306
-DB_NAME=omnilife_db
+DB_NAME=omnistudy_db
 DB_USERNAME=root
 DB_PASSWORD=your_local_mysql_password
 
@@ -120,7 +120,7 @@ DB_PASSWORD=your_local_mysql_password
 JWT_SECRET_KEY=7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a
 JWT_ACCESS_TOKEN_EXPIRATION_MS=900000
 JWT_REFRESH_TOKEN_EXPIRATION_MS=604800000
-JWT_REFRESH_COOKIE_NAME=omnilife_rt
+JWT_REFRESH_COOKIE_NAME=omnistudy_rt
 JWT_REFRESH_COOKIE_SECURE=false
 
 # ===================================================================
@@ -137,7 +137,7 @@ MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=your_email@gmail.com
 MAIL_APP_PASSWORD=your_16_char_gmail_app_password
-MAIL_FROM_ADDRESS=noreply@omnilife.local
+MAIL_FROM_ADDRESS=noreply@omnistudy.local
 
 # ===================================================================
 # FILE UPLOAD & SYLLABUS EXTRACTION LIMITS
@@ -158,7 +158,7 @@ NEXT_PUBLIC_OAUTH2_GOOGLE_AUTH_URL=http://localhost:8080/oauth2/authorization/go
 # ===================================================================
 # APPLICATION & DOCUMENT PIP HUD SETTINGS
 # ===================================================================
-NEXT_PUBLIC_APP_NAME=OmniLife OS
+NEXT_PUBLIC_APP_NAME=OmniStudy
 NEXT_PUBLIC_DEFAULT_TIMEZONE=Asia/Ho_Chi_Minh
 NEXT_PUBLIC_HUD_DEFAULT_WIDTH=340
 NEXT_PUBLIC_HUD_DEFAULT_HEIGHT=460
@@ -166,12 +166,12 @@ NEXT_PUBLIC_HUD_DEFAULT_HEIGHT=460
 
 ---
 
-## 4. Cấu Hình GitHub Actions CI/CD (`.github/workflows/ci-omnilife.yml`)
+## 4. Cấu Hình GitHub Actions CI/CD (`.github/workflows/ci-omnistudy.yml`)
 
 Pipeline này tự động khởi tạo một container **MySQL 8.0 thật**, chạy kiểm증 toàn bộ kịch bản Flyway Migration (`V1__`, `V2__`), chạy toàn bộ Unit/Integration Tests của Spring Boot và kiểm tra kiểu dữ liệu TypeScript của Next.js mỗi khi có lệnh `git push` hoặc `Pull Request`:
 
 ```yaml
-name: OmniLife CI Pipeline
+name: OmniStudy CI Pipeline
 
 on:
   push:
@@ -189,7 +189,7 @@ jobs:
         image: mysql:8.0
         env:
           MYSQL_ROOT_PASSWORD: test_root_password
-          MYSQL_DATABASE: omnilife_test_db
+          MYSQL_DATABASE: omnistudy_test_db
         ports:
           - 3306:3306
         options: >-
@@ -220,7 +220,7 @@ jobs:
         env:
           DB_HOST: 127.0.0.1
           DB_PORT: 3306
-          DB_NAME: omnilife_test_db
+          DB_NAME: omnistudy_test_db
           DB_USERNAME: root
           DB_PASSWORD: test_root_password
           JWT_SECRET_KEY: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef

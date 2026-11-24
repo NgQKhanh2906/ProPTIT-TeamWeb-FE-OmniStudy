@@ -1,4 +1,4 @@
-# Project Folder Structure (Skeleton Specification) - OmniLife Personal OS
+# Project Folder Structure (Skeleton Specification) - OmniStudy
 
 Dự án được tổ chức theo mô hình **Monorepo** gồm 4 khu vực tách biệt rõ ràng: `backend/` (Java 21 + Spring Boot 3 theo kiến trúc Modular Monolith), `frontend/` (Next.js 14 App Router + TypeScript), `database/` (File mô hình MySQL Workbench `.mwb` và các script kiểm thử hiệu năng SQL), và `docs/` (14 file đặc tả hệ thống).
 
@@ -7,7 +7,7 @@ Dự án được tổ chức theo mô hình **Monorepo** gồm 4 khu vực tác
 ## 1. Sơ Đồ Cây Thư Mục Toàn Dự Án (Full File Tree)
 
 ```text
-omnilife/
+omnistudy/
 ├── docker-compose.yml
 ├── .gitignore
 ├── README.md
@@ -27,7 +27,7 @@ omnilife/
 │   ├── roadmap.md
 │   └── worklog.md
 ├── database/
-│   ├── omnilife_erd_model.mwb
+│   ├── omnistudy_erd_model.mwb
 │   ├── explain_queries_benchmark.sql
 │   └── index_tuning_verification.sql
 ├── backend/
@@ -38,8 +38,8 @@ omnilife/
 │   ├── mvnw.cmd
 │   └── src/
 │       ├── main/
-│       │   ├── java/com/omnilife/
-│       │   │   ├── OmniLifeApplication.java
+│       │   ├── java/com/omnistudy/
+│       │   │   ├── OmniStudyApplication.java
 │       │   │   ├── common/
 │       │   │   │   ├── annotation/
 │       │   │   │   │   └── TrackActivity.java
@@ -251,10 +251,10 @@ omnilife/
 │       │       ├── application-local.yml
 │       │       ├── application-prod.yml
 │       │       └── db/migration/
-│       │           ├── V1__init_omnilife_schema.sql
+│       │           ├── V1__init_omnistudy_schema.sql
 │       │           └── V2__seed_initial_data.sql
 │       └── test/
-│           └── java/com/omnilife/
+│           └── java/com/omnistudy/
 │               ├── productivity/
 │               │   ├── UrgencyScoringEngineTest.java
 │               │   └── TaskOptimisticLockingIntegrationTest.java
@@ -354,11 +354,11 @@ omnilife/
 ## 2. Giải Thích Trách Nhiệm Từng Khu Vực & Tệp Cốt Lõi
 
 ### 2.1. Khu vực `database/` (MySQL Workbench Artifacts)
-- `omnilife_erd_model.mwb`: Tệp thiết kế sơ đồ thực thể quan hệ (Enhanced Entity-Relationship Diagram) mở trực tiếp bằng MySQL Workbench.
+- `omnistudy_erd_model.mwb`: Tệp thiết kế sơ đồ thực thể quan hệ (Enhanced Entity-Relationship Diagram) mở trực tiếp bằng MySQL Workbench.
 - `explain_queries_benchmark.sql`: Tập hợp các câu lệnh `EXPLAIN FORMAT=JSON` để bạn thực hành kiểm tra hiệu năng truy vấn bảng xếp hạng công việc, lịch tuần và sổ cái tài chính trên MySQL Workbench.
 - `index_tuning_verification.sql`: Kịch bản tạo dữ liệu lớn và đối chiếu tốc độ truy vấn trước/sau khi đánh Composite Index.
 
-### 2.2. Khu vực `backend/src/main/java/com/omnilife/` (Spring Boot 3 Modular Monolith)
+### 2.2. Khu vực `backend/src/main/java/com/omnistudy/` (Spring Boot 3 Modular Monolith)
 - **`common/`**: Chứa các thành phần hạ tầng dùng chung toàn hệ thống:
   - `ActivityAuditAspect.java`: Sử dụng Spring AOP (`@Around`, `@AfterReturning`) tự động ghi nhận hoạt động của người dùng để tổng hợp vào trang Nhật ký cuối ngày.
   - `SqlPerformanceAspect.java`: Đo thời gian thực thi của các phương thức Repository và cảnh báo ra log nếu truy vấn chạy quá `100ms`.

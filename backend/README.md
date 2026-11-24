@@ -1,6 +1,6 @@
-# OmniLife Backend - Spring Boot 3.3 Modular Monolith
+# OmniStudy Backend - Spring Boot 3.3 Modular Monolith
 
-Thư mục này chứa toàn bộ mã nguồn máy chủ Backend của hệ thống **OmniLife**, được phát triển bằng **Java 21 LTS** và **Spring Boot 3.3.x** theo mô hình kiến trúc **Modular Monolith**.
+Thư mục này chứa toàn bộ mã nguồn máy chủ Backend của hệ thống **OmniStudy**, được phát triển bằng **Java 21 LTS** và **Spring Boot 3.3.x** theo mô hình kiến trúc **Modular Monolith**.
 
 ## 1. Cấu Trúc Các Phân Hệ (Domain Modules)
 

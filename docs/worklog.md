@@ -1,6 +1,6 @@
-# Project Execution Worklog - OmniLife Personal OS
+# Project Execution Worklog - OmniStudy
 
-Bảng theo dõi tiến độ thực thi dự án **OmniLife** khớp 100% với danh sách `TASK-01` đến `TASK-21` trong [roadmap.md](./roadmap.md).
+Bảng theo dõi tiến độ thực thi dự án **OmniStudy** khớp 100% với danh sách `TASK-01` đến `TASK-21` trong [roadmap.md](./roadmap.md).
 
 ## 1. Quy Ước Trạng Thái (Status Legend)
 - `TODO`: Chưa bắt đầu thực hiện.
@@ -14,7 +14,7 @@ Bảng theo dõi tiến độ thực thi dự án **OmniLife** khớp 100% với
 | Mã Task | Tên Task | Phase | Trạng Thái | Ngày Cập Nhật | Ghi Chú Kỹ Thuật / Trọng Tâm Spring Boot & MySQL / Lỗi Phát Sinh |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `TASK-01` | Khởi tạo dự án Spring Boot 3.3, Cấu hình chung & Global Exception Handling | Phase 1 | `TODO` | 2026-11-10 | Trọng tâm: Cấu hình Maven Java 21, `@EnableJpaAuditing`, `BaseAuditEntity`, `@RestControllerAdvice` chuẩn hóa `ApiErrorResponse`. |
-| `TASK-02` | Thiết lập Flyway Migration 24 bảng, Seed Data & Sơ đồ ERD trên MySQL Workbench | Phase 1 | `TODO` | 2026-11-10 | Trọng tâm: Chạy `V1__init_omnilife_schema.sql` và `V2__seed_initial_data.sql`; thực hiện `Reverse Engineer` trên MySQL Workbench lưu file `.mwb`. |
+| `TASK-02` | Thiết lập Flyway Migration 24 bảng, Seed Data & Sơ đồ ERD trên MySQL Workbench | Phase 1 | `TODO` | 2026-11-10 | Trọng tâm: Chạy `V1__init_omnistudy_schema.sql` và `V2__seed_initial_data.sql`; thực hiện `Reverse Engineer` trên MySQL Workbench lưu file `.mwb`. |
 | `TASK-03` | Hiện thực hóa Spring Security 6, Local Auth (BCrypt) & JWT Refresh Token Rotation | Phase 1 | `TODO` | 2026-11-10 | Trọng tâm: `SecurityFilterChain` Stateless, `BCryptPasswordEncoder(12)`, `OncePerRequestFilter`, cơ chế phát hiện đánh cắp Refresh Token. |
 | `TASK-04` | Tích hợp Google OAuth2 Login, Tự động Liên kết Tài khoản & Quản lý User Preferences | Phase 1 | `TODO` | 2026-11-10 | Trọng tâm: `CustomOAuth2UserService`, Account Linking khi trùng Email giữa Local và Google, ánh xạ cột `JSON` trong MySQL 8. |
 | `TASK-05` | Xây dựng CRUD Công việc, Subtasks, chống N+1 Query & Optimistic Locking (`@Version`) | Phase 2 | `TODO` | 2026-11-10 | Trọng tâm: Kiểm soát xung đột bằng `@Version` (`ObjectOptimisticLockingFailureException`), triệt tiêu N+1 Query bằng `@EntityGraph` và `Specification`. |

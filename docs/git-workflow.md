@@ -1,8 +1,8 @@
-# Git Workflow & Version Control Specification - OmniLife Personal OS
+# Git Workflow & Version Control Specification - OmniStudy
 
 ## 1. Chiến Lược Phân Nhánh (Branching Strategy)
 
-Dự án **OmniLife** áp dụng mô hình **GitHub Flow kết hợp Feature Branching** được tối ưu hóa cho lập trình viên phát triển độc lập (Solo Developer) nhưng vẫn tuân thủ nghiêm ngặt quy chuẩn làm việc tại các công ty công nghệ:
+Dự án **OmniStudy** áp dụng mô hình **GitHub Flow kết hợp Feature Branching** được tối ưu hóa cho lập trình viên phát triển độc lập (Solo Developer) nhưng vẫn tuân thủ nghiêm ngặt quy chuẩn làm việc tại các công ty công nghệ:
 
 ```mermaid
 gitGraph
@@ -68,7 +68,7 @@ Mọi commit message bắt buộc tuân thủ chuẩn **Conventional Commits v1.
 - `docs`: Cập nhật tài liệu trong thư mục `docs/` hoặc Javadoc/OpenAPI.
 - `chore`: Cập nhật cấu hình `pom.xml`, `package.json`, Docker, GitHub Actions.
 
-### 2.2. Danh mục `<scope>` theo Module của OmniLife
+### 2.2. Danh mục `<scope>` theo Module của OmniStudy
 - `db`: Thay đổi Flyway migration (`V1__`, `V2__`) hoặc file MySQL Workbench.
 - `security`: Spring Security 6, JWT Filter, Google OAuth2.
 - `user`: Quản lý hồ sơ và cấu hình cá nhân (`user_preferences`).

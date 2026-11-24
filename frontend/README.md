@@ -1,6 +1,6 @@
-# OmniLife Frontend - Next.js 14 App Router & Document PiP HUD
+# OmniStudy Frontend - Next.js 14 App Router & Document PiP HUD
 
-Thư mục này chứa toàn bộ mã nguồn giao diện người dùng của hệ thống **OmniLife**, được phát triển trên nền tảng **Next.js 14 (App Router)**, **React 18**, **TypeScript** và **TailwindCSS**.
+Thư mục này chứa toàn bộ mã nguồn giao diện người dùng của hệ thống **OmniStudy**, được phát triển trên nền tảng **Next.js 14 (App Router)**, **React 18**, **TypeScript** và **TailwindCSS**.
 
 ## 1. Cấu Trúc Thư Mục Chính
 

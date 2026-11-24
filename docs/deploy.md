@@ -1,4 +1,4 @@
-# Deployment Specification (100% Free-tier Strategy) - OmniLife Personal OS
+# Deployment Specification (100% Free-tier Strategy) - OmniStudy
 
 ## 1. Kiến Trúc Hạ Tầng Đám Mây Miễn Phí 100% (Zero-Cost Cloud Topology)
 
@@ -58,8 +58,8 @@ RUN ./mvnw clean package -DskipTests -B
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 
-RUN addgroup -S omnilife && adduser -S omnilife -G omnilife
-USER omnilife:omnilife
+RUN addgroup -S omnistudy && adduser -S omnistudy -G omnistudy
+USER omnistudy:omnistudy
 
 COPY --from=builder /workspace/app/target/*.jar app.jar
 
@@ -82,13 +82,13 @@ ENTRYPOINT ["java", \
 version: '3.9'
 
 services:
-  omnilife-mysql:
+  omnistudy-mysql:
     image: mysql:8.0
-    container_name: omnilife-mysql
+    container_name: omnistudy-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root_password_2026
-      MYSQL_DATABASE: omnilife_db
+      MYSQL_DATABASE: omnistudy_db
       TZ: UTC
     ports:
       - "3306:3306"
@@ -104,22 +104,22 @@ services:
       timeout: 5s
       retries: 5
 
-  omnilife-backend:
+  omnistudy-backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: omnilife-backend
+    container_name: omnistudy-backend
     restart: unless-stopped
     depends_on:
-      omnilife-mysql:
+      omnistudy-mysql:
         condition: service_healthy
     ports:
       - "8080:8080"
     environment:
       SPRING_PROFILES_ACTIVE: local
-      DB_HOST: omnilife-mysql
+      DB_HOST: omnistudy-mysql
       DB_PORT: 3306
-      DB_NAME: omnilife_db
+      DB_NAME: omnistudy_db
       DB_USERNAME: root
       DB_PASSWORD: root_password_2026
       JWT_SECRET_KEY: 7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a
@@ -139,32 +139,32 @@ volumes:
 2. Chọn tạo dịch vụ **MySQL 8.0 (Free Plan - 5GB Storage, 1GB RAM)**.
 3. Sau khi khởi tạo xong, lấy các thông số: `Host`, `Port`, `User`, `Password`, và tải chứng chỉ `ca.pem`.
 4. **Kết nối trực tiếp từ MySQL Workbench trên máy tính của bạn:**
-   - Mở MySQL Workbench -> Nhấn dấu `+` tạo kết nối mới (`OmniLife Cloud DB`).
+   - Mở MySQL Workbench -> Nhấn dấu `+` tạo kết nối mới (`OmniStudy Cloud DB`).
    - Nhập `Hostname`, `Port`, `Username`, `Password`.
    - Chuyển sang tab **SSL**: Chọn `Use SSL: Require and Verify CA` và trỏ đường dẫn tới file `ca.pem`.
-   - Nhấn **Test Connection** -> Tạo schema `omnilife_db`.
+   - Nhấn **Test Connection** -> Tạo schema `omnistudy_db`.
 
 ### Bước 2: Thiết Lập Google OAuth2 Miễn Phí Trên Google Cloud Console
-1. Truy cập `https://console.cloud.google.com/`, tạo Project mới tên `OmniLife-Personal-OS`.
+1. Truy cập `https://console.cloud.google.com/`, tạo Project mới tên `OmniStudy-App`.
 2. Vào mục **APIs & Services -> OAuth consent screen**:
-   - Chọn **External**, điền tên ứng dụng `OmniLife OS`.
+   - Chọn **External**, điền tên ứng dụng `OmniStudy`.
    - Trong phần **Scopes**, thêm `email`, `profile`, `openid` và `https://www.googleapis.com/auth/calendar.readonly`.
    - Trong phần **Test users**, thêm địa chỉ Gmail cá nhân của bạn.
 3. Vào mục **Credentials -> Create Credentials -> OAuth client ID**:
    - Application type: **Web application**.
    - **Authorized JavaScript origins:**
      - `http://localhost:3000`
-     - `https://omnilife-os.vercel.app`
+     - `https://omnistudy.vercel.app`
    - **Authorized redirect URIs:**
      - `http://localhost:8080/login/oauth2/code/google`
-     - `https://omnilife-api.onrender.com/login/oauth2/code/google`
+     - `https://omnistudy-api.onrender.com/login/oauth2/code/google`
 4. Lưu lại `Client ID` và `Client Secret`.
 
 ### Bước 3: Triển Khai Spring Boot Backend Lên Render.com (Free Plan)
 1. Đăng nhập vào `https://render.com/` bằng tài khoản GitHub.
-2. Chọn **New -> Web Service** -> Kết nối tới repository `omnilife`.
+2. Chọn **New -> Web Service** -> Kết nối tới repository `omnistudy`.
 3. Cấu hình dịch vụ:
-   - **Name:** `omnilife-api`
+   - **Name:** `omnistudy-api`
    - **Root Directory:** `backend`
    - **Environment:** `Docker`
    - **Dockerfile Path:** `./Dockerfile`
@@ -178,29 +178,29 @@ volumes:
 | `SERVER_PORT` | `8080` |
 | `DB_HOST` | `<host-mysql-cua-ban-tren-aiven>` |
 | `DB_PORT` | `<port-mysql-tren-aiven>` |
-| `DB_NAME` | `omnilife_db` |
+| `DB_NAME` | `omnistudy_db` |
 | `DB_USERNAME` | `avnadmin` |
 | `DB_PASSWORD` | `<mat-khau-mysql-aiven>` |
 | `JWT_SECRET_KEY` | `<chuoi-ngau-nhien-64-ky-tu>` |
 | `JWT_REFRESH_COOKIE_SECURE` | `true` |
 | `GOOGLE_CLIENT_ID` | `<google-client-id>` |
 | `GOOGLE_CLIENT_SECRET` | `<google-client-secret>` |
-| `GOOGLE_REDIRECT_URI` | `https://omnilife-api.onrender.com/login/oauth2/code/google` |
-| `APP_FRONTEND_URL` | `https://omnilife-os.vercel.app` |
-| `APP_CORS_ALLOWED_ORIGINS` | `https://omnilife-os.vercel.app` |
+| `GOOGLE_REDIRECT_URI` | `https://omnistudy-api.onrender.com/login/oauth2/code/google` |
+| `APP_FRONTEND_URL` | `https://omnistudy.vercel.app` |
+| `APP_CORS_ALLOWED_ORIGINS` | `https://omnistudy.vercel.app` |
 
 5. **Mẹo giữ Backend không bị ngủ (Keep-Alive chống Cold Start):**
    - Gói miễn phí của Render sẽ tự động ngủ sau 15 phút không có request.
-   - Hãy tạo một tài khoản miễn phí trên `https://cron-job.org/`, đặt lịch gọi `GET https://omnilife-api.onrender.com/actuator/health` mỗi **14 phút/lần** từ 06:00 sáng đến 24:00 đêm. Nhờ đó, ứng dụng của bạn luôn phản hồi tức thì dưới `100ms` suốt cả ngày.
+   - Hãy tạo một tài khoản miễn phí trên `https://cron-job.org/`, đặt lịch gọi `GET https://omnistudy-api.onrender.com/actuator/health` mỗi **14 phút/lần** từ 06:00 sáng đến 24:00 đêm. Nhờ đó, ứng dụng của bạn luôn phản hồi tức thì dưới `100ms` suốt cả ngày.
 
 ### Bước 4: Triển Khai Next.js 14 Frontend Lên Vercel (Free Plan)
-1. Đăng nhập vào `https://vercel.com/` bằng GitHub -> Chọn **Add New Project** -> Chọn repo `omnilife`.
+1. Đăng nhập vào `https://vercel.com/` bằng GitHub -> Chọn **Add New Project** -> Chọn repo `omnistudy`.
 2. Cấu hình Build:
    - **Framework Preset:** `Next.js`
    - **Root Directory:** `frontend`
    - **Build Command:** `npm run build`
    - **Install Command:** `npm install`
 3. Thêm biến môi trường trên Vercel:
-   - `NEXT_PUBLIC_API_BASE_URL` = `https://omnilife-api.onrender.com/api/v1`
-   - `NEXT_PUBLIC_OAUTH2_GOOGLE_AUTH_URL` = `https://omnilife-api.onrender.com/oauth2/authorization/google`
+   - `NEXT_PUBLIC_API_BASE_URL` = `https://omnistudy-api.onrender.com/api/v1`
+   - `NEXT_PUBLIC_OAUTH2_GOOGLE_AUTH_URL` = `https://omnistudy-api.onrender.com/oauth2/authorization/google`
 4. Nhấn **Deploy**. Vercel sẽ cấp phát chứng chỉ HTTPS tự động (Bắt buộc phải có HTTPS thì trình duyệt mới cho phép kích hoạt cửa sổ nổi `window.documentPictureInPicture`).

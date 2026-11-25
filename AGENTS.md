@@ -1,125 +1,67 @@
 # Quy Tắc Kiến Trúc & Phát Triển Dành Cho AI Agent (AGENTS.md) - OmniStudy
 
-Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent (Antigravity) khi tham gia khảo sát, thiết kế, lập trình, kiểm thử và bảo trì mã nguồn trong dự án **OmniStudy**.
+Tài liệu này định nghĩa bộ quy tắc bắt buộc dành cho AI Agent khi tham gia khảo sát, thiết kế, hướng dẫn lập trình, kiểm thử và bảo trì mã nguồn trong dự án **OmniStudy (Smart Exam & Task Planner)** — đồ án cá nhân xuyên suốt khóa đào tạo **Frontend Development 2026 — ProPTIT Web**.
 
 ---
 
-## 1. Quy Tắc Bất Biến Bảo Vệ Tài Liệu Thiết Kế (`@docs`)
+## 1. Quy Tắc Bảo Vệ Tài Liệu Thiết Kế (`docs/` & `DESIGN.md`)
 
-1. **Nguyên vẹn tuyệt đối thư mục `docs/`:** Thư mục `./docs/` chứa 14 file đặc tả gốc của hệ thống (`README.md`, `product.md`, `spec.md`, `design-system.md`, `assets.md`, `folder-structure.md`, `architecture.md`, `database.md`, `api.md`, `git-workflow.md`, `github-setup.md`, `deploy.md`, `roadmap.md`, `worklog.md`).
-2. **Cấm xóa hoặc ghi đè trái phép:** Tuyệt đối không xóa, đổi tên, di chuyển hoặc tự ý thay đổi nội dung kiến trúc trong `./docs/` nếu không có yêu cầu trực tiếp từ người dùng.
-3. **Tra cứu trước khi viết code:** Trước khi thực thi bất kỳ Task nào từ `TASK-01` đến `TASK-21`, Agent bắt buộc phải đọc kỹ yêu cầu trong `docs/roadmap.md`, cấu trúc bảng trong `docs/database.md`, hợp đồng giao tiếp trong `docs/api.md` và công thức nghiệp vụ trong `docs/spec.md`.
-
----
-
-## 2. Tóm Tắt Kiến Trúc & Tech Stack Cốt Lõi
-
-- **Mô hình kiến trúc:** Monorepo gồm **Backend Modular Monolith** (Spring Boot 3.3) + **Frontend Hybrid SPA** (Next.js 14 App Router) + **Always-on-Top Mini HUD** (Document Picture-in-Picture API qua Cross-Window React Portal) + **MySQL 8.0 InnoDB** (thiết kế và tối ưu trên MySQL Workbench).
-- **Backend Stack:**
-  - Java 21 LTS, Spring Boot 3.3.x, Maven.
-  - Spring Web, Spring Data JPA (Hibernate 6), Spring Security 6 (JWT Stateless + Google OAuth2 Client), Jakarta Validation, Spring AOP, Spring Mail, Spring Cache (Caffeine).
-  - Flyway Database Migration (`V1__init_omnistudy_schema.sql`, `V2__seed_initial_data.sql`).
-  - SpringDoc OpenAPI 3 (Swagger UI), Apache PDFBox / Apache POI (bóc tách đề cương học tập).
-  - Kiểm thử: JUnit 5, Mockito, AssertJ.
-- **Database Stack:**
-  - MySQL 8.0+ (`InnoDB`, `utf8mb4_unicode_ci`), gồm 24 bảng dữ liệu và 8 Composite Indexes chiến lược.
-- **Frontend Stack:**
-  - Next.js 14 (App Router), React 18, TypeScript, Node.js 20 LTS.
-  - TailwindCSS, shadcn/ui (Radix UI Primitives), Lucide Icons (`strokeWidth={1.75}`).
-  - TanStack Query v5, Zustand, FullCalendar / dnd-kit, Recharts, TipTap / React-Markdown.
-  - Web APIs: `window.documentPictureInPicture`, Web Audio API, Notification API.
-- **DevOps & Hạ tầng:**
-  - Docker (Multi-stage build `eclipse-temurin:21-jre-alpine` tối ưu dưới 350MB RAM), Docker Compose, GitHub Actions CI/CD, triển khai trên Render, Vercel và Aiven/TiDB Cloud.
+1. **Tôn trọng tài liệu đặc tả gốc:** Các tệp đặc tả cốt lõi gồm `README.md`, `DESIGN.md`, `docs/product.md`, `docs/spec.md`, `docs/roadmap.md`, `docs/wireframes.md`, `docs/ai-review.md` là nguồn chân lý duy nhất về phạm vi sản phẩm và lộ trình thực thi.
+2. **Không tự ý sửa đổi ngoài yêu cầu:** Không xóa, đổi tên hoặc thay đổi nội dung kiến trúc trong `docs/` và `DESIGN.md` nếu không có yêu cầu trực tiếp từ người dùng.
+3. **Tra cứu trước khi hướng dẫn hoặc viết code:** Trước khi thực hiện bất kỳ nội dung nào từ **Buổi 1 đến Buổi 7**, Agent bắt buộc phải đối chiếu phạm vi trong `docs/product.md`, công thức nghiệp vụ trong `docs/spec.md`, quy chuẩn giao diện trong `DESIGN.md` và tiêu chuẩn nghiệm thu trong `docs/roadmap.md`.
 
 ---
 
-## 3. Quy Định Vị Trí Đặt Mã Nguồn (Directory Placement Rules)
+## 2. Tóm Tắt Phạm Vi & Tech Stack Cốt Lõi
 
-Mọi file mã nguồn mới bắt buộc phải đặt đúng vị trí đã định nghĩa trong `docs/folder-structure.md`:
-
-### 3.1. Khu vực `backend/` (`backend/src/main/java/com/omnistudy/`)
-- `common/`:
-  - `annotation/`: Chứa custom annotations như `@TrackActivity`.
-  - `aspect/`: Chứa các Spring AOP Aspects (`ActivityAuditAspect`, `SqlPerformanceAspect`).
-  - `config/`: Chứa các class cấu hình hạ tầng (`AsyncConfig`, `CacheConfig`, `CorsConfig`, `JacksonConfig`, `OpenApiConfig`, `SchedulingConfig`).
-  - `entity/`: Chứa `BaseAuditEntity` (`created_at`, `updated_at`).
-  - `exception/`: Chứa `ErrorCode`, `BusinessException`, `ResourceNotFoundException`, `ApiErrorResponse`, `GlobalExceptionHandler`.
-  - `response/`: Chứa cấu trúc phản hồi chuẩn `ApiResponse<T>` và `PageResponse<T>`.
-- `security/`:
-  - Cấu hình `SecurityConfig`, `CustomUserDetails`, `CustomUserDetailsService`, `@CurrentUser`.
-  - `jwt/`: Chứa `JwtTokenProvider`, `JwtAuthenticationFilter`, `JwtAuthenticationEntryPoint`.
-  - `oauth2/`: Chứa `CustomOAuth2UserService`, `GoogleOAuth2UserInfo`, `OAuth2AuthenticationSuccessHandler`, `OAuth2AuthenticationFailureHandler`.
-- **Các phân hệ nghiệp vụ (Domain Modules):** `user/`, `productivity/`, `study/`, `finance/`, `habit/`, `journal/`, `audio/`.
-  - Mỗi domain module được chia thành các package con độc lập: `controller/`, `dto/`, `entity/`, `repository/`, `service/` (và `event/`, `scheduler/` đối với `productivity/`, `study/`).
-  - **Ranh giới Module (Modular Monolith Boundary):** Một domain module không được phép gọi trực tiếp `Repository` của một domain module khác; mọi giao tiếp liên phân hệ phải đi qua Public `Service` hoặc phát sự kiện qua `ApplicationEventPublisher` (`@TransactionalEventListener`).
-- `backend/src/main/resources/`:
-  - Cấu hình `application.yml`, `application-local.yml`, `application-prod.yml`.
-  - `db/migration/`: Chứa kịch bản Flyway `V1__init_omnistudy_schema.sql` và `V2__seed_initial_data.sql`.
-- `backend/src/test/java/com/omnistudy/`:
-  - Đặt các bài kiểm thử đơn vị và tích hợp theo đúng tên package của phân hệ tương ứng (`productivity/`, `study/`, `finance/`, `user/`, `habit/`, `journal/`, `audio/`).
-
-### 3.2. Khu vực `frontend/` (`frontend/src/`)
-- `app/`:
-  - `(auth)/`: Chứa các trang xác thực `login/page.tsx`, `register/page.tsx`, `oauth2/callback/page.tsx`.
-  - `(workspace)/`: Chứa `layout.tsx` (App Shell) và các trang chức năng `dashboard/`, `calendar/`, `study/` (kèm `courses/[courseId]/` và `review/`), `finance/`, `habits/`, `journal/`, `settings/`.
-- `components/`:
-  - `ui/`: Các primitive components tái sử dụng theo chuẩn shadcn/ui.
-  - `layout/`: `AppSidebar.tsx`, `TopCommandHeader.tsx`, `CommandPaletteModal.tsx`, `AmbientAudioPlayerBar.tsx`.
-  - `hud/`: `DocumentPipProvider.tsx`, `StickyMiniHudWindow.tsx`, `PomodoroMiniTimer.tsx`.
-  - Các thư mục component theo nghiệp vụ: `productivity/`, `study/`, `finance/`, `habit/`, `journal/`.
-- `hooks/`: Chứa custom hooks (`useDocumentPip.ts`, `usePomodoroTimer.ts`, `useAmbientAudioMixer.ts`, `useUrgencyLiveTick.ts`).
-- `lib/`: Chứa `api-client.ts`, `urgency-calculator.ts`, `utils.ts`.
-- `stores/`: Chứa Zustand stores (`authStore.ts`, `hudStore.ts`, `audioMixerStore.ts`).
-- `types/`: Chứa các định nghĩa TypeScript interface/type (`productivity.ts`, `study.ts`, `finance.ts`, `habit.ts`, `journal.ts`).
-
-### 3.3. Khu vực `database/`
-- Lưu trữ mô hình MySQL Workbench `omnistudy_erd_model.mwb` và các file kiểm thử hiệu năng SQL (`explain_queries_benchmark.sql`, `index_tuning_verification.sql`).
+- **Phạm vi sản phẩm (3 phân hệ cốt lõi):**
+  1. **Task & Urgency Engine:** Tạo/sửa/xóa/hoàn thành công việc, tự động tính điểm khẩn cấp động $U \in [0, 100]$ theo hạn chót và thời lượng ước tính, phân loại 5 cấp bậc thị giác (`OVERDUE`, `EXTREME`, `HIGH`, `MODERATE`, `LOW`).
+  2. **Google Calendar Sync:** Đăng nhập Google OAuth 2.0 phía Client (`@react-oauth/google`), đọc sự kiện từ Google Calendar API v3 (`primary calendar`), hỗ trợ Time-blocking và có cơ chế fallback bằng dữ liệu mẫu (`mockGoogleCalendar.json`).
+  3. **Smart Exam Prep Kit:** Quản lý kỳ thi, đồng hồ đếm ngược thời gian thực, thanh tỷ lệ sẵn sàng (`% Readiness`) và bộ tự động phân bổ danh sách chủ đề ôn tập thành các Task theo ngày trước kỳ thi.
+- **Ngoài phạm vi (Out-of-Scope):** Không xây dựng Backend riêng, không dùng cơ sở dữ liệu máy chủ (lưu dữ liệu cục bộ bằng `localStorage` và gọi Google Calendar API trực tiếp từ Client), không có tính năng mạng xã hội hay làm việc nhóm.
+- **Tech Stack chuẩn:**
+  - Nền tảng: **React 18**, **TypeScript 5.x** (Strict mode, không dùng `any`), **Vite 5.x**, Node.js 20 LTS.
+  - Giao diện & Design System: **Tailwind CSS 3.4**, **shadcn/ui** (Radix UI primitives), **Lucide React** (`strokeWidth={1.75}`).
+  - Dữ liệu, Form & Routing: **TanStack Query v5**, **React Router**, **React Hook Form + Zod**, **`@react-oauth/google`**, **`date-fns`**.
+  - Triển khai: **GitHub Pages** (bản tĩnh Buổi 2) và **Vercel / Netlify** (ứng dụng hoàn chỉnh Buổi 7).
 
 ---
 
-## 4. Chuẩn Coding Conventions & Kỹ Thuật Bắt Buộc
+## 3. Quy Định Cấu Trúc Thư Mục (`src/` & `docs/`)
 
-### 4.1. Quy tắc Backend (Java 21 & Spring Boot 3.3)
-1. **Constructor Injection 100%:** Nghiêm cấm dùng `@Autowired` trên biến thành viên (Field Injection). Bắt buộc dùng `private final` fields kết hợp Constructor (hoặc `@RequiredArgsConstructor`).
-2. **Kiểm soát Transaction & Chống Self-Invocation:**
-   - Gắn `@Transactional(readOnly = true)` cho toàn bộ phương thức chỉ đọc dữ liệu ở tầng Service để tắt cơ chế Dirty Checking của Hibernate.
-   - Gắn `@Transactional(rollbackFor = Exception.class)` cho các phương thức thay đổi dữ liệu.
-   - Không gọi phương thức có `@Transactional` hoặc `@Async` thông qua `this.` trong cùng một class để tránh vô hiệu hóa CGLIB Proxy.
-3. **Triệt tiêu lỗi N+1 Query:**
-   - Mọi mối quan hệ `@ManyToOne` và `@OneToMany` bắt buộc khai báo `fetch = FetchType.LAZY`.
-   - Khi cần lấy dữ liệu kèm bảng liên kết, bắt buộc sử dụng `@EntityGraph` hoặc Java Record DTO Projection.
-4. **Kiểm soát đồng thời & Kiểu dữ liệu tiền tệ:**
-   - Bảng `tasks` bắt buộc có `@Version private Long version;` (Optimistic Locking) để xử lý xung đột khi cập nhật đồng thời từ giao diện chính và cửa sổ Mini HUD.
-   - Bảng `wallets` bắt buộc sử dụng khóa bi quan `@Lock(LockModeType.PESSIMISTIC_WRITE)` (`SELECT ... FOR UPDATE`) khi thực hiện giao dịch tài chính.
-   - Mọi số liệu tiền tệ và điểm số chính xác bắt buộc dùng `BigDecimal` (`Scale = 2`, `RoundingMode.HALF_UP`), tuyệt đối không dùng `float` hoặc `double`.
-5. **Bảo mật chống IDOR:**
-   - Mọi truy vấn dữ liệu cá nhân phải lấy `userId` từ `SecurityContextHolder` (qua `@CurrentUser CustomUserDetails`), không bao giờ nhận `userId` trực tiếp từ tham số Request của Client.
+Mọi mã nguồn sau khi khởi tạo dự án Vite + React + TypeScript ở Buổi 4 phải tuân thủ đúng cấu trúc đã định nghĩa trong `README.md` và `docs/folder-structure.md`:
 
-### 4.2. Quy tắc Frontend (Next.js 14 & TypeScript)
-1. **Strict TypeScript:** Không sử dụng kiểu `any`. Mọi payload gọi API và phản hồi phải được định nghĩa kiểu rõ ràng trong `src/types/`.
-2. **Design System & Typography:**
-   - Tuân thủ phong cách Dark-First Bento Grid (`--bg-canvas: #090A0F`, `--bg-surface-1: #11131A`, viền `1px` `--border-subtle: #222634`).
-   - Bắt buộc áp dụng font `JetBrains Mono` kèm thuộc tính `tabular-nums` cho toàn bộ đồng hồ Pomodoro, điểm khẩn cấp (`urgencyScore`), thời gian đếm ngược và số tiền tài chính.
-   - Sử dụng Shimmer Skeleton cho trạng thái đang tải, không dùng Spinner chắn toàn màn hình.
-3. **Cross-Window React Portal cho Mini HUD:**
-   - Khi mở cửa sổ `window.documentPictureInPicture`, phải sao chép toàn bộ CSS stylesheets sang `pipWindow.document.head` và render `<StickyMiniHudWindow />` bằng `ReactDOM.createPortal` để dùng chung Zustand Store với cửa sổ chính; đồng thời cung cấp chế độ Floating Mini Panel dự phòng (Fallback) nếu trình duyệt không hỗ trợ Document PiP.
-
-### 4.3. Quy tắc Văn Phong & Git
-- Không sử dụng icon hoặc emoji trong mã nguồn, log, tài liệu kỹ thuật và câu trả lời.
-- Chỉ thực hiện `git commit` và `git push` khi có sự xác nhận trực tiếp từ người dùng.
-- Mọi Commit Message phải tuân thủ chuẩn Conventional Commits được quy định trong `CONTRIBUTING.md`.
+- `src/components/common/`: Các thành phần UI tái sử dụng (`Button`, `Input`, `Skeleton`, `Dialog`, `EmptyState`, `ErrorAlert`).
+- `src/components/layout/`: Khung ứng dụng (`TopHeader`, `BentoLayout`, `ProtectedRoute`).
+- `src/components/task/`: Module công việc (`UrgencyTaskList`, `UrgencyTaskCard`, `TaskFormDialog`).
+- `src/components/exam/`: Module lịch thi (`ExamCountdownWidget`, `ExamPrepDrawer`, `ExamCard`, `ExamReadinessBadge`).
+- `src/hooks/`: Custom React Hooks (`useCountdownTimer`, `useUrgency`).
+- `src/lib/`: Hàm thuần túy và tiện ích (`urgency-calculator.ts`, `date-utils.ts`, `exam-task-generator.ts`).
+- `src/services/`: Giao tiếp API ngoài và dữ liệu mẫu (`google-calendar-service.ts`, `mockGoogleCalendar.json`).
+- `src/types/`: Định nghĩa kiểu dữ liệu TypeScript (`task.ts`, `exam.ts`, `calendar.ts`).
 
 ---
 
-## 5. Quy Tắc Cốt Lõi: Đào Tạo Chuyên Sâu & Người Dùng Tự Viết Mã (Hands-On Learning Rule)
+## 4. Chuẩn Coding Conventions & Thiết Kế Bắt Buộc
 
-Mục đích lớn nhất của dự án OmniStudy là giúp người dùng hiểu sâu sắc, toàn diện toàn bộ kiến thức về Spring Boot, MySQL và quy trình xây dựng một sản phẩm thực tế từ con số 0. Do đó, Agent bắt buộc phải tuân thủ nghiêm ngặt các nguyên tắc sau:
+1. **Strict TypeScript:** Tuyệt đối không dùng kiểu `any`. Toàn bộ props, state, dữ liệu `localStorage` và response từ Google Calendar API v3 phải có interface/type rõ ràng trong `src/types/`.
+2. **Dark-First Bento Grid & Chống AI Slop (theo `DESIGN.md`):**
+   - Dùng nền Canvas `#090A0F`, bề mặt thẻ `#11131A` / `#181B24`, viền mảnh `1px solid #222634`, màu nhấn Indigo 500 `#6366F1`. Tuyệt đối không dùng glassmorphism mờ mịt, drop shadow nặng hoặc gradient tím-hồng tùy tiện.
+   - Bắt buộc dùng `'JetBrains Mono'` kèm `font-variant-numeric: tabular-nums` (`font-mono tabular-nums`) cho mọi đồng hồ đếm ngược, số giờ còn lại và điểm `UrgencyScore`.
+   - Mọi thành phần hiển thị dữ liệu phải xử lý đủ 3 trạng thái biên: **Loading (Shimmer Skeleton)**, **Empty State** (có nút hành động chính) và **Error Alert** (có nút thử lại hoặc đăng nhập lại Google).
+   - Tuân thủ thang khoảng cách bội số `4px` và chuẩn Accessibility (WCAG AA/AAA, điều hướng bàn phím `Tab` / `Enter` / `Escape`).
+3. **Hiệu năng React & Quản lý State:**
+   - Cô lập state của đồng hồ đếm ngược trong component/hook riêng để không gây re-render toàn bộ bảng Task mỗi giây.
+   - Luôn dọn dẹp `setInterval` / listener trong cleanup function của `useEffect`.
+   - Áp dụng `React.lazy` và `Suspense` cho route `/calendar` và modal nặng ở Buổi 7.
 
-1. **Tuyệt đối không trực tiếp tạo hoặc sửa file mã nguồn:** Agent không được tự ý sử dụng các công cụ ghi/sửa file (`write_file`, `edit_file`...) lên các thư mục mã nguồn (`backend/`, `frontend/`, `database/`). Mọi dòng code, cấu hình và kịch bản kiểm thử phải do người dùng tự tay viết và triển khai.
-2. **Hình thức chuyển giao 100% bằng Hướng dẫn Chi tiết (Step-by-Step Technical Guide):** Mọi nhiệm vụ và task từ `TASK-01` đến `TASK-24` phải được diễn giải thành tài liệu hướng dẫn tường minh, chia nhỏ theo từng bước logic, không nhảy cóc, không viết code tóm tắt hoặc để lại `// TODO`.
-3. **Mỗi bước hướng dẫn bắt buộc gồm 5 phần chuẩn mực:**
-   - **Nền tảng & Môi trường thao tác:** Chỉ rõ thực hiện trên công cụ nào (IntelliJ IDEA, VS Code, Terminal, MySQL Workbench, Postman...).
-   - **Đường dẫn & Thao tác:** Đường dẫn chính xác của file, package cần tạo hoặc chỉnh sửa.
-   - **Lý do kiến trúc & Bản chất kỹ thuật:** Giải thích chi tiết "Tại sao lại làm như vậy?". Phân tích cơ chế bên dưới của Spring Boot (AOP Proxy, Reflection, Bean Lifecycle, Transaction Management, Security Filter Chain, Hibernate Session...), rủi ro nếu làm sai hoặc không áp dụng chuẩn này.
-   - **Nội dung mã nguồn & Cấu hình mẫu đầy đủ:** Cung cấp toàn bộ mã nguồn hoặc nội dung cấu hình hoàn chỉnh, định dạng chuẩn mực, kèm chú thích phân tích các đoạn logic then chốt để người dùng đọc hiểu và tự gõ.
-   - **Hướng dẫn Kiểm chứng & Nghiệm thu (Verification):** Chỉ rõ cách thức người dùng tự chạy lệnh build, kiểm tra log, gọi API thử nghiệm hoặc viết test case để xác nhận kết quả hoạt động chính xác.
+---
+
+## 5. Quy Tắc Đào Tạo & Hỗ Trợ Thực Hành (Hands-On Learning Rule)
+
+Mục đích của dự án OmniStudy là giúp học viên nắm vững nền tảng HTML/CSS, TypeScript, React, quản lý State, Design System và quy trình ship sản phẩm Frontend thực tế qua 7 buổi học. Do đó:
+
+1. **Ưu tiên giải thích bản chất kỹ thuật:** Khi hướng dẫn làm bài hoặc sửa lỗi, luôn giải thích rõ cơ chế hoạt động (CSS Grid vs Flexbox, Immutability, Closure/Cleanup trong `useEffect`, Zod Schema, Caching trong TanStack Query, luồng OAuth 2.0...).
+2. **Không viết tắt hoặc để lại `// TODO`:** Mọi hướng dẫn hoặc đoạn mã mẫu cần rõ ràng, đúng chuẩn TypeScript và bám sát từng chặng trong `docs/roadmap.md`.
+3. **Kiểm chứng sau mỗi thay đổi:** Sau khi chỉnh sửa mã nguồn, luôn kiểm tra bằng `npx tsc --noEmit`, `npm run lint`, `npm run build` hoặc kiểm tra trực tiếp trên trình duyệt (DevTools, React DevTools, Lighthouse).
+4. **Quy tắc văn phong & Git:** Không dùng icon hoặc emoji trong mã nguồn, log, tài liệu kỹ thuật và câu trả lời. Chỉ `git commit` và `git push` khi có yêu cầu trực tiếp từ người dùng.

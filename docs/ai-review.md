@@ -13,6 +13,8 @@
 "Design a modern dark-mode productivity dashboard for a student exam and task planner called 'OmniStudy'. Include an exam countdown timer, a prioritized task list with urgency badges, and a daily schedule synced with Google Calendar. Use a dark theme with modern aesthetics."
 ```
 
+![Minh họa 5 lỗi AI Slop trên màn Focus Dashboard](./assets/buoi-1/ai-slop-review.svg)
+
 ---
 
 ## 2. Phân Tích 5 Lỗi "AI Slop" & Giải Pháp Khắc Phục

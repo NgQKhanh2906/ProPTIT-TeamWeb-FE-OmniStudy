@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#6366F1"/>
+  </marker>
+  <marker id="arr-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#9CA3AF"/>
+  </marker>
+  <marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#EF4444"/>
+  </marker>
+  <marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#10B981"/>
+  </marker>
+</defs>
+<rect x="0" y="0" width="1200" height="620" rx="0" fill="#090A0F" stroke="none" stroke-width="1" />
+<rect x="32" y="20" width="1136" height="46" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="52" y="48" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#F3F4F6" text-anchor="start" >USER FLOW - OMNISTUDY (LUONG CHINH &amp; XU LY TRANG THAI BIEN)</text>
+<text x="1148" y="48" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="end" >3 Man Chinh + Google OAuth2 / Calendar API v3</text>
+<rect x="36" y="232" width="160" height="62" rx="10" fill="#181B24" stroke="#6366F1" stroke-width="1.5" />
+<text x="116.0" y="258" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Khoi dong App</text>
+<text x="116.0" y="276" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Mo trinh duyet</text>
+<rect x="248" y="224" width="230" height="78" rx="10" fill="#11131A" stroke="#6366F1" stroke-width="1.5" />
+<text x="363.0" y="250" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Man 1: Focus Dashboard</text>
+<text x="363.0" y="268" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Countdown | Tasks | Mini Cal</text>
+<path d="M 196 263 L 246 263" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<rect x="545" y="92" width="200" height="62" rx="10" fill="#11131A" stroke="#3B82F6" stroke-width="1.5" />
+<text x="645.0" y="118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Google OAuth 2.0</text>
+<text x="645.0" y="136" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Cap quyen Calendar</text>
+<path d="M 363 224 L 363 123 L 543 123" stroke="#9CA3AF" stroke-width="1.8" fill="none" marker-end="url(#arr-gray)"/>
+<text x="452" y="114" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Bam Ket noi Google</text>
+<polygon points="845,88 910,123 845,158 780,123" fill="#181B24" stroke="#3B82F6" stroke-width="1.5"/>
+<text x="845" y="127" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Token OK?</text>
+<path d="M 745 123 L 778 123" stroke="#9CA3AF" stroke-width="1.8" fill="none" marker-end="url(#arr-gray)"/>
+<rect x="976" y="88" width="190" height="68" rx="10" fill="#11131A" stroke="#10B981" stroke-width="1.5" />
+<text x="1071.0" y="114" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Sync Calendar API v3</text>
+<text x="1071.0" y="132" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Hien lich len Man 1 &amp; 2</text>
+<path d="M 910 123 L 974 123" stroke="#10B981" stroke-width="1.8" fill="none" marker-end="url(#arr-green)"/>
+<text x="942" y="114" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle" >Co</text>
+<rect x="976" y="184" width="190" height="64" rx="10" fill="rgba(239,68,68,0.12)" stroke="#EF4444" stroke-width="1.5" />
+<text x="1071.0" y="210" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FCA5A5" text-anchor="middle" >Error State (401/Net)</text>
+<text x="1071.0" y="228" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Banner do + Nut Thu lai</text>
+<path d="M 845 158 L 845 216 L 974 216" stroke="#EF4444" stroke-width="1.8" fill="none" marker-end="url(#arr-red)"/>
+<text x="895" y="208" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#EF4444" text-anchor="middle" >Loi</text>
+<rect x="545" y="230" width="230" height="66" rx="10" fill="#11131A" stroke="#6366F1" stroke-width="1.5" />
+<text x="660.0" y="256" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Man 2: Weekly Calendar</text>
+<text x="660.0" y="274" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Lich tuan + Moc ky thi</text>
+<path d="M 478 263 L 543 263" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<text x="510" y="254" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Xem lich</text>
+<rect x="545" y="360" width="230" height="74" rx="10" fill="#11131A" stroke="#6366F1" stroke-width="1.5" />
+<text x="660.0" y="386" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Man 3: Exam Prep Drawer</text>
+<text x="660.0" y="404" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Nhap ngay thi &amp; Checklist</text>
+<path d="M 660 296 L 660 358" stroke="#9CA3AF" stroke-width="1.8" fill="none" marker-end="url(#arr-gray)"/>
+<text x="668" y="330" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >Chon mon thi</text>
+<path d="M 363 302 L 363 397 L 543 397" stroke="#6366F1" stroke-width="1.8" fill="none" marker-end="url(#arr)"/>
+<text x="452" y="389" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >+ Them Lich Thi / Chon Mon</text>
+<polygon points="865,358 935,397 865,436 795,397" fill="#181B24" stroke="#F59E0B" stroke-width="1.5"/>
+<text x="865" y="401" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Hop le?</text>
+<path d="M 775 397 L 793 397" stroke="#9CA3AF" stroke-width="1.8" fill="none" marker-end="url(#arr-gray)"/>
+<rect x="976" y="286" width="190" height="64" rx="10" fill="rgba(239,68,68,0.12)" stroke="#EF4444" stroke-width="1.5" />
+<text x="1071.0" y="312" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#FCA5A5" text-anchor="middle" >Error Validation</text>
+<text x="1071.0" y="330" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Ngay thi o qua khu -&gt; Alert do</text>
+<path d="M 865 358 L 865 318 L 974 318" stroke="#EF4444" stroke-width="1.8" fill="none" marker-end="url(#arr-red)"/>
+<text x="912" y="310" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#EF4444" text-anchor="middle" >Khong</text>
+<rect x="976" y="368" width="190" height="66" rx="10" fill="#11131A" stroke="#10B981" stroke-width="1.5" />
+<text x="1071.0" y="394" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Tu Dong Sinh Task</text>
+<text x="1071.0" y="412" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chia deu bai on theo ngay</text>
+<path d="M 935 397 L 974 397" stroke="#10B981" stroke-width="1.8" fill="none" marker-end="url(#arr-green)"/>
+<text x="954" y="389" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#10B981" text-anchor="middle" >Co</text>
+<rect x="248" y="464" width="527" height="54" rx="10" fill="#181B24" stroke="#10B981" stroke-width="1.5" />
+<text x="511.5" y="490" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Cap nhat Bang Task &amp; Tinh lai Dynamic Urgency Score (U)</text>
+<text x="511.5" y="508" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Day task moi vao danh sach va tu dong xep hang muc do khan cap</text>
+<path d="M 1071 434 L 1071 491 L 777 491" stroke="#10B981" stroke-width="1.8" fill="none" marker-end="url(#arr-green)"/>
+<path d="M 310 464 L 310 304" stroke="#10B981" stroke-width="1.8" fill="none" marker-end="url(#arr-green)"/>
+<rect x="32" y="540" width="1136" height="58" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="52" y="565" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >QUY TAC TRANG THAI BIEN TREN TAT CA CAC MAN:</text>
+<text x="52" y="584" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="start" >1) Loading: Shimmer Skeleton (#181B24) / Progress Bar   |   2) Empty: Huong dan + Nut CTA tao moi   |   3) Error: Khung do (#EF4444) + Nut Thu lai</text>
+</svg>

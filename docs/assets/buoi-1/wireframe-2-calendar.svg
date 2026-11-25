@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" width="1280" height="880">
+<rect x="0" y="0" width="1280" height="880" rx="0" fill="#090A0F" stroke="none" stroke-width="1" />
+<rect x="24" y="18" width="1232" height="46" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="44" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#F3F4F6" text-anchor="start" >WIREFRAME MAN 2: WEEKLY CALENDAR &amp; EXAM TIMELINE - DU 4 TRANG THAI</text>
+<text x="1236" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="end" >Trang thai: Default | Loading | Empty | Error</text>
+<rect x="24" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="38" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >2A. Trang Thai Mac Dinh (Default)</text>
+<rect x="504" y="96" width="100" height="22" rx="5" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1" />
+<text x="554" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="middle" >DEFAULT</text>
+<rect x="38" y="132" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="152" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="start" >&lt; Tuan Nay &gt;   Thang 11, 2026</text>
+<rect x="356" y="138" width="56" height="20" rx="4" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="384" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Tat ca</text>
+<rect x="418" y="138" width="76" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="456" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi lich thi</text>
+<rect x="500" y="138" width="102" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="551" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi Google Cal</text>
+<g>
+<rect x="38" y="174" width="576" height="250" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<rect x="38" y="174" width="576" height="26" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="66" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle" >Gio</text>
+<line x1="96" y1="174" x2="96" y2="424" stroke="#222634" stroke-width="1" />
+<text x="133.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T2 (24)</text>
+<line x1="170" y1="174" x2="170" y2="424" stroke="#222634" stroke-width="1" />
+<text x="207.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T3 (25)</text>
+<line x1="244" y1="174" x2="244" y2="424" stroke="#222634" stroke-width="1" />
+<text x="281.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T4 (26)</text>
+<line x1="318" y1="174" x2="318" y2="424" stroke="#222634" stroke-width="1" />
+<text x="355.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T5 (27)</text>
+<line x1="392" y1="174" x2="392" y2="424" stroke="#222634" stroke-width="1" />
+<text x="429.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T6 (28)</text>
+<line x1="466" y1="174" x2="466" y2="424" stroke="#222634" stroke-width="1" />
+<text x="503.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T7 (29)</text>
+<line x1="540" y1="174" x2="540" y2="424" stroke="#222634" stroke-width="1" />
+<text x="577.0" y="191" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >CN (30)</text>
+<line x1="38" y1="228" x2="614" y2="228" stroke="#222634" stroke-width="1" />
+<text x="67" y="218" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >ALL-DAY</text>
+<line x1="38" y1="277" x2="614" y2="277" stroke="#222634" stroke-width="1" />
+<text x="67" y="254" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >08:00</text>
+<line x1="38" y1="326" x2="614" y2="326" stroke="#222634" stroke-width="1" />
+<text x="67" y="303" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >10:00</text>
+<line x1="38" y1="375" x2="614" y2="375" stroke="#222634" stroke-width="1" />
+<text x="67" y="352" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >14:00</text>
+<line x1="38" y1="424" x2="614" y2="424" stroke="#222634" stroke-width="1" />
+<text x="67" y="401" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >16:00</text>
+</g>
+<rect x="396" y="204" width="66" height="20" rx="4" fill="rgba(239,68,68,0.22)" stroke="#EF4444" stroke-width="1" />
+<text x="429" y="217" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#FCA5A5" text-anchor="middle" >THI CTDL</text>
+<rect x="100" y="234" width="66" height="44" rx="5" fill="rgba(59,130,246,0.18)" stroke="#3B82F6" stroke-width="1" />
+<text x="133" y="252" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#93C5FD" text-anchor="middle" >[G-Cal]</text>
+<text x="133" y="266" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Lap trinh Web</text>
+<rect x="248" y="234" width="66" height="44" rx="5" fill="rgba(59,130,246,0.18)" stroke="#3B82F6" stroke-width="1" />
+<text x="281" y="252" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#93C5FD" text-anchor="middle" >[G-Cal]</text>
+<text x="281" y="266" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Thuc hanh Mang</text>
+<rect x="174" y="330" width="66" height="44" rx="5" fill="rgba(99,102,241,0.20)" stroke="#6366F1" stroke-width="1" />
+<text x="207" y="348" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#F3F4F6" text-anchor="middle" >[Task On]</text>
+<text x="207" y="362" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#9CA3AF" text-anchor="middle" >On Cay N.P</text>
+<rect x="322" y="330" width="66" height="44" rx="5" fill="rgba(99,102,241,0.20)" stroke="#6366F1" stroke-width="1" />
+<text x="355" y="348" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#F3F4F6" text-anchor="middle" >[Task On]</text>
+<text x="355" y="362" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#9CA3AF" text-anchor="middle" >On Do thi</text>
+<rect x="396" y="234" width="66" height="44" rx="5" fill="rgba(249,115,22,0.20)" stroke="#F97316" stroke-width="1" />
+<text x="429" y="252" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="700" fill="#FDBA74" text-anchor="middle" >08:30 Thi</text>
+<text x="429" y="266" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Phong 402</text>
+<rect x="652" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="666" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >2B. Trang Thai Dang Tai (Loading)</text>
+<rect x="1132" y="96" width="100" height="22" rx="5" fill="rgba(99,102,241,0.15)" stroke="#6366F1" stroke-width="1" />
+<text x="1182" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#6366F1" text-anchor="middle" >LOADING</text>
+<rect x="666" y="132" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="152" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="start" >&lt; Tuan Nay &gt;   Thang 11, 2026</text>
+<rect x="984" y="138" width="56" height="20" rx="4" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="1012" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Tat ca</text>
+<rect x="1046" y="138" width="76" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="1084" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi lich thi</text>
+<rect x="1128" y="138" width="102" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="1179" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi Google Cal</text>
+<rect x="666" y="168" width="576" height="4" rx="2" fill="#181B24" stroke="none" stroke-width="1" />
+<rect x="786" y="168" width="220" height="4" rx="2" fill="#6366F1" stroke="none" stroke-width="1" />
+<g opacity="0.4">
+<rect x="666" y="178" width="576" height="250" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<rect x="666" y="178" width="576" height="26" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="694" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle" >Gio</text>
+<line x1="724" y1="178" x2="724" y2="428" stroke="#222634" stroke-width="1" />
+<text x="761.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T2 (24)</text>
+<line x1="798" y1="178" x2="798" y2="428" stroke="#222634" stroke-width="1" />
+<text x="835.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T3 (25)</text>
+<line x1="872" y1="178" x2="872" y2="428" stroke="#222634" stroke-width="1" />
+<text x="909.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T4 (26)</text>
+<line x1="946" y1="178" x2="946" y2="428" stroke="#222634" stroke-width="1" />
+<text x="983.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T5 (27)</text>
+<line x1="1020" y1="178" x2="1020" y2="428" stroke="#222634" stroke-width="1" />
+<text x="1057.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T6 (28)</text>
+<line x1="1094" y1="178" x2="1094" y2="428" stroke="#222634" stroke-width="1" />
+<text x="1131.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T7 (29)</text>
+<line x1="1168" y1="178" x2="1168" y2="428" stroke="#222634" stroke-width="1" />
+<text x="1205.0" y="195" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >CN (30)</text>
+<line x1="666" y1="232" x2="1242" y2="232" stroke="#222634" stroke-width="1" />
+<text x="695" y="222" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >ALL-DAY</text>
+<line x1="666" y1="281" x2="1242" y2="281" stroke="#222634" stroke-width="1" />
+<text x="695" y="258" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >08:00</text>
+<line x1="666" y1="330" x2="1242" y2="330" stroke="#222634" stroke-width="1" />
+<text x="695" y="307" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >10:00</text>
+<line x1="666" y1="379" x2="1242" y2="379" stroke="#222634" stroke-width="1" />
+<text x="695" y="356" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >14:00</text>
+<line x1="666" y1="428" x2="1242" y2="428" stroke="#222634" stroke-width="1" />
+<text x="695" y="405" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >16:00</text>
+</g>
+<rect x="730" y="240" width="62" height="38" rx="5" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="878" y="240" width="62" height="38" rx="5" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="804" y="336" width="62" height="38" rx="5" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="952" y="336" width="62" height="38" rx="5" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="794" y="430" width="320" height="22" rx="5" fill="#181B24" stroke="#6366F1" stroke-width="1" />
+<text x="954" y="445" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Indeterminate Progress Bar + Luoi lich mo (opacity: 0.4)</text>
+<rect x="24" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="38" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >2C. Trang Thai Rong (Empty)</text>
+<rect x="504" y="496" width="100" height="22" rx="5" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1" />
+<text x="554" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle" >EMPTY</text>
+<rect x="38" y="532" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="552" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="start" >&lt; Tuan Nay &gt;   Thang 11, 2026</text>
+<rect x="356" y="538" width="56" height="20" rx="4" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="384" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Tat ca</text>
+<rect x="418" y="538" width="76" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="456" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi lich thi</text>
+<rect x="500" y="538" width="102" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="551" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi Google Cal</text>
+<g opacity="0.45">
+<rect x="38" y="574" width="576" height="250" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<rect x="38" y="574" width="576" height="26" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="66" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle" >Gio</text>
+<line x1="96" y1="574" x2="96" y2="824" stroke="#222634" stroke-width="1" />
+<text x="133.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T2 (24)</text>
+<line x1="170" y1="574" x2="170" y2="824" stroke="#222634" stroke-width="1" />
+<text x="207.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T3 (25)</text>
+<line x1="244" y1="574" x2="244" y2="824" stroke="#222634" stroke-width="1" />
+<text x="281.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T4 (26)</text>
+<line x1="318" y1="574" x2="318" y2="824" stroke="#222634" stroke-width="1" />
+<text x="355.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T5 (27)</text>
+<line x1="392" y1="574" x2="392" y2="824" stroke="#222634" stroke-width="1" />
+<text x="429.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T6 (28)</text>
+<line x1="466" y1="574" x2="466" y2="824" stroke="#222634" stroke-width="1" />
+<text x="503.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T7 (29)</text>
+<line x1="540" y1="574" x2="540" y2="824" stroke="#222634" stroke-width="1" />
+<text x="577.0" y="591" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >CN (30)</text>
+<line x1="38" y1="628" x2="614" y2="628" stroke="#222634" stroke-width="1" />
+<text x="67" y="618" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >ALL-DAY</text>
+<line x1="38" y1="677" x2="614" y2="677" stroke="#222634" stroke-width="1" />
+<text x="67" y="654" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >08:00</text>
+<line x1="38" y1="726" x2="614" y2="726" stroke="#222634" stroke-width="1" />
+<text x="67" y="703" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >10:00</text>
+<line x1="38" y1="775" x2="614" y2="775" stroke="#222634" stroke-width="1" />
+<text x="67" y="752" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >14:00</text>
+<line x1="38" y1="824" x2="614" y2="824" stroke="#222634" stroke-width="1" />
+<text x="67" y="801" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >16:00</text>
+</g>
+<rect x="156" y="652" width="340" height="118" rx="10" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="326" y="684" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Tuan nay trong lich hoc va lich thi</text>
+<text x="326" y="706" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Hay keo tha cong viec hoac them lich thi moi</text>
+<rect x="241" y="724" width="170" height="28" rx="6" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="326" y="742" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >+ Them Lich Thi / Task</text>
+<rect x="652" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="666" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >2D. Trang Thai Loi (Error)</text>
+<rect x="1132" y="496" width="100" height="22" rx="5" fill="rgba(239,68,68,0.15)" stroke="#EF4444" stroke-width="1" />
+<text x="1182" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle" >ERROR</text>
+<rect x="666" y="532" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="552" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="start" >&lt; Tuan Nay &gt;   Thang 11, 2026</text>
+<rect x="984" y="538" width="56" height="20" rx="4" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="1012" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Tat ca</text>
+<rect x="1046" y="538" width="76" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="1084" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi lich thi</text>
+<rect x="1128" y="538" width="102" height="20" rx="4" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="1179" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Chi Google Cal</text>
+<rect x="666" y="572" width="576" height="48" rx="8" fill="rgba(239,68,68,0.12)" stroke="#EF4444" stroke-width="1" />
+<text x="680" y="593" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="start" >[!] Khong the tai du lieu lich tuan va su kien Google Calendar</text>
+<text x="680" y="609" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Ma loi: 503 / Network Timeout. Bam Tai lai trang de dong bo lai.</text>
+<rect x="1140" y="584" width="88" height="24" rx="6" fill="#EF4444" stroke="none" stroke-width="1" />
+<text x="1184" y="600" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Tai lai trang</text>
+<g opacity="0.25">
+<rect x="666" y="628" width="576" height="250" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<rect x="666" y="628" width="576" height="26" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="694" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#9CA3AF" text-anchor="middle" >Gio</text>
+<line x1="724" y1="628" x2="724" y2="878" stroke="#222634" stroke-width="1" />
+<text x="761.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T2 (24)</text>
+<line x1="798" y1="628" x2="798" y2="878" stroke="#222634" stroke-width="1" />
+<text x="835.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T3 (25)</text>
+<line x1="872" y1="628" x2="872" y2="878" stroke="#222634" stroke-width="1" />
+<text x="909.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T4 (26)</text>
+<line x1="946" y1="628" x2="946" y2="878" stroke="#222634" stroke-width="1" />
+<text x="983.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T5 (27)</text>
+<line x1="1020" y1="628" x2="1020" y2="878" stroke="#222634" stroke-width="1" />
+<text x="1057.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T6 (28)</text>
+<line x1="1094" y1="628" x2="1094" y2="878" stroke="#222634" stroke-width="1" />
+<text x="1131.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >T7 (29)</text>
+<line x1="1168" y1="628" x2="1168" y2="878" stroke="#222634" stroke-width="1" />
+<text x="1205.0" y="645" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >CN (30)</text>
+<line x1="666" y1="682" x2="1242" y2="682" stroke="#222634" stroke-width="1" />
+<text x="695" y="672" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >ALL-DAY</text>
+<line x1="666" y1="731" x2="1242" y2="731" stroke="#222634" stroke-width="1" />
+<text x="695" y="708" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >08:00</text>
+<line x1="666" y1="780" x2="1242" y2="780" stroke="#222634" stroke-width="1" />
+<text x="695" y="757" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >10:00</text>
+<line x1="666" y1="829" x2="1242" y2="829" stroke="#222634" stroke-width="1" />
+<text x="695" y="806" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >14:00</text>
+<line x1="666" y1="878" x2="1242" y2="878" stroke="#222634" stroke-width="1" />
+<text x="695" y="855" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >16:00</text>
+</g>
+</svg>

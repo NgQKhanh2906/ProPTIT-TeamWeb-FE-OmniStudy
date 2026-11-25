@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" width="1280" height="880">
+<rect x="0" y="0" width="1280" height="880" rx="0" fill="#090A0F" stroke="none" stroke-width="1" />
+<rect x="24" y="18" width="1232" height="46" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="44" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#F3F4F6" text-anchor="start" >WIREFRAME MAN 1: FOCUS DASHBOARD (BENTO GRID) - DU 4 TRANG THAI</text>
+<text x="1236" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="end" >Trang thai: Default | Loading | Empty | Error</text>
+<rect x="24" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="38" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >1A. Trang Thai Mac Dinh (Default)</text>
+<rect x="504" y="96" width="100" height="22" rx="5" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1" />
+<text x="554" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="middle" >DEFAULT</text>
+<rect x="38" y="132" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="152" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >OmniStudy</text>
+<rect x="158" y="138" width="170" height="20" rx="4" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<text x="168" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >Search / Filter...</text>
+<rect x="428" y="138" width="130" height="20" rx="4" fill="#1F2330" stroke="#3B82F6" stroke-width="1" />
+<text x="493" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#93C5FD" text-anchor="middle" >Sync Google Cal</text>
+<rect x="572" y="137" width="24" height="22" rx="11" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="584" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >K</text>
+<rect x="38" y="172" width="224" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#6366F1" text-anchor="start" >EXAM COUNTDOWN</text>
+<text x="50" y="206" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#F3F4F6" text-anchor="start" >CTDL &amp; Giai thuat</text>
+<text x="50" y="230" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700" fill="#F3F4F6" text-anchor="start" >03d : 14h : 22m : 45s</text>
+<text x="50" y="248" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >Readiness: 60% (3/5 chu de)</text>
+<rect x="50" y="256" width="200" height="8" rx="4" fill="#090A0F" stroke="none" stroke-width="1" />
+<rect x="50" y="256" width="120" height="8" rx="4" fill="#10B981" stroke="none" stroke-width="1" />
+<rect x="272" y="172" width="342" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="284" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#9CA3AF" text-anchor="start" >DAILY STATS OVERVIEW</text>
+<text x="284" y="212" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#F3F4F6" text-anchor="start" >Task hom nay: 04  |  Da xong: 02/06 (33%)  |  Du kien: 3.5h</text>
+<rect x="284" y="228" width="316" height="10" rx="5" fill="#090A0F" stroke="none" stroke-width="1" />
+<rect x="284" y="228" width="106" height="10" rx="5" fill="#6366F1" stroke="none" stroke-width="1" />
+<rect x="284" y="248" width="118" height="22" rx="6" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="343" y="263" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="middle" >+ Tao Task Moi</text>
+<rect x="410" y="248" width="118" height="22" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<text x="469" y="263" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="middle" >+ Them Lich Thi</text>
+<rect x="38" y="288" width="380" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="306" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#9CA3AF" text-anchor="start" >DYNAMIC URGENCY TASK BOARD (Sap xep theo Score U)</text>
+<rect x="48" y="316" width="360" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="48" y="316" width="4" height="35" rx="2" fill="#F97316" stroke="none" stroke-width="1" />
+<text x="62" y="331" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >Hoan thanh do an Web</text>
+<text x="62" y="344" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >Con 3h15m | P1</text>
+<rect x="318" y="323" width="82" height="20" rx="4" fill="#181B24" stroke="#F97316" stroke-width="1" />
+<text x="359" y="336" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="700" fill="#FDBA74" text-anchor="middle" >EXTREME 88.5</text>
+<rect x="48" y="357" width="360" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="48" y="357" width="4" height="35" rx="2" fill="#EAB308" stroke="none" stroke-width="1" />
+<text x="62" y="372" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >On Cay nhi phan tim kiem</text>
+<text x="62" y="385" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >Con 1d 8h | P2</text>
+<rect x="318" y="364" width="82" height="20" rx="4" fill="#181B24" stroke="#EAB308" stroke-width="1" />
+<text x="359" y="377" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="700" fill="#FDE047" text-anchor="middle" >HIGH 68.0</text>
+<rect x="48" y="398" width="360" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="48" y="398" width="4" height="35" rx="2" fill="#10B981" stroke="none" stroke-width="1" />
+<text x="62" y="413" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >Doc slide Chuong 3 Mang</text>
+<text x="62" y="426" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >Hoan thanh 14:20</text>
+<rect x="318" y="405" width="82" height="20" rx="4" fill="#181B24" stroke="#10B981" stroke-width="1" />
+<text x="359" y="418" font-family="JetBrains Mono, Consolas, monospace" font-size="8" font-weight="700" fill="#10B981" text-anchor="middle" >DONE</text>
+<rect x="428" y="288" width="186" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="440" y="306" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#3B82F6" text-anchor="start" >MINI SCHEDULE (G-CAL)</text>
+<rect x="438" y="316" width="166" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="438" y="316" width="4" height="35" rx="2" fill="#3B82F6" stroke="none" stroke-width="1" />
+<text x="450" y="330" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#93C5FD" text-anchor="start" >09:00-11:30</text>
+<text x="450" y="343" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Hop nhom do an</text>
+<rect x="438" y="357" width="166" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="438" y="357" width="4" height="35" rx="2" fill="#3B82F6" stroke="none" stroke-width="1" />
+<text x="450" y="371" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#93C5FD" text-anchor="start" >14:00-16:00</text>
+<text x="450" y="384" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Hoc Ca 2 tren truong</text>
+<rect x="438" y="398" width="166" height="35" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="438" y="398" width="4" height="35" rx="2" fill="#3B82F6" stroke="none" stroke-width="1" />
+<text x="450" y="412" font-family="JetBrains Mono, Consolas, monospace" font-size="9" font-weight="700" fill="#93C5FD" text-anchor="start" >19:30-21:00</text>
+<text x="450" y="425" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Tu hoc thu vien</text>
+<rect x="652" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="666" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >1B. Trang Thai Dang Tai (Loading)</text>
+<rect x="1132" y="96" width="100" height="22" rx="5" fill="rgba(99,102,241,0.15)" stroke="#6366F1" stroke-width="1" />
+<text x="1182" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#6366F1" text-anchor="middle" >LOADING</text>
+<rect x="666" y="132" width="576" height="32" rx="6" fill="#141720" stroke="#222634" stroke-width="1" />
+<text x="678" y="152" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >OmniStudy</text>
+<rect x="786" y="138" width="170" height="20" rx="4" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<text x="796" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >Search / Filter...</text>
+<rect x="1056" y="138" width="130" height="20" rx="4" fill="#1F2330" stroke="#3B82F6" stroke-width="1" />
+<text x="1121" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#93C5FD" text-anchor="middle" >Sync Google Cal</text>
+<rect x="1200" y="137" width="24" height="22" rx="11" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="1212" y="151" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >K</text>
+<rect x="666" y="172" width="224" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<rect x="678" y="186" width="110" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="678" y="210" width="190" height="26" rx="5" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="678" y="248" width="160" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="900" y="172" width="342" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<rect x="914" y="188" width="220" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="914" y="214" width="310" height="14" rx="6" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="914" y="242" width="140" height="22" rx="6" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="666" y="288" width="380" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<rect x="678" y="304" width="356" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="688" y="312" width="200" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="952" y="311" width="72" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="678" y="348" width="356" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="688" y="356" width="160" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="952" y="355" width="72" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="678" y="392" width="356" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="688" y="400" width="210" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="952" y="399" width="72" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="1056" y="288" width="186" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<rect x="1066" y="304" width="166" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="1076" y="313" width="130" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="1066" y="348" width="166" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="1076" y="357" width="130" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<rect x="1066" y="392" width="166" height="34" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="1076" y="401" width="130" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
+<text x="954" y="438" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Shimmer Skeleton (#181B24) - Khong dung full-screen spinner</text>
+<rect x="24" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="38" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >1C. Trang Thai Rong (Empty)</text>
+<rect x="504" y="496" width="100" height="22" rx="5" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1" />
+<text x="554" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle" >EMPTY</text>
+<rect x="38" y="532" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="50" y="552" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >OmniStudy</text>
+<rect x="158" y="538" width="170" height="20" rx="4" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<text x="168" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >Search / Filter...</text>
+<rect x="428" y="538" width="130" height="20" rx="4" fill="#1F2330" stroke="#3B82F6" stroke-width="1" />
+<text x="493" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#93C5FD" text-anchor="middle" >Sync Google Cal</text>
+<rect x="572" y="537" width="24" height="22" rx="11" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="584" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >K</text>
+<rect x="38" y="572" width="224" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="150" y="608" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Chua co ky thi nao</text>
+<text x="150" y="626" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Them mon thi de bat dau</text>
+<rect x="94" y="642" width="112" height="24" rx="6" fill="#11131A" stroke="#6366F1" stroke-width="1" />
+<text x="150" y="658" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#F3F4F6" text-anchor="middle" >+ Them Mon Thi</text>
+<rect x="272" y="572" width="342" height="108" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="443" y="622" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280" text-anchor="middle" >00 task hom nay | 0% tien do</text>
+<rect x="38" y="688" width="380" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<rect x="206" y="706" width="44" height="30" rx="6" fill="#11131A" stroke="#374151" stroke-width="1" />
+<text x="228" y="725" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#6B7280" text-anchor="middle" >[ ]</text>
+<text x="228" y="756" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Chua co cong viec nao can hoan thanh</text>
+<text x="228" y="774" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Bam nut ben duoi de tao cong viec dau tien</text>
+<rect x="138" y="792" width="180" height="28" rx="6" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="228" y="810" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >+ Tao Cong Viec Dau Tien</text>
+<rect x="428" y="688" width="186" height="158" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="521" y="748" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Hom nay khong co</text>
+<text x="521" y="764" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="middle" >su kien Google Calendar</text>
+<rect x="652" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
+<rect x="666" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >1D. Trang Thai Loi (Error)</text>
+<rect x="1132" y="496" width="100" height="22" rx="5" fill="rgba(239,68,68,0.15)" stroke="#EF4444" stroke-width="1" />
+<text x="1182" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle" >ERROR</text>
+<rect x="666" y="532" width="576" height="32" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="678" y="552" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >OmniStudy</text>
+<rect x="786" y="538" width="170" height="20" rx="4" fill="#090A0F" stroke="#222634" stroke-width="1" />
+<text x="796" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >Search / Filter...</text>
+<rect x="1056" y="538" width="130" height="20" rx="4" fill="#1F2330" stroke="#3B82F6" stroke-width="1" />
+<text x="1121" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#93C5FD" text-anchor="middle" >Sync Google Cal</text>
+<rect x="1200" y="537" width="24" height="22" rx="11" fill="#6366F1" stroke="none" stroke-width="1" />
+<text x="1212" y="551" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >K</text>
+<rect x="666" y="572" width="576" height="46" rx="8" fill="rgba(239,68,68,0.10)" stroke="#EF4444" stroke-width="1" />
+<text x="680" y="592" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="start" >LOI KET NOI DU LIEU: Khong the tai danh sach cong viec (Network Error)</text>
+<text x="680" y="608" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Kiem tra ket noi mang hoac thu tai lai du lieu.</text>
+<rect x="1150" y="583" width="78" height="24" rx="6" fill="#EF4444" stroke="none" stroke-width="1" />
+<text x="1189" y="599" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Thu lai</text>
+<rect x="666" y="630" width="380" height="216" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
+<text x="856" y="736" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="middle" >Du lieu Task chua san sang do loi API</text>
+<rect x="1056" y="630" width="186" height="216" rx="8" fill="rgba(239,68,68,0.08)" stroke="#EF4444" stroke-width="1" />
+<text x="1149" y="680" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#EF4444" text-anchor="middle" >[!] LOI 401</text>
+<text x="1149" y="704" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FCA5A5" text-anchor="middle" >Token Google Calendar</text>
+<text x="1149" y="720" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#FCA5A5" text-anchor="middle" >da het han hoac bi tu choi.</text>
+<rect x="1081" y="744" width="136" height="26" rx="6" fill="#EF4444" stroke="none" stroke-width="1" />
+<text x="1149" y="761" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="middle" >Dang nhap lai Google</text>
+<rect x="1081" y="778" width="136" height="24" rx="6" fill="#181B24" stroke="#EF4444" stroke-width="1" />
+<text x="1149" y="794" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#FCA5A5" text-anchor="middle" >Thu lai</text>
+</svg>

@@ -6,25 +6,24 @@ Tài liệu này mô tả chi tiết luồng người dùng (User Flow) và cấ
 
 ## 1. Sơ Đồ Luồng Người Dùng (User Flow)
 
-```
-[Khởi động OmniStudy]
-        │
-        ▼
-[Màn 1: Focus Dashboard] ──(Bấm kết nối Google)──► [Đăng nhập Google OAuth2]
-        │                                                     │ (Cấp quyền Calendar)
-        ├─────────────────────────────────────────────────────┘
-        │
-        ├──(Bấm vào thẻ Môn thi / Xem tất cả)──► [Màn 2: Weekly Calendar & Exam Timeline]
-        │                                                    │
-        │                                                    ├──(Bấm mốc thi)──┐
-        │                                                    │                 │
-        ├──(Bấm "+ Thêm Lịch Thi" hoặc chọn Môn thi)─────────┴─────────────────┼──► [Màn 3: Exam Prep Drawer]
-        │                                                                      │          │
-        │                                                                      │          ├─► Nhập ngày thi & checklist
-        │                                                                      │          └─► [Bấm Tự động sinh Task]
-        │                                                                      │                    │
-        ▼                                                                      │                    ▼
-[Danh sách Task tự động cập nhật & xếp theo Urgency Score] ◄───────────────────┴─────────── (Đẩy Task vào bảng)
+![Sơ đồ User Flow OmniStudy](./assets/buoi-1/user-flow.svg)
+
+```mermaid
+flowchart TD
+    Start(["Khởi động OmniStudy"]) --> M1["Màn 1: Focus Dashboard"]
+    M1 -->|"Bấm kết nối Google"| OAuth["Đăng nhập Google OAuth 2.0"]
+    OAuth -->|"Token hợp lệ"| Sync["Đồng bộ Google Calendar API v3"]
+    OAuth -->|"401 / Lỗi mạng"| ErrAuth["Error State + Thử lại / Đăng nhập lại"]
+    Sync --> M1
+    Sync --> M2["Màn 2: Weekly Calendar & Exam Timeline"]
+    M1 -->|"Xem lịch tuần"| M2
+    M2 -->|"Chọn mốc thi"| M3["Màn 3: Exam Prep Drawer"]
+    M1 -->|"Bấm + Thêm Lịch Thi / chọn Môn thi"| M3
+    M3 -->|"Nhập ngày thi & checklist"| Validate{"Ngày thi hợp lệ?"}
+    Validate -->|"Không (quá khứ)"| ErrExam["Error Alert dưới nút sinh task"]
+    Validate -->|"Hợp lệ"| Gen["Tự động sinh Task ôn tập"]
+    Gen --> Update["Cập nhật bảng Task & tính lại Urgency Score"]
+    Update --> M1
 ```
 
 ---
@@ -32,6 +31,8 @@ Tài liệu này mô tả chi tiết luồng người dùng (User Flow) và cấ
 ## 2. Đặc Tả Wireframe 3 Màn Hình Chính
 
 ### Màn Hình 1: Focus Dashboard (Bento Grid)
+
+![Wireframe Màn 1 Focus Dashboard đủ 4 trạng thái](./assets/buoi-1/wireframe-1-dashboard.svg)
 
 #### Bố cục Wireframe tổng thể (Desktop):
 ```text
@@ -78,6 +79,8 @@ Tài liệu này mô tả chi tiết luồng người dùng (User Flow) và cấ
 
 ### Màn Hình 2: Lịch Biểu Tuần & Lịch Thi (Weekly Calendar & Exam Timeline)
 
+![Wireframe Màn 2 Weekly Calendar đủ 4 trạng thái](./assets/buoi-1/wireframe-2-calendar.svg)
+
 #### Bố cục Wireframe tổng thể:
 ```text
 +--------------------------------------------------------------------------------------------------+
@@ -107,6 +110,8 @@ Tài liệu này mô tả chi tiết luồng người dùng (User Flow) và cấ
 ---
 
 ### Màn Hình 3: Chi Tiết Môn Thi & Bộ Sinh Lộ Trình (Exam Prep Drawer)
+
+![Wireframe Màn 3 Exam Prep Drawer đủ 4 trạng thái](./assets/buoi-1/wireframe-3-exam-drawer.svg)
 
 #### Bố cục Wireframe (Slide-over Panel mở từ bên phải):
 ```text

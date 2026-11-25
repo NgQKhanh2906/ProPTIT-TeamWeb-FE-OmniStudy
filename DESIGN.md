@@ -15,45 +15,47 @@ Tài liệu này định nghĩa hệ thống quy chuẩn thiết kế giao diệ
 
 ## 2. Bảng Tokens Thiết Kế (Design Tokens)
 
+![Tổng quan hệ thống Design Tokens - OmniStudy](./docs/assets/buoi-1/tokens-overview.svg)
+
 ### 2.1. Hệ Màu Nền & Bề Mặt (Surfaces & Backgrounds)
 
-| CSS Variable | Mã Hex | Mục đích sử dụng |
-| :--- | :--- | :--- |
-| `--bg-canvas` | `#090A0F` | Nền tổng thể toàn bộ trang web (App Canvas) |
-| `--bg-surface-1` | `#11131A` | Nền các khối thẻ Bento Grid, Top Header, Drawer |
-| `--bg-surface-2` | `#181B24` | Nền thẻ Task con, ô nhập liệu form, badge phụ |
-| `--bg-surface-hover` | `#1F2330` | Trạng thái di chuột (Hover) của dòng dữ liệu và nút phụ |
-| `--border-subtle` | `#222634` | Viền mảnh `1px` cấu trúc phân tách giữa các khối |
-| `--border-focus` | `#6366F1` | Viền khi Focus vào ô nhập liệu hoặc phần tử được chọn |
+| Màu mẫu | CSS Variable | Mã Hex | Mục đích sử dụng |
+| :---: | :--- | :--- | :--- |
+| ![#090A0F](./docs/assets/buoi-1/swatches/bg-canvas.svg) | `--bg-canvas` | `#090A0F` | Nền tổng thể toàn bộ trang web (App Canvas) |
+| ![#11131A](./docs/assets/buoi-1/swatches/bg-surface-1.svg) | `--bg-surface-1` | `#11131A` | Nền các khối thẻ Bento Grid, Top Header, Drawer |
+| ![#181B24](./docs/assets/buoi-1/swatches/bg-surface-2.svg) | `--bg-surface-2` | `#181B24` | Nền thẻ Task con, ô nhập liệu form, badge phụ |
+| ![#1F2330](./docs/assets/buoi-1/swatches/bg-surface-hover.svg) | `--bg-surface-hover` | `#1F2330` | Trạng thái di chuột (Hover) của dòng dữ liệu và nút phụ |
+| ![#222634](./docs/assets/buoi-1/swatches/border-subtle.svg) | `--border-subtle` | `#222634` | Viền mảnh `1px` cấu trúc phân tách giữa các khối |
+| ![#6366F1](./docs/assets/buoi-1/swatches/border-focus.svg) | `--border-focus` | `#6366F1` | Viền khi Focus vào ô nhập liệu hoặc phần tử được chọn |
 
 ### 2.2. Hệ Màu Chữ & Tương Phản (Typography Colors)
 
-| CSS Variable | Mã Hex | Mục đích sử dụng |
-| :--- | :--- | :--- |
-| `--text-primary` | `#F3F4F6` | Tiêu đề chính, tên môn thi, số giờ đếm ngược (đạt chuẩn WCAG AAA trên nền `#090A0F`) |
-| `--text-secondary` | `#9CA3AF` | Mô tả phụ, tên phòng thi, nhãn thời gian |
-| `--text-muted` | `#6B7280` | Văn bản gợi ý (Placeholder), task đã gạch bỏ hoàn thành |
+| Màu mẫu | CSS Variable | Mã Hex | Mục đích sử dụng |
+| :---: | :--- | :--- | :--- |
+| ![#F3F4F6](./docs/assets/buoi-1/swatches/text-primary.svg) | `--text-primary` | `#F3F4F6` | Tiêu đề chính, tên môn thi, số giờ đếm ngược (đạt chuẩn WCAG AAA trên nền `#090A0F`) |
+| ![#9CA3AF](./docs/assets/buoi-1/swatches/text-secondary.svg) | `--text-secondary` | `#9CA3AF` | Mô tả phụ, tên phòng thi, nhãn thời gian |
+| ![#6B7280](./docs/assets/buoi-1/swatches/text-muted.svg) | `--text-muted` | `#6B7280` | Văn bản gợi ý (Placeholder), task đã gạch bỏ hoàn thành |
 
 ### 2.3. Hệ Màu Thương Hiệu & Ngữ Nghĩa (Brand & Semantic Colors)
 
-| Token Name | Mã Hex | Ý nghĩa & Ứng dụng |
-| :--- | :--- | :--- |
-| `--accent-primary` | `#6366F1` (Indigo 500) | Nút hành động chính (CTA: "Tạo công việc", "Tạo lộ trình") |
-| `--accent-hover` | `#4F46E5` (Indigo 600) | Trạng thái Hover của nút chính |
-| `--semantic-success` | `#10B981` (Emerald 500) | Đánh dấu hoàn thành task, kỳ thi sẵn sàng 100% |
-| `--semantic-warning` | `#F59E0B` (Amber 500) | Lịch thi còn dưới 7 ngày, mức ưu tiên vừa |
-| `--semantic-danger` | `#EF4444` (Rose 500) | Lịch thi dưới 24h, công việc quá hạn, nút Hủy |
-| `--semantic-info` | `#3B82F6` (Blue 500) | Sự kiện đồng bộ từ Google Calendar API |
+| Màu mẫu | Token Name | Mã Hex | Ý nghĩa & Ứng dụng |
+| :---: | :--- | :--- | :--- |
+| ![#6366F1](./docs/assets/buoi-1/swatches/accent-primary.svg) | `--accent-primary` | `#6366F1` (Indigo 500) | Nút hành động chính (CTA: "Tạo công việc", "Tạo lộ trình") |
+| ![#4F46E5](./docs/assets/buoi-1/swatches/accent-hover.svg) | `--accent-hover` | `#4F46E5` (Indigo 600) | Trạng thái Hover của nút chính |
+| ![#10B981](./docs/assets/buoi-1/swatches/semantic-success.svg) | `--semantic-success` | `#10B981` (Emerald 500) | Đánh dấu hoàn thành task, kỳ thi sẵn sàng 100% |
+| ![#F59E0B](./docs/assets/buoi-1/swatches/semantic-warning.svg) | `--semantic-warning` | `#F59E0B` (Amber 500) | Lịch thi còn dưới 7 ngày, mức ưu tiên vừa |
+| ![#EF4444](./docs/assets/buoi-1/swatches/semantic-danger.svg) | `--semantic-danger` | `#EF4444` (Rose 500) | Lịch thi dưới 24h, công việc quá hạn, nút Hủy |
+| ![#3B82F6](./docs/assets/buoi-1/swatches/semantic-info.svg) | `--semantic-info` | `#3B82F6` (Blue 500) | Sự kiện đồng bộ từ Google Calendar API |
 
 ### 2.4. Màu Phân Cấp Điểm Khẩn Cấp Động (Dynamic Urgency Tier Colors)
 
-| Phân cấp | Tiêu chí | Màu chữ / Nhãn | Màu nền Badge | Viền trái thẻ (`border-left`) |
-| :--- | :--- | :--- | :--- | :--- |
-| `OVERDUE` | $h \le 0$ (Quá hạn) | `#FCA5A5` | `rgba(239, 68, 68, 0.20)` | `3px solid #EF4444` (kèm pulse) |
-| `EXTREME` | $U \ge 80$ (Cực gấp) | `#FDBA74` | `rgba(249, 115, 22, 0.18)` | `3px solid #F97316` |
-| `HIGH` | $60 \le U < 80$ (Ưu tiên cao) | `#FDE047` | `rgba(234, 179, 8, 0.15)` | `3px solid #EAB308` |
-| `MODERATE` | $35 \le U < 60$ (Vừa phải) | `#93C5FD` | `rgba(59, 130, 246, 0.15)` | `3px solid #3B82F6` |
-| `LOW` | $U < 35$ (Thong thả) | `#9CA3AF` | `rgba(156, 163, 175, 0.12)` | `3px solid #4B5563` |
+| Màu mẫu (Nhãn / Viền) | Phân cấp | Tiêu chí | Màu chữ / Nhãn | Màu nền Badge | Viền trái thẻ (`border-left`) |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| ![#FCA5A5](./docs/assets/buoi-1/swatches/urgency-overdue-text.svg) ![#EF4444](./docs/assets/buoi-1/swatches/urgency-overdue-border.svg) | `OVERDUE` | $h \le 0$ (Quá hạn) | `#FCA5A5` | `rgba(239, 68, 68, 0.20)` | `3px solid #EF4444` (kèm pulse) |
+| ![#FDBA74](./docs/assets/buoi-1/swatches/urgency-extreme-text.svg) ![#F97316](./docs/assets/buoi-1/swatches/urgency-extreme-border.svg) | `EXTREME` | $U \ge 80$ (Cực gấp) | `#FDBA74` | `rgba(249, 115, 22, 0.18)` | `3px solid #F97316` |
+| ![#FDE047](./docs/assets/buoi-1/swatches/urgency-high-text.svg) ![#EAB308](./docs/assets/buoi-1/swatches/urgency-high-border.svg) | `HIGH` | $60 \le U < 80$ (Ưu tiên cao) | `#FDE047` | `rgba(234, 179, 8, 0.15)` | `3px solid #EAB308` |
+| ![#93C5FD](./docs/assets/buoi-1/swatches/urgency-moderate-text.svg) ![#3B82F6](./docs/assets/buoi-1/swatches/urgency-moderate-border.svg) | `MODERATE` | $35 \le U < 60$ (Vừa phải) | `#93C5FD` | `rgba(59, 130, 246, 0.15)` | `3px solid #3B82F6` |
+| ![#9CA3AF](./docs/assets/buoi-1/swatches/urgency-low-text.svg) ![#4B5563](./docs/assets/buoi-1/swatches/urgency-low-border.svg) | `LOW` | $U < 35$ (Thong thả) | `#9CA3AF` | `rgba(156, 163, 175, 0.12)` | `3px solid #4B5563` |
 
 ---
 

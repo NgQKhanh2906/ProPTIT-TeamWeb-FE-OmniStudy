@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620">
+  <rect width="1200" height="620" fill="#ECE7D8" />
+
+  <!-- Top Header -->
+  <rect x="28" y="20" width="1144" height="54" rx="14" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="48" y="53" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" fill="#283629">6. QUY TRINH 6 BUOC THUC HIEN THUC HANH TU KHOI TAO DEN DEPLOY</text>
+  <rect x="920" y="33" width="232" height="28" rx="14" fill="#E3F2EA" stroke="#9ACBAE" stroke-width="1" />
+  <text x="1036" y="51" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#2E7D52" text-anchor="middle">6 Buoc Tuan Tu · Zero Guess</text>
+
+  <!-- Phase 1 Banner -->
+  <rect x="28" y="90" width="1144" height="152" rx="16" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="48" y="118" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" fill="#4F7043">GIAI DOAN 1: KHOI TAO NHANH &amp; CAU TRUC TEP</text>
+
+  <rect x="48" y="132" width="528" height="94" rx="12" fill="#2F4231" />
+  <text x="68" y="158" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#F4EFE2">Buoc 0: Tao nhanh &amp; thu muc lam viec</text>
+  <text x="68" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#C6D1BF">git checkout -b feature/buoi-2-static-bento-layout</text>
+  <text x="68" y="202" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#F4EFE2">Tai sao can: Co lap code thu nghiem, giu nhanh main luon sach.</text>
+
+  <line x1="578" y1="179" x2="616" y2="179" stroke="#4F7043" stroke-width="2" />
+  <polygon points="614,173 624,179 614,185" fill="#4F7043" />
+
+  <rect x="626" y="132" width="526" height="94" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="646" y="158" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">Buoc 1: Tao tokens.css (Bien :root + box-sizing)</text>
+  <text x="646" y="180" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#4F7043">Viet tai: styles/tokens.css</text>
+  <text x="646" y="202" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Tai sao can: Moi tep CSS sau dung var(--...), sua 1 noi doi toan trang.</text>
+
+  <!-- Connector Phase 1 -> Phase 2 -->
+  <line x1="888" y1="242" x2="888" y2="262" stroke="#4F7043" stroke-width="2" />
+  <polygon points="882,258 894,258 888,268" fill="#4F7043" />
+
+  <!-- Phase 2 Banner -->
+  <rect x="28" y="268" width="1144" height="172" rx="16" fill="#FAF6EC" stroke="#9B6B43" stroke-width="1.5" />
+  <text x="48" y="296" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" fill="#7A5130">GIAI DOAN 2: XAY DUNG HTML5 NGU NGHIA &amp; 2 LOP CSS</text>
+
+  <rect x="48" y="312" width="352" height="112" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="64" y="338" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">Buoc 2: Viet index.html</text>
+  <text x="64" y="358" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#4F7043">Nhung dung thu tu trong &lt;head&gt;:</text>
+  <text x="64" y="376" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#283629">1.tokens -&gt; 2.layout -&gt; 3.components</text>
+  <text x="64" y="398" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Tai sao: Duong dan ./styles/... tranh</text>
+  <text x="64" y="413" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">404; Landmark giup Tab &amp; Screen Reader.</text>
+
+  <line x1="402" y1="368" x2="428" y2="368" stroke="#9B6B43" stroke-width="2" />
+  <polygon points="426,362 436,368 426,374" fill="#9B6B43" />
+
+  <rect x="438" y="312" width="352" height="112" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="454" y="338" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">Buoc 3: Viet styles/layout.css</text>
+  <text x="454" y="358" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#4F7043">Mobile 1 cot -&gt; 768px -&gt; 1024px</text>
+  <text x="454" y="376" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#283629">minmax(0, 1fr) + min-width: 0</text>
+  <text x="454" y="398" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Tai sao: Tach khung xuong Grid khoi</text>
+  <text x="454" y="413" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">trang tri, ngan chu dai lam vo cot.</text>
+
+  <line x1="792" y1="368" x2="818" y2="368" stroke="#9B6B43" stroke-width="2" />
+  <polygon points="816,362 826,368 816,374" fill="#9B6B43" />
+
+  <rect x="828" y="312" width="324" height="112" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="844" y="338" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">Buoc 4: Viet styles/components.css</text>
+  <text x="844" y="358" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#4F7043">Sidebar, Banner, 4-col Timer, Pills</text>
+  <text x="844" y="376" font-family="JetBrains Mono, Consolas, monospace" font-size="10.5" fill="#283629">tabular-nums + reduced-motion</text>
+  <text x="844" y="398" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Tai sao: Chot ty le dong ho 1 hang,</text>
+  <text x="844" y="413" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">phan cap mau diu mat, an toan a11y.</text>
+
+  <!-- Connector Phase 2 -> Phase 3 -->
+  <line x1="990" y1="440" x2="990" y2="458" stroke="#4F7043" stroke-width="2" />
+  <polygon points="984,454 996,454 990,464" fill="#4F7043" />
+
+  <!-- Phase 3 Banner -->
+  <rect x="28" y="464" width="1144" height="134" rx="16" fill="#FAF6EC" stroke="#2E7D52" stroke-width="1.5" />
+  <text x="48" y="492" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" fill="#2E7D52">GIAI DOAN 3: KIEM THU CHROME DEVTOOLS &amp; PHAT HANH GITHUB PAGES</text>
+
+  <rect x="48" y="506" width="528" height="76" rx="12" fill="#E3F2EA" stroke="#9ACBAE" />
+  <text x="64" y="530" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#2E7D52">Buoc 5: Kiem thu Grid, 375px, Tab &amp; Lighthouse (&gt;= 90)</text>
+  <text x="64" y="550" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#283629">Soi Grid Overlay, test chuoi dai 60 ky tu, bat prefers-reduced-motion.</text>
+  <text x="64" y="568" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Tai sao: HTML/CSS khong bao loi compile, chi phat hien loi vo cuc bo khi test.</text>
+
+  <line x1="578" y1="544" x2="616" y2="544" stroke="#2E7D52" stroke-width="2" />
+  <polygon points="614,538 624,544 614,550" fill="#2E7D52" />
+
+  <rect x="626" y="506" width="526" height="76" rx="12" fill="#4F7043" />
+  <text x="644" y="530" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#FDF9F0">Buoc 6: Commit, Push, Bat GitHub Pages &amp; Mo PR</text>
+  <text x="644" y="550" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#F4EFE2">feat(ui): build static cozy woodland bento dashboard</text>
+  <text x="644" y="568" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#C6D1BF">Tai sao: Kiem chung CSS tai HTTP 200 tren URL that truoc khi merge main.</text>
+</svg>

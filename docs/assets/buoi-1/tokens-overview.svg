@@ -1,138 +1,220 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
-<rect x="0" y="0" width="1200" height="780" rx="0" fill="#090A0F" stroke="none" stroke-width="1" />
-<rect x="32" y="24" width="1136" height="48" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="52" y="54" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#F3F4F6" text-anchor="start" >OMNISTUDY DESIGN TOKENS - DARK-FIRST BENTO SYSTEM</text>
-<text x="1148" y="54" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="500" fill="#9CA3AF" text-anchor="end" >WCAG Contrast Checked | Base 4px Scale</text>
-<rect x="32" y="88" width="556" height="286" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="52" y="118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#F3F4F6" text-anchor="start" >1. MAU CHINH &amp; NGU NGHIA (BRAND &amp; SEMANTIC)</text>
-<rect x="52" y="136" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="62" y="146" width="42" height="42" rx="6" fill="#6366F1" stroke="#374151" stroke-width="1" />
-<text x="114" y="160" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--accent-primary</text>
-<text x="114" y="176" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#6366F1</text>
-<text x="114" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Indigo 500 - Primary CTA</text>
-<rect x="316" y="136" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="326" y="146" width="42" height="42" rx="6" fill="#4F46E5" stroke="#374151" stroke-width="1" />
-<text x="378" y="160" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--accent-hover</text>
-<text x="378" y="176" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#4F46E5</text>
-<text x="378" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Indigo 600 - Button Hover</text>
-<rect x="52" y="210" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="62" y="220" width="42" height="42" rx="6" fill="#10B981" stroke="#374151" stroke-width="1" />
-<text x="114" y="234" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--semantic-success</text>
-<text x="114" y="250" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#10B981</text>
-<text x="114" y="264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Emerald 500 - Done / 100%</text>
-<rect x="316" y="210" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="326" y="220" width="42" height="42" rx="6" fill="#F59E0B" stroke="#374151" stroke-width="1" />
-<text x="378" y="234" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--semantic-warning</text>
-<text x="378" y="250" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#F59E0B</text>
-<text x="378" y="264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Amber 500 - Thi &lt; 7 ngay</text>
-<rect x="52" y="284" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="62" y="294" width="42" height="42" rx="6" fill="#EF4444" stroke="#374151" stroke-width="1" />
-<text x="114" y="308" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--semantic-danger</text>
-<text x="114" y="324" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#EF4444</text>
-<text x="114" y="338" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Rose 500 - Qua han / Loi</text>
-<rect x="316" y="284" width="252" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="326" y="294" width="42" height="42" rx="6" fill="#3B82F6" stroke="#374151" stroke-width="1" />
-<text x="378" y="308" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="600" fill="#F3F4F6" text-anchor="start" >--semantic-info</text>
-<text x="378" y="324" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="start" >#3B82F6</text>
-<text x="378" y="338" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start" >Blue 500 - Google Calendar</text>
-<rect x="612" y="88" width="556" height="286" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="632" y="118" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#F3F4F6" text-anchor="start" >2. MAU TRUNG TINH, BE MAT &amp; CHU (SURFACES &amp; TEXT)</text>
-<rect x="632" y="136" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="640" y="144" width="150" height="18" rx="4" fill="#090A0F" stroke="#374151" stroke-width="1" />
-<text x="640" y="177" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--bg-canvas</text>
-<text x="640" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#090A0F | App Background</text>
-<rect x="808" y="136" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="816" y="144" width="150" height="18" rx="4" fill="#11131A" stroke="#374151" stroke-width="1" />
-<text x="816" y="177" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--bg-surface-1</text>
-<text x="816" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#11131A | Bento Card</text>
-<rect x="984" y="136" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="992" y="144" width="150" height="18" rx="4" fill="#181B24" stroke="#374151" stroke-width="1" />
-<text x="992" y="177" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--bg-surface-2</text>
-<text x="992" y="190" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#181B24 | Input / Sub-card</text>
-<rect x="632" y="210" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="640" y="218" width="150" height="18" rx="4" fill="#1F2330" stroke="#374151" stroke-width="1" />
-<text x="640" y="251" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--bg-surface-hover</text>
-<text x="640" y="264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#1F2330 | Row Hover</text>
-<rect x="808" y="210" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="816" y="218" width="150" height="18" rx="4" fill="#222634" stroke="#374151" stroke-width="1" />
-<text x="816" y="251" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--border-subtle</text>
-<text x="816" y="264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#222634 | 1px Card Border</text>
-<rect x="984" y="210" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="992" y="218" width="150" height="18" rx="4" fill="#6366F1" stroke="#374151" stroke-width="1" />
-<text x="992" y="251" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--border-focus</text>
-<text x="992" y="264" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#6366F1 | Focus Ring</text>
-<rect x="632" y="284" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="640" y="292" width="150" height="18" rx="4" fill="#F3F4F6" stroke="#374151" stroke-width="1" />
-<text x="640" y="325" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--text-primary</text>
-<text x="640" y="338" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#F3F4F6 | 15.8:1 (WCAG AAA)</text>
-<rect x="808" y="284" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="816" y="292" width="150" height="18" rx="4" fill="#9CA3AF" stroke="#374151" stroke-width="1" />
-<text x="816" y="325" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--text-secondary</text>
-<text x="816" y="338" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#9CA3AF | 6.2:1 (WCAG AA)</text>
-<rect x="984" y="284" width="166" height="62" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="992" y="292" width="150" height="18" rx="4" fill="#6B7280" stroke="#374151" stroke-width="1" />
-<text x="992" y="325" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="600" fill="#F3F4F6" text-anchor="start" >--text-muted</text>
-<text x="992" y="338" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >#6B7280 | Placeholder / Done</text>
-<rect x="32" y="392" width="556" height="356" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="52" y="422" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#F3F4F6" text-anchor="start" >3. MAU PHAN CAP DIEM KHAN CAP (URGENCY TIERS)</text>
-<rect x="52" y="442" width="516" height="48" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="52" y="442" width="5" height="48" rx="2" fill="#EF4444" stroke="none" stroke-width="1" />
-<rect x="70" y="453" width="96" height="26" rx="6" fill="rgba(239,68,68,0.20)" stroke="#EF4444" stroke-width="1" />
-<text x="118" y="470" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#FCA5A5" text-anchor="middle" >OVERDUE</text>
-<text x="182" y="470" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#F3F4F6" text-anchor="start" >h &lt;= 0 (Qua han)</text>
-<text x="552" y="470" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="end" >Text: #FCA5A5  |  Border: #EF4444</text>
-<rect x="52" y="500" width="516" height="48" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="52" y="500" width="5" height="48" rx="2" fill="#F97316" stroke="none" stroke-width="1" />
-<rect x="70" y="511" width="96" height="26" rx="6" fill="rgba(249,115,22,0.18)" stroke="#F97316" stroke-width="1" />
-<text x="118" y="528" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#FDBA74" text-anchor="middle" >EXTREME</text>
-<text x="182" y="528" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#F3F4F6" text-anchor="start" >U &gt;= 80 (Cuc gap)</text>
-<text x="552" y="528" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="end" >Text: #FDBA74  |  Border: #F97316</text>
-<rect x="52" y="558" width="516" height="48" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="52" y="558" width="5" height="48" rx="2" fill="#EAB308" stroke="none" stroke-width="1" />
-<rect x="70" y="569" width="96" height="26" rx="6" fill="rgba(234,179,8,0.15)" stroke="#EAB308" stroke-width="1" />
-<text x="118" y="586" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#FDE047" text-anchor="middle" >HIGH</text>
-<text x="182" y="586" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#F3F4F6" text-anchor="start" >60 &lt;= U &lt; 80 (Cao)</text>
-<text x="552" y="586" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="end" >Text: #FDE047  |  Border: #EAB308</text>
-<rect x="52" y="616" width="516" height="48" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="52" y="616" width="5" height="48" rx="2" fill="#3B82F6" stroke="none" stroke-width="1" />
-<rect x="70" y="627" width="96" height="26" rx="6" fill="rgba(59,130,246,0.15)" stroke="#3B82F6" stroke-width="1" />
-<text x="118" y="644" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#93C5FD" text-anchor="middle" >MODERATE</text>
-<text x="182" y="644" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#F3F4F6" text-anchor="start" >35 &lt;= U &lt; 60 (Vua)</text>
-<text x="552" y="644" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="end" >Text: #93C5FD  |  Border: #3B82F6</text>
-<rect x="52" y="674" width="516" height="48" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="52" y="674" width="5" height="48" rx="2" fill="#4B5563" stroke="none" stroke-width="1" />
-<rect x="70" y="685" width="96" height="26" rx="6" fill="rgba(156,163,175,0.12)" stroke="#4B5563" stroke-width="1" />
-<text x="118" y="702" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#9CA3AF" text-anchor="middle" >LOW</text>
-<text x="182" y="702" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500" fill="#F3F4F6" text-anchor="start" >U &lt; 35 (Thong tha)</text>
-<text x="552" y="702" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="end" >Text: #9CA3AF  |  Border: #4B5563</text>
-<rect x="612" y="392" width="556" height="356" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="632" y="422" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#F3F4F6" text-anchor="start" >4. TYPOGRAPHY, SPACING (4PX) &amp; BORDER RADIUS</text>
-<rect x="632" y="438" width="516" height="152" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="648" y="464" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700" fill="#F3F4F6" text-anchor="start" >03d : 14h : 22m : 45s</text>
-<text x="1132" y="462" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6366F1" text-anchor="end" >Display Timer 36px | JetBrains Mono (tabular-nums)</text>
-<text x="648" y="494" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#F3F4F6" text-anchor="start" >Heading 1 (24px Bold) - Focus Dashboard</text>
-<text x="648" y="518" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#F3F4F6" text-anchor="start" >Heading 2 (18px SemiBold) - Khoi Bento / Drawer</text>
-<text x="648" y="540" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#9CA3AF" text-anchor="start" >Heading 3 (15px SemiBold) - Ten Task / Mon Thi</text>
-<text x="648" y="560" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="start" >Body (14px Regular) - Mo ta chi tiet, ghi chu lich hoc</text>
-<text x="648" y="578" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="start" >Caption / Badge (12px Medium) - Urgency Score, Phong 402</text>
-<rect x="632" y="604" width="516" height="126" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="648" y="626" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >THANG KHOANG CACH (BOI SO 4PX) &amp; BO GOC (RADIUS)</text>
-<rect x="648" y="642" width="8" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="648" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >4px</text>
-<rect x="704" y="642" width="16" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="704" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >8px</text>
-<rect x="760" y="642" width="24" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="760" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >12px</text>
-<rect x="816" y="642" width="32" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="816" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >16px</text>
-<rect x="872" y="642" width="48" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="872" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >24px</text>
-<rect x="940" y="642" width="64" height="14" rx="3" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="940" y="672" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="400" fill="#9CA3AF" text-anchor="start" >32px</text>
-<rect x="648" y="686" width="145" height="32" rx="6" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="720" y="706" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Badge: 6px (rounded-md)</text>
-<rect x="808" y="686" width="155" height="32" rx="8" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="885" y="706" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Input/Btn: 8px (rounded-lg)</text>
-<rect x="978" y="686" width="155" height="32" rx="12" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="1055" y="706" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#F3F4F6" text-anchor="middle" >Bento: 12px (rounded-xl)</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 840" width="1240" height="840">
+  <rect x="0" y="0" width="1240" height="840" fill="#ECE7D8" />
+
+  <!-- Top Woodland Header -->
+  <rect x="32" y="24" width="1176" height="52" rx="14" fill="#2F4231" stroke="#7A5130" stroke-width="1" />
+  <!-- Minimalist Pine & Leaf Emblem -->
+  <g transform="translate(52, 36)">
+    <polygon points="14,2 4,18 24,18" fill="#A6C48A" />
+    <polygon points="14,9 2,24 26,24" fill="#4F7043" />
+    <rect x="12" y="23" width="4" height="5" rx="1" fill="#9B6B43" />
+  </g>
+  <text x="90" y="56" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="18" font-weight="700" fill="#F4EFE2" text-anchor="start">OMNISTUDY DESIGN TOKENS - COZY WOODLAND BENTO</text>
+  <text x="1186" y="55" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="500" fill="#C6D1BF" text-anchor="end">Light-First Nature System | 4px Grid | tabular-nums</text>
+
+  <!-- SECTION 1: SURFACES, SIDEBAR & BORDERS -->
+  <rect x="32" y="92" width="576" height="346" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="54" y="122" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="15" font-weight="700" fill="#283629" text-anchor="start">1. Bề Mặt, Forest Sidebar &amp; Đường Viền</text>
+
+  <!-- Row 1 of Section 1 -->
+  <rect x="54" y="138" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="64" y="148" width="150" height="24" rx="6" fill="#ECE7D8" stroke="#8F9888" stroke-width="1" />
+  <text x="64" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-canvas</text>
+  <text x="64" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#ECE7D8 | Warm Parchment</text>
+
+  <rect x="235" y="138" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="245" y="148" width="150" height="24" rx="6" fill="#2F4231" stroke="#8F9888" stroke-width="1" />
+  <text x="245" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-sidebar</text>
+  <text x="245" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#2F4231 | Forest (248px)</text>
+
+  <rect x="416" y="138" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="426" y="148" width="72" height="24" rx="6" fill="#3B513D" stroke="#8F9888" stroke-width="1" />
+  <rect x="504" y="148" width="72" height="24" rx="6" fill="#4A5F44" stroke="#8F9888" stroke-width="1" />
+  <text x="426" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-sidebar-card</text>
+  <text x="426" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#3B513D / #4A5F44</text>
+
+  <!-- Row 2 of Section 1 -->
+  <rect x="54" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="64" y="242" width="150" height="24" rx="6" fill="#9B6B43" stroke="#7A5130" stroke-width="1.5" />
+  <text x="139" y="258" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#FDF9F0" text-anchor="middle">Wood Sign (#FDF9F0)</text>
+  <text x="64" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-wood-sign</text>
+  <text x="64" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#9B6B43 | Border #7A5130</text>
+
+  <rect x="235" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="245" y="242" width="150" height="24" rx="6" fill="#FAF6EC" stroke="#8F9888" stroke-width="1" />
+  <text x="245" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-surface-1</text>
+  <text x="245" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#FAF6EC | Bento / Modal</text>
+
+  <rect x="416" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="426" y="242" width="150" height="24" rx="6" fill="#F1ECDD" stroke="#8F9888" stroke-width="1" />
+  <text x="426" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-surface-2</text>
+  <text x="426" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#F1ECDD | Task / Input / Skel</text>
+
+  <!-- Row 3 of Section 1 -->
+  <rect x="54" y="326" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="64" y="336" width="150" height="24" rx="6" fill="#E7E0CC" stroke="#8F9888" stroke-width="1" />
+  <text x="64" y="377" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--bg-surface-hover</text>
+  <text x="64" y="393" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#E7E0CC | Hover State</text>
+
+  <rect x="235" y="326" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="245" y="336" width="150" height="24" rx="6" fill="#DDD6C3" stroke="#8F9888" stroke-width="1" />
+  <text x="245" y="377" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--border-subtle</text>
+  <text x="245" y="393" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#DDD6C3 | 1px Card Border</text>
+
+  <rect x="416" y="326" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="426" y="336" width="150" height="24" rx="6" fill="#FAF6EC" stroke="#4F7043" stroke-width="2" />
+  <text x="426" y="377" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--border-focus</text>
+  <text x="426" y="393" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#4F7043 | Focus Ring</text>
+
+  <!-- SECTION 2: TEXT, BRAND & SEMANTIC -->
+  <rect x="632" y="92" width="576" height="346" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="654" y="122" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="15" font-weight="700" fill="#283629" text-anchor="start">2. Màu Chữ, Thương Hiệu &amp; Ngữ Nghĩa</text>
+
+  <!-- Text Row -->
+  <rect x="654" y="138" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="664" y="148" width="150" height="24" rx="6" fill="#283629" stroke="#8F9888" stroke-width="1" />
+  <text x="664" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--text-primary</text>
+  <text x="664" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#283629 | Forest Ink (AAA)</text>
+
+  <rect x="835" y="138" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="845" y="148" width="72" height="24" rx="6" fill="#546353" stroke="#8F9888" stroke-width="1" />
+  <rect x="923" y="148" width="72" height="24" rx="6" fill="#626F5F" stroke="#8F9888" stroke-width="1" />
+  <text x="845" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--text-sec / muted</text>
+  <text x="845" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#546353 | #626F5F</text>
+
+  <rect x="1016" y="138" width="170" height="82" rx="12" fill="#2F4231" stroke="#4A5F44" stroke-width="1" />
+  <rect x="1026" y="148" width="72" height="24" rx="6" fill="#F4EFE2" stroke="#8F9888" stroke-width="1" />
+  <rect x="1104" y="148" width="72" height="24" rx="6" fill="#C6D1BF" stroke="#8F9888" stroke-width="1" />
+  <text x="1026" y="189" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#F4EFE2">--text-on-sidebar</text>
+  <text x="1026" y="205" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#C6D1BF">#F4EFE2 | #C6D1BF</text>
+
+  <!-- Brand & Semantic Row 1 -->
+  <rect x="654" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="664" y="242" width="72" height="24" rx="6" fill="#4F7043" stroke="#8F9888" stroke-width="1" />
+  <rect x="742" y="242" width="72" height="24" rx="6" fill="#3F5B35" stroke="#8F9888" stroke-width="1" />
+  <text x="664" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--accent-primary</text>
+  <text x="664" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#4F7043 | Hover #3F5B35</text>
+
+  <rect x="835" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="845" y="242" width="150" height="24" rx="6" fill="#E3F2EA" stroke="#2E7D52" stroke-width="1" />
+  <text x="920" y="258" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#2E7D52" text-anchor="middle">Success #2E7D52</text>
+  <text x="845" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--semantic-success</text>
+  <text x="845" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#2E7D52 | bg #E3F2EA</text>
+
+  <rect x="1016" y="232" width="170" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="1026" y="242" width="150" height="24" rx="6" fill="#FBF1DC" stroke="#B87A1E" stroke-width="1" />
+  <text x="1101" y="258" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#8A580F" text-anchor="middle">Warning #B87A1E</text>
+  <text x="1026" y="283" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--semantic-warning</text>
+  <text x="1026" y="299" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">#B87A1E | text #8A580F</text>
+
+  <!-- Brand & Semantic Row 2 -->
+  <rect x="654" y="326" width="260" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="664" y="336" width="240" height="24" rx="6" fill="#FBEAE7" stroke="#B94435" stroke-width="1" />
+  <text x="784" y="352" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#9A3326" text-anchor="middle">Danger #B94435 (Text #9A3326 on #FBEAE7)</text>
+  <text x="664" y="377" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--semantic-danger</text>
+  <text x="664" y="393" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">Quá hạn / Thi &lt; 24h / Validation &amp; Error Alert</text>
+
+  <rect x="926" y="326" width="260" height="82" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="936" y="336" width="240" height="24" rx="6" fill="#E5F1F6" stroke="#3A6F88" stroke-width="1" />
+  <text x="1056" y="352" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#2B566B" text-anchor="middle">Info #3A6F88 (Text #2B566B on #E5F1F6)</text>
+  <text x="936" y="377" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#283629">--semantic-info</text>
+  <text x="936" y="393" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" fill="#546353">Sự kiện đồng bộ từ Google Calendar API v3</text>
+
+  <!-- SECTION 3: DYNAMIC URGENCY TIERS -->
+  <rect x="32" y="456" width="576" height="356" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="54" y="486" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="15" font-weight="700" fill="#283629">3. Phân Cấp Điểm Khẩn Cấp (1px Border + Dot + Pill)</text>
+
+  <!-- Tier 1: OVERDUE -->
+  <rect x="54" y="504" width="532" height="48" rx="12" fill="#F1ECDD" stroke="#D97C6E" stroke-width="1" />
+  <circle cx="72" cy="528" r="5" fill="#9A3326" />
+  <rect x="86" y="515" width="96" height="26" rx="13" fill="#F9DFDA" stroke="#D97C6E" stroke-width="1" />
+  <text x="134" y="532" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#9A3326" text-anchor="middle">OVERDUE</text>
+  <text x="196" y="532" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#283629">h &lt;= 0 (Quá hạn)</text>
+  <text x="572" y="532" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353" text-anchor="end">text #9A3326 | border #D97C6E</text>
+
+  <!-- Tier 2: EXTREME -->
+  <rect x="54" y="560" width="532" height="48" rx="12" fill="#F1ECDD" stroke="#E09866" stroke-width="1" />
+  <circle cx="72" cy="584" r="5" fill="#9E4718" />
+  <rect x="86" y="571" width="96" height="26" rx="13" fill="#FBE6D4" stroke="#E09866" stroke-width="1" />
+  <text x="134" y="588" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#9E4718" text-anchor="middle">EXTREME</text>
+  <text x="196" y="588" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#283629">U &gt;= 80 (Cực gấp)</text>
+  <text x="572" y="588" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353" text-anchor="end">text #9E4718 | border #E09866</text>
+
+  <!-- Tier 3: HIGH -->
+  <rect x="54" y="616" width="532" height="48" rx="12" fill="#F1ECDD" stroke="#D9AE59" stroke-width="1" />
+  <circle cx="72" cy="640" r="5" fill="#8A580F" />
+  <rect x="86" y="627" width="96" height="26" rx="13" fill="#FBF0D6" stroke="#D9AE59" stroke-width="1" />
+  <text x="134" y="644" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#8A580F" text-anchor="middle">HIGH</text>
+  <text x="196" y="644" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#283629">60 &lt;= U &lt; 80 (Cao)</text>
+  <text x="572" y="644" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353" text-anchor="end">text #8A580F | border #D9AE59</text>
+
+  <!-- Tier 4: MODERATE -->
+  <rect x="54" y="672" width="532" height="48" rx="12" fill="#F1ECDD" stroke="#7FAAC0" stroke-width="1" />
+  <circle cx="72" cy="696" r="5" fill="#2B566B" />
+  <rect x="86" y="683" width="96" height="26" rx="13" fill="#E4F0F5" stroke="#7FAAC0" stroke-width="1" />
+  <text x="134" y="700" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#2B566B" text-anchor="middle">MODERATE</text>
+  <text x="196" y="700" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#283629">35 &lt;= U &lt; 60 (Vừa)</text>
+  <text x="572" y="700" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353" text-anchor="end">text #2B566B | border #7FAAC0</text>
+
+  <!-- Tier 5: LOW -->
+  <rect x="54" y="728" width="532" height="48" rx="12" fill="#F1ECDD" stroke="#C9C2AE" stroke-width="1" />
+  <circle cx="72" cy="752" r="5" fill="#546353" />
+  <rect x="86" y="739" width="96" height="26" rx="13" fill="#EAE6D9" stroke="#C9C2AE" stroke-width="1" />
+  <text x="134" y="756" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#546353" text-anchor="middle">LOW</text>
+  <text x="196" y="756" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#283629">U &lt; 35 (Thong thả)</text>
+  <text x="572" y="756" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353" text-anchor="end">text #546353 | border #C9C2AE</text>
+
+  <text x="54" y="796" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" fill="#626F5F">Quy tắc: Không dùng viền trái neon dày; dùng viền mảnh 1px + chấm trạng thái + pill badge.</text>
+
+  <!-- SECTION 4: TYPOGRAPHY, SPACING & RADIUS -->
+  <rect x="632" y="456" width="576" height="356" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="654" y="486" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="15" font-weight="700" fill="#283629">4. Typography, Spacing (4px) &amp; Border Radius</text>
+
+  <!-- Typography Sample Card -->
+  <rect x="654" y="504" width="532" height="162" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="670" y="530" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="17" font-weight="700" fill="#283629">Display (Fraunces / Lora): Chào buổi tối, Khánh</text>
+  <!-- Single-row 4-box countdown sample -->
+  <rect x="670" y="544" width="74" height="34" rx="8" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="707" y="565" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">03 Ngày</text>
+  <rect x="752" y="544" width="74" height="34" rx="8" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="789" y="565" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">14 Giờ</text>
+  <rect x="834" y="544" width="74" height="34" rx="8" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="871" y="565" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">22 Phút</text>
+  <rect x="916" y="544" width="74" height="34" rx="8" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="953" y="565" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">45 Giây</text>
+  <text x="1002" y="565" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600" fill="#4F7043">tabular-nums (1 dòng)</text>
+
+  <text x="670" y="602" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#283629">Body Sans (Plus Jakarta Sans / Inter): 8.5h | 60% (3/5 chủ đề)</text>
+  <text x="670" y="624" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" fill="#546353">Thứ Tư, 25/11/2026 | Kỳ thi gần nhất: 08:30 - Thứ Bảy, 28/11/2026</text>
+  <text x="670" y="646" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" fill="#626F5F">100% font-variant-numeric: tabular-nums cho mọi con số và bộ đếm</text>
+
+  <!-- Spacing & Radius Card -->
+  <rect x="654" y="678" width="532" height="118" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="670" y="700" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#283629">THANG KHOẢNG CÁCH (BỘI SỐ 4PX) &amp; BO GÓC (RADIUS)</text>
+
+  <rect x="670" y="712" width="8" height="14" rx="3" fill="#4F7043" />
+  <text x="670" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">4px</text>
+  <rect x="720" y="712" width="16" height="14" rx="3" fill="#4F7043" />
+  <text x="720" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">8px</text>
+  <rect x="774" y="712" width="24" height="14" rx="3" fill="#4F7043" />
+  <text x="774" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">12px</text>
+  <rect x="836" y="712" width="32" height="14" rx="3" fill="#4F7043" />
+  <text x="836" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">16px</text>
+  <rect x="904" y="712" width="48" height="14" rx="3" fill="#4F7043" />
+  <text x="904" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">24px</text>
+  <rect x="986" y="712" width="64" height="14" rx="3" fill="#4F7043" />
+  <text x="986" y="739" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" fill="#546353">32px</text>
+
+  <rect x="670" y="752" width="114" height="30" rx="8" fill="#FAF6EC" stroke="#4F7043" stroke-width="1" />
+  <text x="727" y="771" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#283629" text-anchor="middle">Badge: 8px</text>
+
+  <rect x="794" y="752" width="128" height="30" rx="12" fill="#FAF6EC" stroke="#4F7043" stroke-width="1" />
+  <text x="858" y="771" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#283629" text-anchor="middle">Task / Input: 12px</text>
+
+  <rect x="932" y="752" width="132" height="30" rx="15" fill="#FAF6EC" stroke="#4F7043" stroke-width="1" />
+  <text x="998" y="771" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#283629" text-anchor="middle">Bento / Modal: 16px</text>
+
+  <rect x="1074" y="752" width="96" height="30" rx="15" fill="#4F7043" />
+  <text x="1122" y="771" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="600" fill="#FDF9F0" text-anchor="middle">Pill: 9999px</text>
 </svg>

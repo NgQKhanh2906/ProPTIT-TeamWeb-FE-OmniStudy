@@ -1,105 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" width="1280" height="880">
-<rect x="0" y="0" width="1280" height="880" rx="0" fill="#090A0F" stroke="none" stroke-width="1" />
-<rect x="24" y="18" width="1232" height="46" rx="10" fill="#11131A" stroke="#222634" stroke-width="1" />
-<text x="44" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#F3F4F6" text-anchor="start" >WIREFRAME MAN 3: EXAM PREP DRAWER (SLIDE-OVER PANEL) - DU 4 TRANG THAI</text>
-<text x="1236" y="46" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" fill="#9CA3AF" text-anchor="end" >Trang thai: Default | Loading | Empty | Error</text>
-<rect x="24" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<rect x="38" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="50" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >3A. Trang Thai Mac Dinh (Default)</text>
-<rect x="504" y="96" width="100" height="22" rx="5" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1" />
-<text x="554" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="middle" >DEFAULT</text>
-<rect x="38" y="132" width="576" height="314" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
-<rect x="50" y="148" width="175" height="282" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" opacity="0.45"/>
-<text x="138" y="282" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="middle" >Nen Dashboard mo</text>
-<rect x="238" y="132" width="376" height="314" rx="8" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="254" y="156" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >CHI TIET MON THI</text>
-<text x="598" y="156" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#9CA3AF" text-anchor="end" >[X]</text>
-<line x1="238" y1="166" x2="614" y2="166" stroke="#222634" stroke-width="1" />
-<text x="254" y="186" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >Cau truc du lieu &amp; Giai thuat</text>
-<text x="254" y="202" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >08:30 - 28/11/2026 | Phong 402 - A2 | Trong so: 60%</text>
-<text x="254" y="222" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="start" >Con 03 ngay 14 gio  |  San sang: 60% (3/5 chu de)</text>
-<rect x="254" y="230" width="344" height="8" rx="4" fill="#181B24" stroke="none" stroke-width="1" />
-<rect x="254" y="230" width="206" height="8" rx="4" fill="#10B981" stroke="none" stroke-width="1" />
-<rect x="254" y="248" width="344" height="28" rx="6" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="426" y="266" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Tu Dong Phan Bo Task On Vao Lich</text>
-<text x="254" y="294" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" fill="#9CA3AF" text-anchor="start" >DANH SACH CHU DE CAN ON (CHECKLIST)</text>
-<rect x="254" y="304" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="264" y="319" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#10B981" text-anchor="start" >[x] 1. Cay nhi phan tim kiem (Xong 24/11)</text>
-<rect x="254" y="331" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="264" y="346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#10B981" text-anchor="start" >[x] 2. Can bang cay AVL (Xong 25/11)</text>
-<rect x="254" y="358" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="264" y="373" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >[ ] 3. Do thi BFS/DFS (Lich 26/11)</text>
-<rect x="254" y="385" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="264" y="400" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >[ ] 4. Prim/Kruskal (Lich 27/11)</text>
-<rect x="254" y="416" width="344" height="20" rx="4" fill="#090A0F" stroke="#222634" stroke-width="1" />
-<text x="264" y="429" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >+ Them chu de moi...</text>
-<rect x="652" y="80" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<rect x="666" y="92" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="678" y="111" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >3B. Trang Thai Dang Tai (Loading)</text>
-<rect x="1132" y="96" width="100" height="22" rx="5" fill="rgba(99,102,241,0.15)" stroke="#6366F1" stroke-width="1" />
-<text x="1182" y="111" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#6366F1" text-anchor="middle" >LOADING</text>
-<rect x="666" y="132" width="576" height="314" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
-<rect x="678" y="148" width="175" height="282" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" opacity="0.45"/>
-<text x="766" y="282" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="middle" >Nen Dashboard mo</text>
-<rect x="866" y="132" width="376" height="314" rx="8" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="882" y="156" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >CHI TIET MON THI</text>
-<line x1="866" y1="166" x2="1242" y2="166" stroke="#222634" stroke-width="1" />
-<rect x="882" y="180" width="250" height="14" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="202" width="310" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="220" width="210" height="10" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="246" width="344" height="28" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<rect x="882" y="294" width="20" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="912" y="298" width="280" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="326" width="20" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="912" y="330" width="260" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="358" width="20" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="912" y="362" width="240" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="882" y="390" width="20" height="20" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<rect x="912" y="394" width="220" height="12" rx="4" fill="#222634" stroke="none" stroke-width="1" />
-<text x="1054" y="432" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >3 hang skeleton thong tin + 4 hang checkbox skeleton</text>
-<rect x="24" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<rect x="38" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="50" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >3C. Trang Thai Rong (Empty)</text>
-<rect x="504" y="496" width="100" height="22" rx="5" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1" />
-<text x="554" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle" >EMPTY</text>
-<rect x="38" y="532" width="576" height="314" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
-<rect x="50" y="548" width="175" height="282" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" opacity="0.45"/>
-<text x="138" y="682" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="middle" >Nen Dashboard mo</text>
-<rect x="238" y="532" width="376" height="314" rx="8" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="254" y="556" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >CHI TIET MON THI</text>
-<line x1="238" y1="566" x2="614" y2="566" stroke="#222634" stroke-width="1" />
-<text x="254" y="586" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >Mang may tinh (Mon moi tao)</text>
-<text x="254" y="604" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >09:00 - 02/12/2026 | Chua co chu de on tap</text>
-<rect x="254" y="624" width="344" height="28" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="426" y="642" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="middle" >Tu Dong Phan Bo Task (Disabled - Chua co chu de)</text>
-<rect x="254" y="670" width="344" height="148" rx="8" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="426" y="704" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Chua co checklist chu de nao</text>
-<text x="426" y="722" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="middle" >Nhap ten chuong hoac bai hoc dau tien</text>
-<rect x="274" y="740" width="304" height="34" rx="6" fill="#090A0F" stroke="#6366F1" stroke-width="1" />
-<text x="286" y="761" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#6B7280" text-anchor="start" >VD: Chuong 1 - Mo hinh OSI (Nhan Enter)...</text>
-<text x="426" y="798" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="8" font-weight="400" fill="#6B7280" text-anchor="middle" >Sau khi them it nhat 1 chu de, nut sinh task se bat</text>
-<rect x="652" y="480" width="604" height="382" rx="12" fill="#11131A" stroke="#222634" stroke-width="1" />
-<rect x="666" y="492" width="576" height="30" rx="6" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="678" y="511" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >3D. Trang Thai Loi (Error)</text>
-<rect x="1132" y="496" width="100" height="22" rx="5" fill="rgba(239,68,68,0.15)" stroke="#EF4444" stroke-width="1" />
-<text x="1182" y="511" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle" >ERROR</text>
-<rect x="666" y="532" width="576" height="314" rx="8" fill="#090A0F" stroke="#222634" stroke-width="1" />
-<rect x="678" y="548" width="175" height="282" rx="6" fill="#11131A" stroke="#222634" stroke-width="1" opacity="0.45"/>
-<text x="766" y="682" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="middle" >Nen Dashboard mo</text>
-<rect x="866" y="532" width="376" height="314" rx="8" fill="#11131A" stroke="#6366F1" stroke-width="1" />
-<text x="882" y="556" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#F3F4F6" text-anchor="start" >CHI TIET MON THI</text>
-<line x1="866" y1="566" x2="1242" y2="566" stroke="#222634" stroke-width="1" />
-<text x="882" y="586" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F3F4F6" text-anchor="start" >Giai tich 2</text>
-<rect x="882" y="596" width="344" height="24" rx="5" fill="#181B24" stroke="#EF4444" stroke-width="1" />
-<text x="892" y="612" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="600" fill="#FCA5A5" text-anchor="start" >Ngay thi: 08:30 - 20/11/2026 (Da qua han!)</text>
-<rect x="882" y="630" width="344" height="28" rx="6" fill="#6366F1" stroke="none" stroke-width="1" />
-<text x="1054" y="648" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#F3F4F6" text-anchor="middle" >Tu Dong Phan Bo Task On Vao Lich</text>
-<rect x="882" y="666" width="344" height="62" rx="8" fill="rgba(239,68,68,0.12)" stroke="#EF4444" stroke-width="1" />
-<text x="894" y="686" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" fill="#FCA5A5" text-anchor="start" >[!] Ngay thi khong hop le de phan bo lo trinh</text>
-<text x="894" y="702" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#F3F4F6" text-anchor="start" >Ngay thi phai lon hon thoi diem hien tai it nhat 1 ngay.</text>
-<text x="894" y="717" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >Vui long chinh sua ngay thi hoac bam Thu lai.</text>
-<rect x="882" y="744" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="892" y="759" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >[ ] 1. Tich phan boi ba</text>
-<rect x="882" y="772" width="344" height="22" rx="4" fill="#181B24" stroke="#222634" stroke-width="1" />
-<text x="892" y="787" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" fill="#9CA3AF" text-anchor="start" >[ ] 2. Tich phan duong</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 960" width="1360" height="960">
+  <defs>
+    <linearGradient id="warmShimmerDrawer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F1ECDD" />
+      <stop offset="50%" stop-color="#FAF6EC" />
+      <stop offset="100%" stop-color="#F1ECDD" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1360" height="960" fill="#ECE7D8" />
+
+  <!-- Top Header -->
+  <rect x="24" y="18" width="1312" height="48" rx="14" fill="#2F4231" stroke="#7A5130" stroke-width="1" />
+  <text x="46" y="48" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="16" font-weight="700" fill="#F4EFE2">WIREFRAME MÀN 3: EXAM PREP DRAWER (SLIDE-OVER PANEL) - ĐỦ 4 TRẠNG THÁI</text>
+  <text x="1314" y="47" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="12" fill="#C6D1BF" text-anchor="end">Readiness 60% (3/5 chủ đề) | Thứ Bảy, 28/11/2026 | Validation 24h</text>
+
+  <!-- ==================== 3A. DEFAULT ==================== -->
+  <rect x="24" y="80" width="646" height="420" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="40" y="106" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">3A. Trạng Thái Mặc Định (Default)</text>
+  <rect x="556" y="89" width="98" height="22" rx="11" fill="#E3F2EA" stroke="#2E7D52" stroke-width="1" />
+  <text x="605" y="104" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#2E7D52" text-anchor="middle">DEFAULT</text>
+
+  <!-- Dimmed Woodland Background -->
+  <rect x="36" y="120" width="622" height="368" rx="12" fill="#ECE7D8" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="36" y="120" width="92" height="368" rx="12" fill="#2F4231" opacity="0.45" />
+  <rect x="138" y="136" width="114" height="336" rx="10" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" opacity="0.5" />
+  <text x="195" y="295" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" fill="#626F5F" text-anchor="middle">Nền Dashboard mờ</text>
+
+  <!-- Slide-over Drawer 3A -->
+  <rect x="262" y="120" width="396" height="368" rx="14" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="278" y="144" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#4F7043">CHI TIẾT MÔN THI</text>
+  <text x="642" y="144" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#546353" text-anchor="end">[X]</text>
+  <line x1="262" y1="154" x2="658" y2="154" stroke="#DDD6C3" stroke-width="1" />
+
+  <text x="278" y="174" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13.5" font-weight="700" fill="#283629">Cấu trúc dữ liệu &amp; Giải thuật</text>
+  <text x="278" y="191" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" fill="#546353">08:30 - Thứ Bảy, 28/11/2026 | Phòng 402 - Giảng đường A2 | Trọng số: 60%</text>
+
+  <!-- Single-line countdown + Readiness -->
+  <rect x="278" y="200" width="364" height="24" rx="7" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="288" y="216" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="700" fill="#283629">03 Ngày | 14 Giờ | 22 Phút | 45 Giây</text>
+  <text x="634" y="216" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" font-weight="700" fill="#2E7D52" text-anchor="end">60% (3/5)</text>
+
+  <rect x="278" y="230" width="364" height="7" rx="3.5" fill="#F1ECDD" />
+  <rect x="278" y="230" width="218" height="7" rx="3.5" fill="#2E7D52" />
+
+  <rect x="278" y="244" width="364" height="26" rx="9" fill="#4F7043" />
+  <text x="460" y="261" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" fill="#FDF9F0" text-anchor="middle">Tự Động Phân Bổ Task Ôn Vào Lịch (2 chủ đề còn lại)</text>
+
+  <text x="278" y="286" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#546353">DANH SÁCH 5 CHỦ ĐỀ ÔN TẬP (3/5 = 60%)</text>
+
+  <!-- 5 EXACT TOPICS -->
+  <rect x="278" y="294" width="364" height="26" rx="7" fill="#E3F2EA" stroke="#2E7D52" stroke-width="1" />
+  <text x="288" y="311" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#2E7D52">[x] 1. Cây nhị phân tìm kiếm (Hoàn thành 23/11)</text>
+
+  <rect x="278" y="325" width="364" height="26" rx="7" fill="#E3F2EA" stroke="#2E7D52" stroke-width="1" />
+  <text x="288" y="342" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#2E7D52">[x] 2. Cân bằng cây AVL (Hoàn thành 24/11)</text>
+
+  <rect x="278" y="356" width="364" height="26" rx="7" fill="#E3F2EA" stroke="#2E7D52" stroke-width="1" />
+  <text x="288" y="373" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#2E7D52">[x] 3. Bảng băm &amp; Hashing (Hoàn thành 25/11)</text>
+
+  <rect x="278" y="387" width="364" height="26" rx="7" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="288" y="404" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#283629">[ ] 4. Đồ thị &amp; Duyệt BFS/DFS (Dự kiến 26/11)</text>
+
+  <rect x="278" y="418" width="364" height="26" rx="7" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="288" y="435" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#283629">[ ] 5. Cây khung nhỏ nhất Prim/Kruskal (Dự kiến 27/11)</text>
+
+  <rect x="278" y="452" width="364" height="24" rx="7" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="288" y="468" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#626F5F">+ Thêm chủ đề mới (Nhấn Enter)...</text>
+
+  <!-- ==================== 3B. LOADING ==================== -->
+  <rect x="690" y="80" width="646" height="420" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="706" y="106" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">3B. Trạng Thái Đang Tải (Warm Shimmer)</text>
+  <rect x="1222" y="89" width="98" height="22" rx="11" fill="#E5F1F6" stroke="#3A6F88" stroke-width="1" />
+  <text x="1271" y="104" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#2B566B" text-anchor="middle">LOADING</text>
+
+  <rect x="702" y="120" width="622" height="368" rx="12" fill="#ECE7D8" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="702" y="120" width="92" height="368" rx="12" fill="#2F4231" opacity="0.45" />
+  <rect x="804" y="136" width="114" height="336" rx="10" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" opacity="0.5" />
+
+  <rect x="928" y="120" width="396" height="368" rx="14" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="944" y="144" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#4F7043">CHI TIẾT MÔN THI</text>
+  <line x1="928" y1="154" x2="1324" y2="154" stroke="#DDD6C3" stroke-width="1" />
+
+  <rect x="944" y="170" width="260" height="16" rx="5" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="196" width="340" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="216" width="220" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="242" width="364" height="28" rx="9" fill="url(#warmShimmerDrawer)" />
+
+  <rect x="944" y="294" width="22" height="22" rx="6" fill="url(#warmShimmerDrawer)" />
+  <rect x="976" y="299" width="310" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="328" width="22" height="22" rx="6" fill="url(#warmShimmerDrawer)" />
+  <rect x="976" y="333" width="290" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="362" width="22" height="22" rx="6" fill="url(#warmShimmerDrawer)" />
+  <rect x="976" y="367" width="270" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="396" width="22" height="22" rx="6" fill="url(#warmShimmerDrawer)" />
+  <rect x="976" y="401" width="250" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+  <rect x="944" y="430" width="22" height="22" rx="6" fill="url(#warmShimmerDrawer)" />
+  <rect x="976" y="435" width="230" height="12" rx="4" fill="url(#warmShimmerDrawer)" />
+
+  <text x="1126" y="473" font-family="'JetBrains Mono', Consolas, monospace" font-size="8.5" fill="#546353" text-anchor="middle">3 hàng skeleton thông tin + 5 hàng checkbox (@keyframes warmShimmer)</text>
+
+  <!-- ==================== 3C. EMPTY ==================== -->
+  <rect x="24" y="516" width="646" height="420" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="40" y="542" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">3C. Trạng Thái Rỗng (Empty Checklist)</text>
+  <rect x="556" y="525" width="98" height="22" rx="11" fill="#FBF1DC" stroke="#B87A1E" stroke-width="1" />
+  <text x="605" y="540" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#8A580F" text-anchor="middle">EMPTY</text>
+
+  <rect x="36" y="556" width="622" height="368" rx="12" fill="#ECE7D8" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="36" y="556" width="92" height="368" rx="12" fill="#2F4231" opacity="0.45" />
+  <rect x="138" y="572" width="114" height="336" rx="10" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" opacity="0.5" />
+
+  <rect x="262" y="556" width="396" height="368" rx="14" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="278" y="580" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#4F7043">CHI TIẾT MÔN THI</text>
+  <line x1="262" y1="590" x2="658" y2="590" stroke="#DDD6C3" stroke-width="1" />
+
+  <text x="278" y="612" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">Mạng máy tính (Môn mới tạo)</text>
+  <text x="278" y="630" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" fill="#546353">09:00 - Thứ Tư, 02/12/2026 | 0% Sẵn sàng (0/0 chủ đề)</text>
+
+  <rect x="278" y="646" width="364" height="28" rx="9" fill="#EAE6D9" stroke="#C9C2AE" stroke-width="1" />
+  <text x="460" y="664" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#626F5F" text-anchor="middle">Tự Động Phân Bổ Task (Disabled - Chưa có chủ đề)</text>
+
+  <rect x="278" y="692" width="364" height="194" rx="12" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="460" y="734" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="11.5" font-weight="700" fill="#283629" text-anchor="middle">Chưa có checklist chủ đề ôn tập</text>
+  <text x="460" y="754" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" fill="#546353" text-anchor="middle">Nhập tên chương hoặc bài học đầu tiên rồi nhấn Enter</text>
+  <rect x="298" y="774" width="324" height="36" rx="10" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="310" y="796" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" fill="#626F5F">VD: Chương 1 - Mô hình OSI (Nhấn Enter)...</text>
+  <text x="460" y="836" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="8.5" fill="#626F5F" text-anchor="middle">Nút sinh lộ trình sẽ tự bật khi có ít nhất 1 chủ đề chưa xong</text>
+
+  <!-- ==================== 3D. ERROR & 24H MODAL VALIDATION ==================== -->
+  <rect x="690" y="516" width="646" height="420" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="706" y="542" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">3D. Trạng Thái Lỗi &amp; Validate 24h (Disabled Submit)</text>
+  <rect x="1222" y="525" width="98" height="22" rx="11" fill="#FBEAE7" stroke="#B94435" stroke-width="1" />
+  <text x="1271" y="540" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#9A3326" text-anchor="middle">ERROR</text>
+
+  <rect x="702" y="556" width="622" height="368" rx="12" fill="#ECE7D8" stroke="#DDD6C3" stroke-width="1" />
+  <rect x="702" y="556" width="92" height="368" rx="12" fill="#2F4231" opacity="0.45" />
+  <rect x="804" y="572" width="114" height="336" rx="10" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" opacity="0.5" />
+
+  <rect x="928" y="556" width="396" height="368" rx="14" fill="#FAF6EC" stroke="#B94435" stroke-width="1.5" />
+  <text x="944" y="580" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#9A3326">CHI TIẾT MÔN THI / MODAL VALIDATION</text>
+  <line x1="928" y1="590" x2="1324" y2="590" stroke="#DDD6C3" stroke-width="1" />
+
+  <text x="944" y="612" font-family="'Fraunces', 'Lora', Georgia, serif" font-size="13" font-weight="700" fill="#283629">Giải tích 2 (Định dạng 24h: HH:mm DD/MM/YYYY)</text>
+  <rect x="944" y="622" width="364" height="28" rx="8" fill="#FBEAE7" stroke="#B94435" stroke-width="1" />
+  <text x="954" y="640" font-family="'JetBrains Mono', Consolas, monospace" font-size="9.5" font-weight="700" fill="#9A3326">08:30 20/11/2026  (Lỗi: Ở quá khứ so với 25/11/2026)</text>
+
+  <!-- Disabled Submit Button -->
+  <rect x="944" y="660" width="364" height="28" rx="9" fill="#EAE6D9" stroke="#C9C2AE" stroke-width="1" />
+  <text x="1126" y="678" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9.5" font-weight="700" fill="#626F5F" text-anchor="middle">Lưu / Tự Động Phân Bổ Task (Disabled khi form lỗi)</text>
+
+  <!-- Error Alert Box -->
+  <rect x="944" y="698" width="364" height="68" rx="10" fill="#FBEAE7" stroke="#B94435" stroke-width="1" />
+  <text x="956" y="718" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#9A3326">[!] Ngày thi không hợp lệ để phân bổ lộ trình</text>
+  <text x="956" y="736" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#9A3326">Định dạng chuẩn 24h (HH:mm DD/MM/YYYY) phải lớn hơn 25/11/2026.</text>
+  <text x="956" y="752" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#546353">Vui lòng sửa lại hạn chót/ngày thi để mở khóa nút Lưu.</text>
+
+  <rect x="944" y="782" width="364" height="26" rx="7" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="954" y="799" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#546353">[ ] 1. Tích phân bội ba</text>
+  <rect x="944" y="814" width="364" height="26" rx="7" fill="#F1ECDD" stroke="#DDD6C3" stroke-width="1" />
+  <text x="954" y="831" font-family="'Plus Jakarta Sans', 'Inter', 'Segoe UI', sans-serif" font-size="9" fill="#546353">[ ] 2. Tích phân đường</text>
 </svg>

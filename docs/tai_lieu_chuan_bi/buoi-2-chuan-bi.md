@@ -660,3 +660,142 @@ thu-muc-trien-khai/
 - **Rớt chữ `Giây` xuống hàng dưới ở màn `375px`:** Do dùng Flexbox bật `flex-wrap` cho 4 ô đếm ngược. Sửa bằng `grid-template-columns: repeat(4, minmax(0, 1fr))` kết hợp `white-space: nowrap`.
 - **Thẻ Task đẩy vỡ cột Bento bên phải:** Do quên khai báo `min-width: 0` trên `.task-content` và `.bento-card`.
 - **Tụt điểm Lighthouse Accessibility:** Do xóa mất `outline` mặc định của focus, quên `aria-label` trên `<input type="checkbox">` hoặc quên `aria-hidden="true"` trên SVG nền trang trí.
+
+---
+
+## Phần 6. Quy trình các bước thực hiện thực hành
+
+![Sơ đồ quy trình 6 bước thực hiện thực hành từ khởi tạo đến deploy](../assets/buoi-2/6-execution-workflow.svg)
+
+### I. Giai đoạn 1: Khởi tạo nhánh và cấu trúc thư mục
+
+#### 1. Tạo nhánh thực hành độc lập từ main
+
+**A. Nơi thực hiện và câu lệnh khởi tạo**
+
+Mở Terminal tại thư mục gốc của dự án (`ProPTIT-TeamWeb-FE-OmniStudy`), cập nhật nhánh `main` mới nhất rồi tách sang nhánh riêng:
+
+```bash
+git checkout main
+git pull origin main
+git checkout -b feature/buoi-2-static-bento-layout
+```
+
+**B. Tại sao cần tách nhánh riêng trước khi viết code**
+
+- Giữ nhánh `main` luôn ổn định, không bị lẫn các file thử nghiệm đang làm dở.
+- Dễ kiểm soát toàn bộ thay đổi thông qua `git diff` và Pull Request khi hoàn thiện bài tập.
+
+#### 2. Tạo thư mục làm việc và phân tách tệp mã nguồn
+
+**A. Nơi đặt thư mục và danh sách tệp cần tạo**
+
+Tạo thư mục thực hành (ví dụ `buoi-2-static/` nếu giữ gọn trong repo, hoặc đặt `index.html` và `styles/` ở gốc nhánh thực hành khi xuất bản GitHub Pages) gồm đúng 4 tệp:
+
+| Tên tệp & vị trí | Nhiệm vụ đảm nhận | Tại sao phải tách riêng |
+| :--- | :--- | :--- |
+| `index.html` | Chứa khung HTML5 ngữ nghĩa và dữ liệu mẫu | Tách biệt hoàn toàn nội dung cấu trúc khỏi quy tắc trình bày |
+| `styles/tokens.css` | Khai báo toàn bộ biến `:root` và `box-sizing` | Tập trung bảng màu, font, bo góc về 1 chỗ; sửa 1 dòng đổi toàn trang |
+| `styles/layout.css` | Dựng `app-shell`, lưới Bento 12 cột và Breakpoints | Tách khung xương Grid khỏi chi tiết từng thẻ, dễ tìm lỗi vỡ cột |
+| `styles/components.css` | Trang trí Sidebar, Banner, Countdown, Task và Motion | Dễ bảo trì từng thành phần độc lập mà không làm rối file lưới |
+
+**B. Lưu ý về đường dẫn tệp**
+
+- Trong `index.html`, bắt buộc gọi CSS bằng đường dẫn tương đối bắt đầu bằng `./styles/...`.
+- Cách viết này giúp trang chạy được cả khi mở trực tiếp file trên máy và khi đưa lên subpath của GitHub Pages.
+
+### II. Giai đoạn 2: Xây dựng giao diện từ nền tảng tới chi tiết
+
+#### 1. Bước 1 - Cài đặt Design Tokens trong `styles/tokens.css`
+
+**A. Cách viết và áp dụng vào tệp `styles/tokens.css`**
+
+- Mở `styles/tokens.css` và sao chép toàn bộ khối `box-sizing: border-box` cùng phần khai báo `:root` từ **Phần 3**.
+- Kiểm tra đủ 5 nhóm biến: bề mặt/sidebar (`--bg-canvas`, `--bg-sidebar`), màu chữ (`--text-primary`, `--text-secondary`), ngữ nghĩa (`--accent-primary`, `--semantic-*`), 5 cấp `Urgency Tiers` và biến khoảng cách/bo góc/font.
+
+**B. Tại sao phải viết `styles/tokens.css` đầu tiên**
+
+- Cả `layout.css` và `components.css` đều tham chiếu giá trị thông qua `var(--ten-bien)`.
+- Nếu viết `tokens.css` trước, bạn tránh được thói quen gõ mã màu Hex thủ công rải rác, đồng thời khóa chặt bảng màu Cozy Woodland ngay từ dòng code đầu tiên.
+
+#### 2. Bước 2 - Dựng khung HTML5 ngữ nghĩa trong `index.html`
+
+**A. Cách viết và thứ tự nhúng CSS bắt buộc trong `<head>`**
+
+Đặt các thẻ `<link>` trong `<head>` của `index.html` theo đúng thứ tự phụ thuộc từ tổng quát đến chi tiết:
+
+```html
+<link rel="stylesheet" href="./styles/tokens.css">
+<link rel="stylesheet" href="./styles/layout.css">
+<link rel="stylesheet" href="./styles/components.css">
+```
+
+- Tiếp theo, dựng lần lượt 4 khối trong `<body>` theo đúng mã mẫu ở **Phần 1**: `.skip-link` -> `<aside class="forest-sidebar">` -> `<header class="scenic-banner">` -> `<main id="main-content" class="bento-grid">`.
+- Trong `<main>`, đặt đủ 4 thẻ `<section>` (Countdown, Daily Stats, Task List, Mini Schedule) và dùng `<article>` cho từng task và sự kiện lịch.
+
+**B. Tại sao thứ tự nhúng CSS và thẻ ngữ nghĩa lại quan trọng**
+
+- Trong CSS Cascade, tệp đứng sau dùng biến của tệp đứng trước và có thể ghi đè khi cần; nhúng sai thứ tự sẽ khiến biến `var(--...)` chưa tồn tại hoặc mất style Responsive.
+- Gắn `aria-hidden="true"` cho SVG nền và chấm tròn trạng thái giúp Screen Reader không đọc ký tự trang trí vô nghĩa.
+
+#### 3. Bước 3 - Dựng khung Shell và Lưới 12 cột trong `styles/layout.css`
+
+**A. Cách viết theo tư duy Mobile-First**
+
+- Mở `styles/layout.css`, viết quy tắc cơ sở cho `body`, `.skip-link`, `:focus-visible` và `.mono-num` trước.
+- Khai báo `.app-shell` là 1 cột dọc (`minmax(0, 1fr)`) và `.bento-grid` có 4 khối đều `grid-column: span 12` cho màn hình nhỏ.
+- Chỉ mở rộng lên `span 6` ở `@media (min-width: 768px)` và `248px minmax(0, 1fr)` kèm `5/7`, `8/4` ở `@media (min-width: 1024px)`.
+
+**B. Tại sao phải viết Mobile-First và khóa `minmax(0, 1fr)`**
+
+- Viết Mobile trước giúp CSS gọn hơn vì bố cục xếp dọc là mặc định tự nhiên, lên màn hình lớn chỉ cần bổ sung chia cột.
+- Nếu thiếu `minmax(0, 1fr)` và `min-width: 0`, một tiêu đề công việc dài không dấu cách sẽ đẩy phình cột Grid làm xuất hiện thanh cuộn ngang trên điện thoại.
+
+#### 4. Bước 4 - Hoàn thiện thành phần và chuyển động trong `styles/components.css`
+
+**A. Cách áp dụng cho từng thành phần giao diện**
+
+- Mở `styles/components.css` và hoàn thiện theo thứ tự từ trên xuống dưới: `ForestSidebar` -> `ScenicHeaderBanner` -> Buttons -> `.bento-card` -> `.countdown-grid` -> `.stats-grid` -> `.task-list` + 5 tier pills -> `.schedule-list`.
+- Cuối tệp, thêm 3 `@keyframes` (`pageEnter`, `cloudDrift`, `warmShimmer`) và khối `@media (prefers-reduced-motion: reduce)`.
+
+**B. Tại sao phải viết tách khối thành phần và quy tắc giảm chuyển động**
+
+- Khóa `.countdown-grid` bằng `repeat(4, minmax(0, 1fr))` kèm `white-space: nowrap` trên `.countdown-unit` đảm bảo 4 ô đếm ngược không bao giờ bị rớt chữ `Giây` xuống dòng thứ hai.
+- Khối `@media (prefers-reduced-motion: reduce)` ở cuối tệp giúp tắt hiệu ứng trượt/trôi cho người dùng nhạy cảm chuyển động mà vẫn giữ rõ phản hồi màu sắc khi hover và focus.
+
+### III. Giai đoạn 3: Kiểm thử, tối ưu và phát hành lên GitHub Pages
+
+#### 1. Bước 5 - Kiểm tra trực tiếp trên trình duyệt và Chrome DevTools
+
+**A. Cách kiểm tra chi tiết từng hạng mục**
+
+- Mở `index.html` trên Chrome (hoặc dùng Live Server) và mở **Chrome DevTools (`F12`)**.
+- Bật **Grid Overlay** trên `.app-shell`, `.bento-grid`, `.countdown-grid` để nhìn trực tiếp các đường gióng `5/7`, `8/4` và 4 ô đếm ngược.
+- Mở **Device Toolbar (`Ctrl + Shift + M`)** kiểm tra đủ 3 mốc `375px`, `768px`, `1440px` và thử thay 1 tiêu đề task thành chuỗi dài `60` ký tự không dấu cách để kiểm chứng chống tràn lưới.
+- Nhấn phím `Tab` từ đầu trang để kiểm tra Skip Link và vòng `:focus-visible`; mở **Rendering** bật `prefers-reduced-motion: reduce` xem mây có dừng trôi không.
+- Chạy tab **Lighthouse** (chọn **Accessibility**) và xác nhận điểm đạt **>= 90**.
+
+**B. Tại sao không được bỏ qua bước kiểm thử bằng DevTools**
+
+- HTML và CSS không báo lỗi cú pháp khi gõ sai tên biến hay thiếu `min-width: 0`; lỗi chỉ lộ ra khi kiểm tra bằng Grid Overlay và thay đổi kích thước màn hình.
+- Chạy Lighthouse giúp phát hiện sớm các lỗi thiếu `aria-label` hoặc độ tương phản chữ chưa đạt chuẩn WCAG trước khi nộp bài.
+
+#### 2. Bước 6 - Commit mã nguồn, triển khai GitHub Pages và tạo Pull Request
+
+**A. Quy trình lưu mã nguồn và xuất bản trang tĩnh**
+
+- Kiểm tra lại danh sách tệp thay đổi và nội dung chỉnh sửa bằng `git status` và `git diff` để chắc chắn không có tệp rác.
+- Lưu commit trên nhánh thực hành theo chuẩn dự án và đẩy lên GitHub:
+
+```bash
+git add .
+git commit -m "feat(ui): build static cozy woodland bento dashboard with semantic html"
+git push -u origin feature/buoi-2-static-bento-layout
+```
+
+- Trên GitHub Repository: vào **Settings -> Pages -> Build and deployment**, chọn **Deploy from a branch**, chọn nhánh chứa file `index.html` và lưu cấu hình.
+
+**B. Kiểm tra lại trang công khai sau khi deploy**
+
+- Mở đường dẫn `https://<username>.github.io/ProPTIT-TeamWeb-FE-OmniStudy/` và mở tab **Network** trong DevTools để chắc chắn cả 3 tệp `tokens.css`, `layout.css`, `components.css` đều tải thành công (`200 OK`).
+- Chạy lại Lighthouse Accessibility trên URL công khai rồi tạo Pull Request hợp nhất nhánh `feature/buoi-2-static-bento-layout` vào `main`.

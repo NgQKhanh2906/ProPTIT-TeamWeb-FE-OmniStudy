@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620">
+  <rect width="1200" height="620" fill="#ECE7D8" />
+
+  <!-- Top Header -->
+  <rect x="28" y="20" width="1144" height="54" rx="14" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="48" y="53" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" fill="#283629">5. KIEM THU ACCESSIBILITY (a11y), CHROME DEVTOOLS &amp; GITHUB PAGES</text>
+  <rect x="920" y="33" width="232" height="28" rx="14" fill="#E3F2EA" stroke="#9ACBAE" stroke-width="1" />
+  <text x="1036" y="51" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#2E7D52" text-anchor="middle">Lighthouse Accessibility &gt;= 90</text>
+
+  <!-- Row 1: Tab Order Flow -->
+  <rect x="28" y="90" width="1144" height="164" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1.5" />
+  <text x="48" y="122" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="700" fill="#283629">A. Thu tu dieu huong ban phim (Tab Order) &amp; Vong sang :focus-visible (#4F7043)</text>
+
+  <rect x="48" y="142" width="204" height="88" rx="12" fill="#4F7043" />
+  <text x="150" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#FDF9F0" text-anchor="middle">Tab 1: Skip Link</text>
+  <text x="150" y="192" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#F4EFE2" text-anchor="middle">Nhay thang toi #main-content</text>
+  <text x="150" y="210" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#C6D1BF" text-anchor="middle">outline: 2px solid #4F7043</text>
+
+  <line x1="254" y1="186" x2="280" y2="186" stroke="#4F7043" stroke-width="2" />
+  <polygon points="278,180 288,186 278,192" fill="#4F7043" />
+
+  <rect x="290" y="142" width="204" height="88" rx="12" fill="#2F4231" />
+  <text x="392" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#F4EFE2" text-anchor="middle">Tab 2: ForestSidebar</text>
+  <text x="392" y="192" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#C6D1BF" text-anchor="middle">4 lien ket &lt;a&gt; trong &lt;nav&gt;</text>
+  <text x="392" y="210" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#C6D1BF" text-anchor="middle">outline-color: #F4EFE2</text>
+
+  <line x1="496" y1="186" x2="522" y2="186" stroke="#4F7043" stroke-width="2" />
+  <polygon points="520,180 530,186 520,192" fill="#4F7043" />
+
+  <rect x="532" y="142" width="204" height="88" rx="12" fill="#F1ECDD" stroke="#4F7043" stroke-width="2" />
+  <text x="634" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">Tab 3: Banner CTA</text>
+  <text x="634" y="192" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353" text-anchor="middle">Nut "+ Them Lich Thi"</text>
+  <text x="634" y="210" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#4F7043" text-anchor="middle">min-height &gt;= 40px</text>
+
+  <line x1="738" y1="186" x2="764" y2="186" stroke="#4F7043" stroke-width="2" />
+  <polygon points="762,180 772,186 762,192" fill="#4F7043" />
+
+  <rect x="774" y="142" width="204" height="88" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="876" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#283629" text-anchor="middle">Tab 4: Bento Controls</text>
+  <text x="876" y="192" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353" text-anchor="middle">Lo trinh, + Tao Task, Checkbox</text>
+  <text x="876" y="210" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Co aria-label cu the</text>
+
+  <line x1="980" y1="186" x2="1006" y2="186" stroke="#4F7043" stroke-width="2" />
+  <polygon points="1004,180 1014,186 1004,192" fill="#4F7043" />
+
+  <rect x="1016" y="142" width="136" height="88" rx="12" fill="#E3F2EA" stroke="#9ACBAE" />
+  <text x="1084" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#2E7D52" text-anchor="middle">WCAG Check</text>
+  <text x="1084" y="192" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#2E7D52" text-anchor="middle">#283629 &gt;11:1</text>
+  <text x="1084" y="210" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#2E7D52" text-anchor="middle">#546353 &gt;5.8:1</text>
+
+  <!-- Row 2 Left: 4 DevTools Checks -->
+  <rect x="28" y="272" width="560" height="324" rx="16" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1.5" />
+  <text x="48" y="304" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="700" fill="#283629">B. 4 Buoc Kiem Chung Tren Chrome DevTools</text>
+
+  <rect x="48" y="322" width="520" height="56" rx="10" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="64" y="345" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">1. Elements -&gt; Grid Overlay</text>
+  <text x="64" y="364" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Bat huy hieu "grid" tren .bento-grid va .countdown-grid de soi duong chia 5/7, 8/4 va 4 o</text>
+
+  <rect x="48" y="388" width="520" height="56" rx="10" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="64" y="411" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">2. Device Toolbar (Ctrl + Shift + M)</text>
+  <text x="64" y="430" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Do tai 375px (Mobile), 768px (Tablet), 1440px (Desktop) - Xac nhan overflow-x = 0</text>
+
+  <rect x="48" y="454" width="520" height="56" rx="10" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="64" y="477" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">3. Rendering -&gt; prefers-reduced-motion: reduce</text>
+  <text x="64" y="496" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Kiem tra may tren ScenicBanner ngung troi va the khong dich chuyen khi hover</text>
+
+  <rect x="48" y="520" width="520" height="56" rx="10" fill="#E3F2EA" stroke="#9ACBAE" />
+  <text x="64" y="543" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#2E7D52">4. Lighthouse -&gt; Accessibility Audit</text>
+  <text x="64" y="562" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#2E7D52">Dat diem &gt;= 90 o ca che do Mobile va Desktop truoc khi day len GitHub Pages</text>
+
+  <!-- Row 2 Right: Static Structure & GitHub Pages Deploy -->
+  <rect x="608" y="272" width="564" height="324" rx="16" fill="#FAF6EC" stroke="#9B6B43" stroke-width="1.5" />
+  <text x="628" y="304" font-family="Fraunces, Georgia, serif" font-size="17" font-weight="700" fill="#283629">C. Cau Truc Duong Dan Tuong Doi &amp; GitHub Pages</text>
+
+  <rect x="628" y="322" width="524" height="148" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="646" y="348" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="700" fill="#283629">thu-muc-tinh/</text>
+  <text x="646" y="370" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#4F7043">|-- index.html                 (&lt;link href="./styles/tokens.css"&gt;)</text>
+  <text x="646" y="392" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#546353">`-- styles/</text>
+  <text x="646" y="414" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#546353">    |-- tokens.css             (Bien mau, font, spacing, radius)</text>
+  <text x="646" y="436" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#546353">    |-- layout.css             (Shell 248px + Grid 12 cot)</text>
+  <text x="646" y="458" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#546353">    `-- components.css         (Banner, Countdown, Task, Motion)</text>
+
+  <rect x="628" y="484" width="256" height="92" rx="10" fill="#E3F2EA" stroke="#9ACBAE" />
+  <text x="644" y="508" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#2E7D52">DUNG: ./styles/tokens.css</text>
+  <text x="644" y="528" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#283629">Chay dung tren subpath</text>
+  <text x="644" y="546" font-family="JetBrains Mono, Consolas, monospace" font-size="10" fill="#2E7D52">/ProPTIT-.../styles/tokens.css</text>
+
+  <rect x="896" y="484" width="256" height="92" rx="10" fill="#FBEAE7" stroke="#D97C6E" />
+  <text x="912" y="508" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#9A3326">SAI: /styles/tokens.css</text>
+  <text x="912" y="528" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#283629">Loi 404 khi len GitHub Pages</text>
+  <text x="912" y="546" font-family="JetBrains Mono, Consolas, monospace" font-size="10" fill="#9A3326">Do tro ve domain goc</text>
+</svg>

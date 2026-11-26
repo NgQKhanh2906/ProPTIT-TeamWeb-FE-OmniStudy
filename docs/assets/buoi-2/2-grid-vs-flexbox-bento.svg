@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620">
+  <rect width="1200" height="620" fill="#ECE7D8" />
+
+  <!-- Top Header -->
+  <rect x="28" y="20" width="1144" height="54" rx="14" fill="#FAF6EC" stroke="#DDD6C3" stroke-width="1" />
+  <text x="48" y="53" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="700" fill="#283629">2. CSS GRID (2D) VS FLEXBOX (1D) &amp; KY THUAT CHONG TRAN LUOI</text>
+  <rect x="920" y="33" width="232" height="28" rx="14" fill="#FBF0D6" stroke="#D9AE59" stroke-width="1" />
+  <text x="1036" y="51" font-family="JetBrains Mono, Consolas, monospace" font-size="11" font-weight="700" fill="#8A580F" text-anchor="middle">minmax(0, 1fr) + min-width: 0</text>
+
+  <!-- Left Panel: CSS Grid 2D -->
+  <rect x="28" y="90" width="700" height="506" rx="16" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="50" y="122" font-family="Fraunces, Georgia, serif" font-size="18" font-weight="700" fill="#283629">A. CSS Grid (2 Chieu): Chia cau truc 12 cot</text>
+  <text x="50" y="144" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#4F7043">.app-shell { grid-template-columns: 248px minmax(0, 1fr); }</text>
+  <text x="50" y="164" font-family="JetBrains Mono, Consolas, monospace" font-size="12" fill="#4F7043">.bento-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }</text>
+
+  <!-- Column Ruler 1..12 -->
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#546353" text-anchor="middle">
+    <rect x="50" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="74" y="197">C1</text>
+    <rect x="104" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="128" y="197">C2</text>
+    <rect x="158" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="182" y="197">C3</text>
+    <rect x="212" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="236" y="197">C4</text>
+    <rect x="266" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="290" y="197">C5</text>
+    <rect x="320" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="344" y="197">C6</text>
+    <rect x="374" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="398" y="197">C7</text>
+    <rect x="428" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="452" y="197">C8</text>
+    <rect x="482" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="506" y="197">C9</text>
+    <rect x="536" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="560" y="197">C10</text>
+    <rect x="590" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="614" y="197">C11</text>
+    <rect x="644" y="182" width="48" height="22" rx="4" fill="#F1ECDD" stroke="#DDD6C3" /><text x="668" y="197">C12</text>
+  </g>
+
+  <!-- Row 1: 5 + 7 -->
+  <rect x="50" y="216" width="264" height="156" rx="12" fill="#F1ECDD" stroke="#4F7043" stroke-width="1.5" />
+  <text x="66" y="242" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">ExamCountdown (span 5)</text>
+  <text x="66" y="262" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#4F7043">repeat(4, minmax(0, 1fr))</text>
+
+  <!-- 4 Equal Countdown Boxes -->
+  <rect x="64" y="278" width="54" height="52" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="91" y="302" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#283629" text-anchor="middle">03</text>
+  <text x="91" y="320" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Ngay</text>
+
+  <rect x="124" y="278" width="54" height="52" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="151" y="302" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#283629" text-anchor="middle">14</text>
+  <text x="151" y="320" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Gio</text>
+
+  <rect x="184" y="278" width="54" height="52" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="211" y="302" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#283629" text-anchor="middle">22</text>
+  <text x="211" y="320" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Phut</text>
+
+  <rect x="244" y="278" width="54" height="52" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="271" y="302" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#4F7043" text-anchor="middle">45</text>
+  <text x="271" y="320" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Giay</text>
+
+  <text x="66" y="356" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#2E7D52" font-weight="600">Khoa cung 1 hang ngang, khong rot chu Giay</text>
+
+  <rect x="320" y="216" width="372" height="156" rx="12" fill="#F1ECDD" stroke="#3A6F88" stroke-width="1.5" />
+  <text x="336" y="242" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">Daily Stats Overview (span 7)</text>
+  <text x="336" y="262" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#2B566B">repeat(3, minmax(0, 1fr)) ben trong the</text>
+  <rect x="336" y="278" width="108" height="68" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="390" y="306" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#283629" text-anchor="middle">04</text>
+  <text x="390" y="326" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Task can lam</text>
+
+  <rect x="452" y="278" width="108" height="68" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="506" y="306" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="700" fill="#2E7D52" text-anchor="middle">02/06</text>
+  <text x="506" y="326" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Hoan thanh 33%</text>
+
+  <rect x="568" y="278" width="108" height="68" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="622" y="306" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700" fill="#283629" text-anchor="middle">8.5h</text>
+  <text x="622" y="326" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#546353" text-anchor="middle">Tong gio ngay</text>
+
+  <!-- Row 2: 8 + 4 -->
+  <rect x="50" y="388" width="426" height="128" rx="12" fill="#F1ECDD" stroke="#D9AE59" stroke-width="1.5" />
+  <text x="66" y="414" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#283629">UrgencyTaskList (span 8)</text>
+  <text x="66" y="436" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">Khung ngoai dung Grid 8 cot; ben trong xep danh sach doc bang Flexbox</text>
+  <rect x="66" y="452" width="394" height="46" rx="8" fill="#FAF6EC" stroke="#E09866" />
+  <text x="80" y="479" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="600" fill="#283629">Hoan thanh bao cao Do an Web  |  [EXTREME 89.0]</text>
+
+  <rect x="482" y="388" width="210" height="128" rx="12" fill="#E5F1F6" stroke="#7FAAC0" stroke-width="1.5" />
+  <text x="498" y="414" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" font-weight="700" fill="#2B566B">Mini Schedule (span 4)</text>
+  <text x="498" y="438" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#2B566B">09:00 - 11:30</text>
+  <text x="498" y="456" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#283629">Hop nhom do an</text>
+  <text x="498" y="480" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#2B566B">14:00 - 16:00</text>
+  <text x="498" y="498" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#283629">Hoc Ca 2 tren truong</text>
+
+  <!-- Anti-overflow note -->
+  <rect x="50" y="530" width="642" height="48" rx="10" fill="#FBEAE7" stroke="#D97C6E" stroke-width="1" />
+  <text x="66" y="551" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#9A3326">Vi sao dung minmax(0, 1fr) + min-width: 0?</text>
+  <text x="66" y="568" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" fill="#546353">1fr mac dinh la minmax(auto, 1fr), chuoi dai khong ngat dong se day vo cot. min-width: 0 khoa cot khong tran.</text>
+
+  <!-- Right Panel: Flexbox 1D -->
+  <rect x="748" y="90" width="424" height="506" rx="16" fill="#FAF6EC" stroke="#9B6B43" stroke-width="1.5" />
+  <text x="770" y="122" font-family="Fraunces, Georgia, serif" font-size="18" font-weight="700" fill="#283629">B. Flexbox (1 Chieu): Can hang / cot</text>
+  <text x="770" y="144" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" fill="#546353">Chi kiem soat 1 truc chinh (ngang row hoac doc column)</text>
+
+  <!-- Flex Example 1: Card Header -->
+  <rect x="770" y="168" width="380" height="114" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="786" y="192" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">1. Thanh tieu de the (.card-header)</text>
+  <text x="786" y="210" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#4F7043">justify-content: space-between; align-items: flex-start;</text>
+  <rect x="786" y="224" width="348" height="44" rx="8" fill="#FAF6EC" stroke="#DDD6C3" />
+  <text x="800" y="251" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">Bang cong viec</text>
+  <rect x="1032" y="232" width="90" height="28" rx="14" fill="#4F7043" />
+  <text x="1077" y="250" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" font-weight="600" fill="#FDF9F0" text-anchor="middle">+ Tao Task</text>
+
+  <!-- Flex Example 2: Task Item -->
+  <rect x="770" y="298" width="380" height="134" rx="12" fill="#F1ECDD" stroke="#DDD6C3" />
+  <text x="786" y="322" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">2. Dong cong viec (.task-item)</text>
+  <text x="786" y="340" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#4F7043">flex-direction: column -&gt; row (>= 640px)</text>
+  <rect x="786" y="354" width="348" height="62" rx="8" fill="#FAF6EC" stroke="#E09866" />
+  <rect x="798" y="374" width="16" height="16" rx="3" fill="#FAF6EC" stroke="#4F7043" stroke-width="1.5" />
+  <text x="824" y="381" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#283629">Do an Web</text>
+  <text x="824" y="399" font-family="JetBrains Mono, Consolas, monospace" font-size="10" fill="#546353">Con 2.5h | 1.5h</text>
+  <rect x="1024" y="370" width="98" height="24" rx="12" fill="#FBE6D4" stroke="#E09866" />
+  <text x="1073" y="386" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#9E4718" text-anchor="middle">EXTREME 89.0</text>
+
+  <!-- Flex Example 3: Sidebar Column -->
+  <rect x="770" y="448" width="380" height="130" rx="12" fill="#2F4231" />
+  <text x="788" y="474" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#F4EFE2">3. Cot ForestSidebar (flex-direction: column)</text>
+  <text x="788" y="494" font-family="JetBrains Mono, Consolas, monospace" font-size="11" fill="#C6D1BF">justify-content: space-between;</text>
+  <rect x="788" y="506" width="160" height="54" rx="8" fill="#3B513D" />
+  <text x="802" y="528" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" font-weight="600" fill="#F4EFE2">Tren: Logo + Nav</text>
+  <text x="802" y="546" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#C6D1BF">Co dinh o dau cot</text>
+  <rect x="966" y="506" width="166" height="54" rx="8" fill="#4A5F44" />
+  <text x="980" y="528" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="11" font-weight="600" fill="#F4EFE2">Duoi: Meo hoc tap</text>
+  <text x="980" y="546" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" fill="#C6D1BF">Day sat chan sidebar</text>
+</svg>
